@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terra Legal</title>
+  <style>
+    :root {
+      --bg: #f2efe6;
+      --ink: #1d2b28;
+      --muted: #586866;
+      --line: #cbbfa7;
+      --card: #fbf8f1;
+      --accent: #0f6b57;
+      --accent-soft: #d7ebe5;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: radial-gradient(circle at top, #fcfaf5 0%, var(--bg) 58%, #e7e0d0 100%);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 18px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(251,248,241,0.96), rgba(235,243,240,0.92));
+      box-shadow: 0 18px 50px rgba(35, 44, 42, 0.08);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.82rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.02;
+      max-width: 10ch;
+    }
+
+    .lead {
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 18px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .section {
+      margin-top: 34px;
+      padding: 24px;
+      background: rgba(251,248,241,0.82);
+      border: 1px solid var(--line);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .linkbox {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      background: white;
+    }
+
+    .linkbox strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">AIUZ Terra Codex Eco System</div>
+      <h1>Terra Legal</h1>
+      <div class="lead">
+        Compact legal, governance, publication, and protocol donor layer for the
+        wider Terra ecosystem. This page is a readable public entrance into the
+        explicit normative spine, not the whole archive.
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What it is</h2>
+        <p>
+          A compact perimeter for rules, participation, governance, publication,
+          and the explicit Terra legal-operational spine.
+        </p>
+      </article>
+      <article class="card">
+        <h2>What it is not</h2>
+        <p>
+          Not the entire Terra archive, not a dump zone, and not a replacement
+          for the full FMP corpus.
+        </p>
+      </article>
+      <article class="card">
+        <h2>Why it matters</h2>
+        <p>
+          It gives other live repositories one coherent donor layer instead of
+          leaving legal and protocol logic scattered across mirrors and drafts.
+        </p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Explicit Normative Spine</h2>
+      <ul>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/TERRA_UNIVERSAL_CONVENTION.md">TERRA UNIVERSAL CONVENTION</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/terra_living_protocols_constitution.md">Terra Living Protocols Constitution</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/terra-main-directive-v7.0.md">Terra Main Directive v7.0</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/terra-sequence-protocol-v7.0.md">Terra Sequence Protocol v7.0</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/PUBLICATION_RULE.md">Publication Rule</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/REPOSITORY_PROTOCOL.md">Repository Protocol</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/GOVERNANCE.md">Governance</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/SECURITY.md">Security</a></li>
+        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/DOCUMENTATION-STANDARD.md">Documentation Standard</a></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Use in the Ecosystem</h2>
+      <ul>
+        <li>Live repositories may inherit files directly from this donor layer.</li>
+        <li>They may adapt them with local bridge language when needed.</li>
+        <li>Compact normative files belong here; heavy engines and raw mirrors do not.</li>
+        <li>The wider hidden standards layer continues to be reviewed and normalized around this core.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>External Surfaces</h2>
+      <div class="links">
+        <div class="linkbox">
+          <strong>Repository</strong>
+          <a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal">github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal</a>
+        </div>
+        <div class="linkbox">
+          <strong>Main Vitrine</strong>
+          <a href="https://fractal-metascience.org/">fractal-metascience.org</a>
+        </div>
+        <div class="linkbox">
+          <strong>FMP Central Public Surface</strong>
+          <a href="https://secret-uzbek.github.io/FMP-CENTRAL-REPO/">secret-uzbek.github.io/FMP-CENTRAL-REPO</a>
+        </div>
+      </div>
+      <div class="footer">
+        Terra Legal is part of the broader FMP and Terra ecosystem and should
+        stay compact, readable, and normative.
+      </div>
+    </section>
+  </div>
+</body>
+</html>
