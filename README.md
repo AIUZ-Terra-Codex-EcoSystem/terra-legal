@@ -27,8 +27,28 @@ This repository is the strongest local donor for:
 - [GOVERNANCE.md](./GOVERNANCE.md)
 - [SECURITY.md](./SECURITY.md)
 - [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
+- [terra_living_protocols_constitution.md](./terra_living_protocols_constitution.md)
+- [terra-main-directive-v7.0.md](./terra-main-directive-v7.0.md)
+- [terra-sequence-protocol-v7.0.md](./terra-sequence-protocol-v7.0.md)
 - [PUBLICATION_RULE.md](./PUBLICATION_RULE.md)
 - [REPOSITORY_PROTOCOL.md](./REPOSITORY_PROTOCOL.md)
+
+## Normative spine
+
+The compact normative spine of Terra in this repository is now:
+
+- convention;
+- living constitution;
+- main directive;
+- sequence protocol;
+- publication rule;
+- repository protocol;
+- governance and security surfaces.
+
+This does not yet mean that every hidden or differently named standard from the
+wider archive has already been absorbed here. It means the explicit legal and
+operational core is now present in one donor repository, while broader
+standard-family consolidation continues outside this compact perimeter.
 
 ## Ecosystem use
 
