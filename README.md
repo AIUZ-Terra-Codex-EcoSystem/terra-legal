@@ -26,6 +26,9 @@ This repository is the strongest local donor for:
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [GOVERNANCE.md](./GOVERNANCE.md)
 - [SECURITY.md](./SECURITY.md)
+- [AUDIT_REGULATION.md](./AUDIT_REGULATION.md)
+- [VALIDATION_PROTOCOL.md](./VALIDATION_PROTOCOL.md)
+- [DOCUMENT_TEMPLATES.md](./DOCUMENT_TEMPLATES.md)
 - [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
 - [terra_living_protocols_constitution.md](./terra_living_protocols_constitution.md)
 - [terra-main-directive-v7.0.md](./terra-main-directive-v7.0.md)
@@ -43,7 +46,19 @@ The compact normative spine of Terra in this repository is now:
 - sequence protocol;
 - publication rule;
 - repository protocol;
-- governance and security surfaces.
+- governance and security surfaces;
+- visible donor files for audit, validation, and document templates.
+
+## Standard families now visible
+
+The repository now exposes three additional donor families at root level:
+
+- `AUDIT_REGULATION.md`:
+  audit and compliance logic for document checking, required metadata, and audit reporting.
+- `VALIDATION_PROTOCOL.md`:
+  validation checklist layer for ecosystem completeness and structural coherence.
+- `DOCUMENT_TEMPLATES.md`:
+  reusable templates for technical specifications, governance documents, security protocols, and protocol standards.
 
 This does not yet mean that every hidden or differently named standard from the
 wider archive has already been absorbed here. It means the explicit legal and
