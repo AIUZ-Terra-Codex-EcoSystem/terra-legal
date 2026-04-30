@@ -4,8 +4,10 @@
 [![License](https://img.shields.io/badge/License-CC0--1.0-lightgrey)](./LICENSE)
 [![Release](https://img.shields.io/github/v/release/AIUZ-Terra-Codex-EcoSystem/terra-legal?display_name=tag)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/AIUZ-Terra-Codex-EcoSystem/terra-legal)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/commits/main)
+[![Release Pipeline](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/release-and-publish.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/release-and-publish.yml)
+[![Zenodo Sync](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/zenodo-release.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/zenodo-release.yml)
+[![Terra Audit](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/terra-audit.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/terra-audit.yml)
 [![Pages](https://img.shields.io/badge/Pages-terra--legal-0f6b57)](https://aiuz-terra-codex-ecosystem.github.io/terra-legal/)
-[![DOI](https://img.shields.io/badge/DOI-pending-b8860b)](./CITATION.cff)
 
 > Normative donor repository for the Terra ecosystem: legal, governance, validation, audit, participation, and publication bridge files.
 
@@ -28,6 +30,18 @@ It is a donor layer, not the whole theory corpus, not the whole archive, and not
 
 - GitHub Pages: [aiuz-terra-codex-ecosystem.github.io/terra-legal](https://aiuz-terra-codex-ecosystem.github.io/terra-legal/)
 - Repository root: [github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal)
+- Citation metadata: [CITATION.cff](./CITATION.cff)
+
+## Publication automation
+
+This donor repository already exposes the live publication chain:
+
+- release bundle creation on tagged releases;
+- Zenodo DOI synchronization after release publication;
+- Terra audit of the visible donor surface.
+
+The repository DOI should be written back into `CITATION.cff` by the Zenodo
+workflow after the first successful published release.
 
 ## Core files
 
