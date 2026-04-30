@@ -39,6 +39,8 @@ It is a donor layer, not the whole theory corpus, not the whole archive, and not
 - [AUDIT_REGULATION.md](./AUDIT_REGULATION.md)
 - [VALIDATION_PROTOCOL.md](./VALIDATION_PROTOCOL.md)
 - [FMP_ANALYSIS_PROTOCOL.md](./FMP_ANALYSIS_PROTOCOL.md)
+- [FRACTAL_REPOSITORY_TEMPLATE_PROTOCOL.md](./FRACTAL_REPOSITORY_TEMPLATE_PROTOCOL.md)
+- [BIBLIOGRAPHY_SYNC_PROTOCOL.md](./BIBLIOGRAPHY_SYNC_PROTOCOL.md)
 - [DOCUMENT_TEMPLATES.md](./DOCUMENT_TEMPLATES.md)
 - [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
 - [terra_living_protocols_constitution.md](./terra_living_protocols_constitution.md)
@@ -53,7 +55,7 @@ It is a donor layer, not the whole theory corpus, not the whole archive, and not
 2. Continue to [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
 3. Then read [terra-main-directive-v7.0.md](./terra-main-directive-v7.0.md)
 4. Then read [terra-sequence-protocol-v7.0.md](./terra-sequence-protocol-v7.0.md)
-5. Then move to audit, validation, analysis, and template files
+5. Then move to audit, validation, analysis, bibliography, and template files
 
 ## Ecosystem use
 
