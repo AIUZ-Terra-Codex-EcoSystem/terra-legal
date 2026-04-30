@@ -1,0 +1,22 @@
+name: Zenodo DOI Registration
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  register-doi:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Wait for Zenodo webhook
+        run: sleep 90
+
+      - name: Poll Zenodo for DOI
+        run: |
+          echo "Configure repository URL and DOI sync logic here."

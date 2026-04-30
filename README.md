@@ -49,6 +49,12 @@ It is a donor layer, not the whole theory corpus, not the whole archive, and not
 - [PUBLICATION_RULE.md](./PUBLICATION_RULE.md)
 - [REPOSITORY_PROTOCOL.md](./REPOSITORY_PROTOCOL.md)
 
+## Template scaffold
+
+Reusable starter scaffold for new repositories:
+
+- [`templates/fractal_repository_template`](./templates/fractal_repository_template)
+
 ## Reading path
 
 1. Start with [README.md](./README.md)

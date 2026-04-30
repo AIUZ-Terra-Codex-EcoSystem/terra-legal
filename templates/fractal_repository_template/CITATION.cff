@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use or quote this repository branch, please cite it as below."
+type: software
+title: "REPOSITORY"
+authors:
+  - family-names: Abdukarimov
+    given-names: Abdurashid
+    orcid: "https://orcid.org/0009-0000-6394-4912"
+    affiliation: "Fractal Metascience Foundation, Tashkent"
+repository-code: "https://github.com/OWNER/REPOSITORY"
+abstract: "Short repository description."
+keywords:
+  - fractal-metascience
+  - terra
+  - open-science
+license: CC0-1.0
+date-released: "YYYY-MM-DD"
+version: "0.1.0"
+# doi: "10.5281/zenodo.TODO"
