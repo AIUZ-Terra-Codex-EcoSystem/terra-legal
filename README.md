@@ -54,6 +54,7 @@ workflow after the first successful published release.
 - [VALIDATION_PROTOCOL.md](./VALIDATION_PROTOCOL.md)
 - [FMP_ANALYSIS_PROTOCOL.md](./FMP_ANALYSIS_PROTOCOL.md)
 - [TECHNICAL_GLOSSARY.md](./TECHNICAL_GLOSSARY.md)
+- [GITHUB_LAYER_MODEL.md](./GITHUB_LAYER_MODEL.md)
 - [FRACTAL_REPOSITORY_TEMPLATE_PROTOCOL.md](./FRACTAL_REPOSITORY_TEMPLATE_PROTOCOL.md)
 - [BIBLIOGRAPHY_SYNC_PROTOCOL.md](./BIBLIOGRAPHY_SYNC_PROTOCOL.md)
 - [DOCUMENT_TEMPLATES.md](./DOCUMENT_TEMPLATES.md)
@@ -76,7 +77,8 @@ Reusable starter scaffold for new repositories:
 2. Continue to [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
 3. Then read [terra-main-directive-v7.0.md](./terra-main-directive-v7.0.md)
 4. Then read [terra-sequence-protocol-v7.0.md](./terra-sequence-protocol-v7.0.md)
-5. Then move to audit, validation, analysis, bibliography, and template files
+5. Then read [GITHUB_LAYER_MODEL.md](./GITHUB_LAYER_MODEL.md)
+6. Then move to audit, validation, analysis, bibliography, and template files
 
 ## Ecosystem use
 
