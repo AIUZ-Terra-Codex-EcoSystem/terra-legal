@@ -21,10 +21,11 @@
 - governance logic;
 - security baseline;
 - publication boundaries;
-- convention and protocol bridge files;
+- convention and protocol files, including full normative texts for core legal instruments;
 - visible donor files for audit, validation, FMP analysis, and templates.
 
 It is a donor layer, not the whole theory corpus, not the whole archive, and not a dump zone.
+It may still carry complete normative texts when a foundational document would be misleading or useless in bridge-only form.
 
 ## Main public surfaces
 
@@ -93,6 +94,7 @@ Other repositories may:
 
 This repository should remain compact, readable, and normative.
 It should not absorb theory corpora, raw archives, or shadow duplicates.
+Foundational legal texts may appear here in full when the legal donor layer would otherwise degrade into pointers without substantive content.
 
 ## Author
 
