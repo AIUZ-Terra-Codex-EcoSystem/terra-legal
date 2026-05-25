@@ -23,7 +23,7 @@ jobs:
 
       - name: Upload to Figshare
         env:
-          FIGSHARE_TOKEN: ${{ secrets.FIGSHARE_TOKEN }}
+          FIGSHARE_TOKEN: ${{ secrets.FIGSHARE_SYNC_TOKEN || secrets.FIGSHARE_TOKEN }}
           TITLE: ${{ github.event.repository.name }} - ${{ github.event.release.tag_name }}
           REPO_URL: https://github.com/${{ github.repository }}
           RELEASE_URL: ${{ github.event.release.html_url }}
@@ -69,7 +69,7 @@ PY
 
       - name: Register on OSF
         env:
-          OSF_TOKEN: ${{ secrets.OSF_TOKEN }}
+          OSF_TOKEN: ${{ secrets.OSF_SYNC_TOKEN || secrets.OSF_TOKEN }}
           TITLE: ${{ github.event.repository.name }} - ${{ github.event.release.tag_name }}
           RELEASE_URL: ${{ github.event.release.html_url }}
         run: |
