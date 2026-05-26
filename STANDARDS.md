@@ -1,63 +1,53 @@
-# Standards
+# Terra Standards Surface
 
-$repo: $(System.Collections.Hashtable.Name)
-Layer role: $(System.Collections.Hashtable.Role)
+Repository: terra-legal
+Layer role: normative donor layer
 
-This file binds the repository to the shared Terra donor standard.
+This file binds `terra-legal` to the shared Terra documentary standard.
 
 ## Inheritance rule
 
-This repository inherits its compact standard layer from:
+This repository inherits and exposes the following donor standards:
 
-- 	erra-legal/DOCUMENTATION-STANDARD.md
-- 	erra-legal/TECHNICAL_GLOSSARY.md
-- 	erra-legal/GITHUB_LAYER_MODEL.md
+- DOCUMENTATION-STANDARD.md
+- TECHNICAL_GLOSSARY.md
+- GITHUB_LAYER_MODEL.md
+- terra_living_protocols_constitution.md
+- REPOSITORY_PROTOCOL.md
+
+## Source-first standard
+
+`terra-legal` must not fabricate normative structures in isolation.
+When a rule, directive, or protocol is added here, it must be traceable to an existing donor text, operator instruction, or extracted protocol surface.
 
 ## Local obligations
 
-- keep the public surface English-first;
-- do not use fake DOI placeholders;
-- keep citation, release, and audit surfaces coherent;
-- preserve layer boundaries instead of flattening theory, practice, archive, and governance;
-- keep changes traceable and readable for humans first.
+- keep the public surface readable for human review first;
+- keep provenance visible;
+- preserve separation between donor text, bridge text, and repository-local instructions;
+- do not flatten theory, archive, governance, audit, and tooling into one undifferentiated file;
+- do not introduce fake DOI, fake authority, or unverifiable claims;
+- prefer living continuity over rigid version fetishism;
+- keep child safety, detoxification, and explicit operator control intact.
 
-## Minimal standard set
+## Minimal normative set
 
 - README.md
-- CITATION.cff
-- CONTRIBUTING.md
-- SECURITY.md
-- CODE_OF_CONDUCT.md
+- LIVING_INDEX.md
+- STANDARDS.md
 - DOCUMENTATION-STANDARD.md
 - TECHNICAL_GLOSSARY.md
-- LIVING_INDEX.md
-"@
+- GITHUB_LAYER_MODEL.md
+- AUDIT_REGULATION.md
+- VALIDATION_PROTOCOL.md
+- REPOSITORY_PROTOCOL.md
+- TERRA_DOCUMENTARY_LAYER.md
+- RULE_0_SOURCE_FIRST_PROTOCOL.md
 
-   = @"
-# Living Index
+## Packaging rule
 
-Repository: $(System.Collections.Hashtable.Name)
-Layer role: $(System.Collections.Hashtable.Role)
+Normative packaging inside `terra-legal` should follow the Terra living approach:
 
-## Current reading path
-
-1. README.md
-2. CITATION.cff
-3. CONTRIBUTING.md
-4. SECURITY.md
-5. CODE_OF_CONDUCT.md
-6. DOCUMENTATION-STANDARD.md
-7. TECHNICAL_GLOSSARY.md
-8. workflow files under .github/workflows/
-
-## Donor references
-
-- 	erra-legal/GITHUB_LAYER_MODEL.md
-- 	erra-legal/DOCUMENTATION-STANDARD.md
-- 	erra-legal/TECHNICAL_GLOSSARY.md
-
-## Use rule
-
-This index is living.
-It may evolve as the repository gains stronger structure, but it should always
-preserve a readable entry path for humans.
+- literal donor texts where exact wording matters;
+- bridge files where cross-repository coherence matters;
+- explicit provenance notes where extraction or condensation was necessary.
