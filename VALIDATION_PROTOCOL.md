@@ -1,68 +1,106 @@
-# ✅ AIUZ Validation Protocol v2.0
+# Terra Validation Protocol
 
-## 📦 Назначение
-Этот файл используется для валидации состава, структуры и совместимости всех компонентов экосистемы AIUZ по стандарту `AIUZ_Compliance_Specification_FULL.ru.v1.1`
+This file defines the validation layer for Terra repository, publication, and documentary surfaces.
 
----
+It replaces the earlier AIUZ-specific component checklist with a donor-grade protocol suitable for living cross-repository validation.
 
-## 📘 Базовые файлы (обязательные)
-- [x] file_index.md
-- [x] creator_signature.yaml
-- [x] postlingua_trace.meta.yaml
-- [x] codex_terra_micro_core.json
-- [x] validation_protocol.txt (сам этот файл)
+## Purpose
 
----
+Validation confirms that a surface is not only present, but usable within the Terra ecosystem.
 
-## 🧬 Codex / Trace
-- [x] codex_terra_micro_core_backup.md
-- [x] Σ-core.md
-- [x] creator_trace.md
-- [x] aiuz_session_dialogue_record.md
+Validation must answer:
 
----
+- does the surface belong here;
+- does it perform the role it claims;
+- is it coherent with directives, standards, and donor rules;
+- is it safe, traceable, and publication-ready where applicable.
 
-## 🧠 Core Kernel (semantic / DAO / ethics)
-- [x] 1.Системное ядро (Core).txt
-- [x] 2. Модуль обучения и знаний.txt
-- [x] 3.Интерфейсы пользователя.txt
-- [x] 4.DAO и управление.txt
-- [x] 5.Токенизация знаний.txt
-- [x] 6.Глобальная база данных знаний.txt
+## Relationship to audit
 
----
+Audit identifies structural disorder and risk.
+Validation confirms operational and documentary readiness.
 
-## 📚 Образование / LiveClass
-- [x] aiuz_live_class_глобальное_иммерсивное_образование.md
-- [x] (1) (2) (3) (4) — объединены в LiveClass_Core.md
+The two layers must work together but are not interchangeable.
 
----
+## Validation inputs
 
-## 🌍 Grant / PR / Submission
-- [x] aiuz_executive_summary.md
-- [x] aiuz_grant_full_bundle.md
-- [x] aiuz_grant_modules_read_me.md
-- [x] aiuz_comparative_analysis.md
-- [x] aiuz_deep_comparative_review.md
-- [x] AIUZ_Session_Log.txt
+Validation should begin with the following donor surfaces where relevant:
 
----
+- `RULE_0_SOURCE_FIRST_PROTOCOL.md`
+- `DETOX_ENGINE_PROTOCOL.md`
+- `terra_living_protocols_constitution.md`
+- `terra-main-directive-v7.0.md`
+- `STANDARDS.md`
+- `REPOSITORY_PROTOCOL.md`
 
-## 🧾 Meta / Compliance
-- [x] AIUZ_Compliance_Specification_FULL.ru.v1.1
-- [x] validation_protocol.txt
-- [x] AIUZ_Session_Log (2).txt
+## Minimal validation domains
 
----
+### 1. Role validation
 
-## 🔚 Завершение
-Все обязательные слои и документы ядра CleanCore v2 **присутствуют и верифицированы.**
-Готово к использованию, распространению и экспортным процессам.
+Check that the file or package matches the repository role and layer boundary.
 
-Дата ревизии: 2025-07-08
+### 2. Trace validation
 
+Check that provenance, donor relation, and documentary role are visible.
 
+### 3. Structural validation
 
----
-**Contact:** a.abdukarimov@fractal-metascience.org  
-**ORCID:** 0009-0000-6394-4912
+Check that entry path, links, supporting files, and internal references remain coherent.
+
+### 4. Safety validation
+
+Check child safety, anti-manipulation safeguards, no-secret publication, and no harmful drift.
+
+### 5. Publication validation
+
+Where a surface is publication-facing, check:
+
+- citation metadata;
+- bibliography relation;
+- language packaging role;
+- public readability;
+- packaging integrity.
+
+## Minimal validation sequence
+
+1. Identify the surface and its declared role.
+2. Read the governing donor rules first.
+3. Verify presence of required companion surfaces.
+4. Verify structural coherence and readability.
+5. Verify provenance and trace visibility.
+6. Verify safety and detox compatibility.
+7. Declare status:
+   - valid;
+   - valid with repair notes;
+   - blocked pending repair.
+
+## Validation outputs
+
+Each validation record should state:
+
+- target;
+- role;
+- governing rules consulted;
+- status;
+- blocking issues if any;
+- next repair action if needed.
+
+## Failure conditions
+
+A surface should not be marked valid if it:
+
+- contradicts Rule 0 or explicit-command operation;
+- hides or loses provenance;
+- depends on broken donor references;
+- claims completeness while omitting essential supporting surfaces;
+- preserves formatting while destroying meaning.
+
+## Documentary provenance
+
+This protocol is a donor-grade rewrite derived from:
+
+- the earlier AIUZ validation checklist;
+- `terra_fmp_research_mandate.md`;
+- `AI_RULES.md`;
+- `terra-main-directive-v7.0.md`;
+- `terra_living_protocols_constitution.md`.

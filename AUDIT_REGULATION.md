@@ -1,81 +1,105 @@
-# 📋 AIUZ\_Audit\_Regulation.md
+# Terra Audit Regulation
 
-```markdown
-[DOCUMENT_TYPE]: Regulation
-[VERSION]: 1.0.0
-[AUTHOR_ID]: AIUZ2025
-[DATE_CREATED]: 2025-07-07
-[LANGUAGE_SCOPE]: UZ-RU-DE-EN-∅
-[HASH]: AIUZ-[autogen_SHA256]
-[SESSION_ID]: AIUZ_SESSION_AUDIT_STD
-```
+This file defines the audit layer for documentary, repository, publication, and bridge surfaces within the Terra ecosystem.
 
-> **Документ:** Регламент аудита и валидации соответствия документов проекту AIUZ промышленному стандарту.\
-> **Поддержка:** OpenAI Full-Stack
+It replaces the too-narrow AIUZ-only wording of the earlier audit draft with a donor-grade regulation suitable for cross-repository use in `terra-legal`.
 
----
+## Purpose
 
-## 🎯 Цель
+Audit exists to verify that a public surface is:
 
-Обеспечить единообразие, достоверность и машиночитаемость всех текстов, созданных в рамках AIUZ, через системный аудит на соответствие стандарту `AIUZ_Standard.md`.
+- structurally coherent;
+- documentary traceable;
+- safe for publication;
+- aligned with living directives and repository role;
+- free from hidden fragmentation, silent drift, or public-facing distortion.
 
----
+## Audit scope
 
-## 🧾 1. Формат аудита
+Use this regulation when reviewing:
 
-- Периодичность: после генерации / правки документа
-- Уровни проверки: `strict` (все поля) и `flex` (ключевые)
-- Метод: человек, AI или гибрид
+- repository root surfaces;
+- living indexes;
+- directives and protocol files;
+- publication-facing bridge documents;
+- release bundles and documentary packages;
+- audit, validation, and governance files themselves.
 
----
+## Non-negotiable audit rules
 
-## ✅ 2. Чек-лист соответствия (по типу)
+### 1. Source-first rule
 
-| Тип документа | Обязательные поля                   | Структурные блоки                  |
-| ------------- | ----------------------------------- | ---------------------------------- |
-| WhitePaper    | DOCUMENT\_TYPE, VERSION, HASH, QR   | Миссия, Архитектура, Риски         |
-| Module        | DOCUMENT\_TYPE, SESSION\_ID, AUTHOR | Вход/выход, Механизмы, Онтоединицы |
-| Thesaurus     | LANGUAGE\_SCOPE, FORMAT, VERSION    | Классы терминов, Формат            |
-| Article/Case  | AUTHOR\_ID, HASH, QR\_SIGNATURE     | Гипотеза, Методика, Выводы         |
-| SessionLog    | SESSION\_ID, DATE\_CREATED, STATUS  | Инструкции, Выполненные действия   |
+No audit may certify a surface that was assembled without reading the donor corpus relevant to that surface.
 
----
+### 2. No implicit action rule
 
-## 🧪 3. Алгоритм валидации
+Audit may identify problems and prepare repair surfaces, but it must not silently convert analysis into unannounced structural change.
 
-1. Проверка метаданных (`DOCUMENT_TYPE`, `HASH`, `QR_SIGNATURE` и др.)
-2. Проверка структуры тела по типу
-3. Проверка наличия OpenAI-ссылки и авторских меток
-4. Проверка на наличие языка `∅` при необходимости
-5. Хеширование тела и сверка с указанным `HASH`
-6. Лог аудита: файл `AUDIT_REPORT_YYYYMMDD.md`
+### 3. Human-readable rule
 
----
+Audit outputs must remain reviewable by humans and must not collapse into opaque machine-only diagnostics.
 
-## 🛠 4. Автофиксация (если включено)
+### 4. Child-safety and dignity rule
 
-- Возможна генерация недостающих блоков
-- Автоматическая вставка QR, даты, подписи
-- Исправления записываются в `CHANGELOG`
+Any surface that weakens child safety, dignity, or anti-manipulation safeguards fails audit regardless of formatting quality.
 
----
+## Audit levels
 
-## 📎 Примеры
+- `surface`
+  - check readability, links, entry path, role clarity
+- `structural`
+  - check layer boundaries, donor relations, provenance, duplication
+- `publication`
+  - check citation, evidence relation, packaging role, public safety
+- `protocol`
+  - check consistency with directives, Rule 0, detox, and living protocol rules
 
-- `Session_Audit_Log_0707.md`
-- `UCOM_Module_AUDITED.md`
+## Minimal audit sequence
 
----
+1. Identify the target surface and its declared repository role.
+2. Read the relevant donor rules, directives, or protocol sources.
+3. Check whether the surface matches its declared role.
+4. Check for mojibake, dead links, false exhaustiveness, broken provenance, or archive leakage.
+5. Check whether the surface contradicts:
+   - Rule 0;
+   - Detox Engine logic;
+   - explicit-command operation;
+   - living protocol rules.
+6. State the audit result and required repair path.
 
-**Версия документа:** 1.0.0\
-**Дата публикации:** 2025-07-07\
-**Проект:** AIUZ
+## Required audit output
 
-© AIUZ 2025. Все права защищены.\
-🛠 Создано при технической поддержке OpenAI.
+An audit output should identify:
 
+- target surface;
+- repository role;
+- audit level used;
+- detected fragmentation or risk;
+- recommended action:
+  - keep;
+  - clarify;
+  - detox;
+  - extract;
+  - re-layer;
+  - relocate;
+  - deprecate.
 
+## What fails audit immediately
 
----
-**Contact:** a.abdukarimov@fractal-metascience.org  
-**ORCID:** 0009-0000-6394-4912
+- fabricated provenance;
+- public secrets;
+- false claims that a partial surface is the whole system;
+- broken donor references presented as valid;
+- machine-generated noise presented as documentary authority;
+- assistant initiative replacing operator intent.
+
+## Documentary provenance
+
+This regulation is a donor-grade rewrite based on:
+
+- earlier `AIUZ_Audit_Regulation` logic;
+- `terra-main-directive-v7.0.md`;
+- `terra_living_protocols_constitution.md`;
+- `RULE_0_SOURCE_FIRST_PROTOCOL.md`;
+- `DETOX_ENGINE_PROTOCOL.md`;
+- `REPOSITORY_PROTOCOL.md`.
