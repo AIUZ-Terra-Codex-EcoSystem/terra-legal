@@ -64,6 +64,9 @@ Current donor sources:
 
 ### 3. Detox and reflexivity tools
 
+- `DETOX_ENGINE_PROTOCOL.md`
+  - documentary bridge surface for the Terra Detox Engine;
+  - states blocked pattern families, detox levels, and repository-use rule.
 - `Terra Detox Engine` donor surface from `AIUZ-terra-codex-FMP/terra-detox-engine-v1.0 .jsx`
   - filters initiative, manipulation, commercial pressure, and self-prompting patterns;
   - supports L0-L3 detox levels;
