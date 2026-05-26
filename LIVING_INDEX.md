@@ -9,19 +9,21 @@ Layer role: normative donor layer for Terra legal, governance, audit, validation
 2. TERRA_DOCUMENTARY_LAYER.md
 3. RULE_0_SOURCE_FIRST_PROTOCOL.md
 4. DETOX_ENGINE_PROTOCOL.md
-5. terra_living_protocols_constitution.md
-6. terra-main-directive-v7.0.md
-7. terra-sequence-protocol-v7.0.md
-8. TERRA_UNIVERSAL_CONVENTION.md
-9. STANDARDS.md
-10. DOCUMENTATION-STANDARD.md
-11. TECHNICAL_GLOSSARY.md
-12. GITHUB_LAYER_MODEL.md
-13. AUDIT_REGULATION.md
-14. VALIDATION_PROTOCOL.md
-15. FMP_ANALYSIS_PROTOCOL.md
-16. PUBLICATION_RULE.md
-17. REPOSITORY_PROTOCOL.md
+5. FULL_PACKAGING_PROTOCOL.md
+6. DONOR_SOURCE_REGISTRY.md
+7. terra_living_protocols_constitution.md
+8. terra-main-directive-v7.0.md
+9. terra-sequence-protocol-v7.0.md
+10. TERRA_UNIVERSAL_CONVENTION.md
+11. STANDARDS.md
+12. DOCUMENTATION-STANDARD.md
+13. TECHNICAL_GLOSSARY.md
+14. GITHUB_LAYER_MODEL.md
+15. AUDIT_REGULATION.md
+16. VALIDATION_PROTOCOL.md
+17. FMP_ANALYSIS_PROTOCOL.md
+18. PUBLICATION_RULE.md
+19. REPOSITORY_PROTOCOL.md
 
 ## Documentary layer families
 
@@ -46,6 +48,8 @@ Layer role: normative donor layer for Terra legal, governance, audit, validation
   - TERRA_DOCUMENTARY_LAYER.md
   - RULE_0_SOURCE_FIRST_PROTOCOL.md
   - DETOX_ENGINE_PROTOCOL.md
+  - FULL_PACKAGING_PROTOCOL.md
+  - DONOR_SOURCE_REGISTRY.md
   - terra_living_protocols_constitution.md
   - terra-main-directive-v7.0.md
   - terra-sequence-protocol-v7.0.md

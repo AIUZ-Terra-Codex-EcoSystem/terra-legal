@@ -40,9 +40,9 @@ repair.
 1. Define the analyzed surface.
 2. Identify its declared role.
 3. Identify its actual behavior in the ecosystem.
-4. Mark contradictions, fractures, duplications, or false claims of canonicity.
+4. Mark contradictions, fractures, duplications, or false claims of finality.
 5. Distinguish:
-   - canonical layer;
+   - living layer;
    - donor layer;
    - operational layer;
    - archive or shadow layer.
@@ -51,7 +51,7 @@ repair.
    - clarification;
    - extraction;
    - relocation;
-   - canonicalization;
+   - re-layering;
    - deprecation.
 
 ## Required output
@@ -69,7 +69,7 @@ An FMP analysis output should name:
 Do not:
 
 - treat machine-facing files as if they were human entry documents;
-- declare a file canonical only because it exists at repository root;
+- treat a root file as final or exhaustive only because it exists at repository root;
 - confuse mirrored residue with live donor material;
 - replace reading with auto-generated summary language;
 - present unresolved structural tension as if it were already solved.

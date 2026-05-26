@@ -15,6 +15,8 @@ This repository inherits and exposes the following donor standards:
 - terra_living_protocols_constitution.md
 - REPOSITORY_PROTOCOL.md
 - DETOX_ENGINE_PROTOCOL.md
+- FULL_PACKAGING_PROTOCOL.md
+- DONOR_SOURCE_REGISTRY.md
 
 ## Source-first standard
 
@@ -45,6 +47,8 @@ When a rule, directive, or protocol is added here, it must be traceable to an ex
 - TERRA_DOCUMENTARY_LAYER.md
 - RULE_0_SOURCE_FIRST_PROTOCOL.md
 - DETOX_ENGINE_PROTOCOL.md
+- FULL_PACKAGING_PROTOCOL.md
+- DONOR_SOURCE_REGISTRY.md
 
 ## Packaging rule
 

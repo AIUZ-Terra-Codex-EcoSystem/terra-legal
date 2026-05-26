@@ -95,6 +95,14 @@ Current donor sources:
 - `DOCUMENT_TEMPLATES.md`
 - `REPOSITORY_PROTOCOL.md`
 
+### 5.5 Packaging and donor trace
+
+- `FULL_PACKAGING_PROTOCOL.md`
+  - full, light, and living package logic;
+  - multilingual packaging and provenance-preserving assembly rules.
+- `DONOR_SOURCE_REGISTRY.md`
+  - explicit registry of external documentary donor surfaces currently bridged into `terra-legal`.
+
 ### 6. Legal and participation surfaces
 
 - `LICENSE.md`
