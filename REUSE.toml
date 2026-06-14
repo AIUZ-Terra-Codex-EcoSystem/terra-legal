@@ -24,9 +24,11 @@ path = [
   "audits/README.md",
   "audits/2026-06-14-terra-legal-stabilization-v2.md",
   "audits/2026-06-14-pr3-rule0-reconciliation.md",
+  "audits/2026-06-14-pr2-merge-readiness.md",
   "traces/README.md",
   "traces/TL-2026-06-14-004.md",
-  "traces/TL-2026-06-14-005.md"
+  "traces/TL-2026-06-14-005.md",
+  "traces/TL-2026-06-14-006.md"
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
