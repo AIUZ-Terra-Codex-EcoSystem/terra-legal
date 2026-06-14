@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Check normative surface
         shell: bash
@@ -30,7 +30,10 @@ jobs:
             THIRD_PARTY_NOTICES.md CONTRIBUTOR_TERMS.md CONTRIBUTING.md GOVERNANCE.md
             RESPONSIBLE_USE_POLICY.md TRADEMARK_POLICY.md SECURITY.md CODE_OF_CONDUCT.md
             RULE_0_SOURCE_FIRST_PROTOCOL.md DETOX_ENGINE_PROTOCOL.md TRACELOG_PROTOCOL.md
-            VALIDATION_PROTOCOL.md AUDIT_REGULATION.md
+            VALIDATION_PROTOCOL.md AUDIT_REGULATION.md AUDIT_COMPLETION_PROTOCOL.md
+            VALIDATION_AUDIT_STACK.md EVIDENCE_AND_PROVENANCE_PROTOCOL.md
+            INDEPENDENT_REVIEW_PROTOCOL.md RISK_AND_RELEASE_GATE_PROTOCOL.md
+            decisions/2026-06-14-publication-decision.md
             traces/TL-2026-06-14-004.md traces/TL-2026-06-14-005.md traces/TL-2026-06-14-006.md
             audits/2026-06-14-terra-legal-stabilization-v2.md
             audits/2026-06-14-pr3-rule0-reconciliation.md
@@ -50,13 +53,12 @@ jobs:
           grep -Fq "Licensing is file-specific" CITATION.cff
           grep -Fq "https://orcid.org/0009-0000-6394-4912" CITATION.cff
           grep -Fq "Search existing ecosystem artifacts first" RULE_0_SOURCE_FIRST_PROTOCOL.md
-          grep -Fq "Source-first record" traces/TL-2026-06-14-004.md
-          grep -Fq "TL-2026-06-14-006" audits/2026-06-14-pr2-merge-readiness.md
+          grep -Fq "Fabricated precision" DETOX_ENGINE_PROTOCOL.md
+          grep -Fq "Evidence and claim validation" VALIDATION_PROTOCOL.md
+          grep -Fq "GO WITH EXCLUSIONS" RISK_AND_RELEASE_GATE_PROTOCOL.md
+          grep -Fq "GO WITH EXCLUSIONS" decisions/2026-06-14-publication-decision.md
           grep -Fq "do not retroactively change" CONTRIBUTOR_TERMS.md
           grep -Fq "explicit approval by the Lead Maintainer" CONTRIBUTOR_TERMS.md
-          grep -Fq "actions/checkout@v4" THIRD_PARTY_NOTICES.md
-          grep -Fq "softprops/action-gh-release@v2" THIRD_PARTY_NOTICES.md
-          grep -Fq "It does not itself:" THIRD_PARTY_NOTICES.md
 
           if grep -Fq '**/*.md' REUSE.toml || grep -Fq '**/*.html' REUSE.toml || grep -Fq '.github/workflows/*.yml' REUSE.toml; then
             echo "Broad wildcard relicensing pattern detected in REUSE.toml"
@@ -68,4 +70,9 @@ jobs:
             exit 1
           fi
 
-          echo "Normative surface passed. External actions remain version-tagged and require later commit-SHA review." >> "$GITHUB_STEP_SUMMARY"
+          if grep -RhoE 'uses:[[:space:]]*[^[:space:]]+@[^[:space:]]+' .github/workflows | grep -Ev '@[0-9a-fA-F]{40}([[:space:]]|$)'; then
+            echo "An external GitHub Action is not pinned to a full commit SHA"
+            exit 1
+          fi
+
+          echo "Normative, evidence, review, risk, and dependency controls passed." >> "$GITHUB_STEP_SUMMARY"
