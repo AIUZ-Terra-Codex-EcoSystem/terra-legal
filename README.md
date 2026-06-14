@@ -1,171 +1,194 @@
 # terra-legal
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--6394--4912-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0000-6394-4912)
-[![License](https://img.shields.io/badge/License-review%20required-b8860b)](./TRACELOG.md)
+[![Licensing](https://img.shields.io/badge/licensing-file--scoped-b8860b)](./LEGAL.md)
+[![Governance](https://img.shields.io/badge/governance-reviewable-2E8B57)](./GOVERNANCE.md)
+[![TraceLog](https://img.shields.io/badge/TraceLog-active-4A90E2)](./TRACELOG.md)
 [![Release](https://img.shields.io/github/v/release/AIUZ-Terra-Codex-EcoSystem/terra-legal?display_name=tag)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/AIUZ-Terra-Codex-EcoSystem/terra-legal)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/commits/main)
-[![Release Pipeline](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/release-and-publish.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/release-and-publish.yml)
-[![Zenodo Sync](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/zenodo-release.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/zenodo-release.yml)
-[![Terra Audit](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/terra-audit.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/terra-audit.yml)
-[![Pages](https://img.shields.io/badge/Pages-terra--legal-2E8B57)](https://aiuz-terra-codex-ecosystem.github.io/terra-legal/)
+[![Pages](https://img.shields.io/badge/Pages-terra--legal-7B66DC)](https://aiuz-terra-codex-ecosystem.github.io/terra-legal/)
 
-> Normative donor repository for the Terra ecosystem: legal, governance, validation, audit, participation, publication, naming, identity, TraceLog, continuity, and portfolio licensing strategy.
+> Normative donor repository for Terra legal, governance, validation, audit, publication, naming, identity, TraceLog, continuity, responsible use, and portfolio licensing strategy.
+
+## Stabilization status
+
+`terra-legal` is being stabilized through a reviewable, repository-specific legal process.
+
+The current structure resolves the former appearance that CC BY 4.0, CC0-1.0, and Terra Public License v1.0 simultaneously governed the entire repository.
+
+Current rule:
+
+- there is no single blanket license for every file;
+- file-level licensing is defined through `LEGAL.md`, `REUSE.toml`, SPDX records, and explicit notices;
+- the former Terra Public License is preserved as an archived draft, not an active portfolio-wide license;
+- earlier public grants are not represented as revoked;
+- unclassified historical files remain pending rights review rather than being silently relicensed.
+
+Start with:
+
+1. [LICENSE](./LICENSE)
+2. [LEGAL.md](./LEGAL.md)
+3. [REUSE.toml](./REUSE.toml)
+4. [LICENSES/](./LICENSES)
+5. [Third-Party Notices](./THIRD_PARTY_NOTICES.md)
 
 ## Repository role
 
-`terra-legal` is the strongest compact donor repository for:
+This repository is a compact donor layer for:
 
-- license language and portfolio license mapping;
-- contribution rules;
-- code of conduct;
-- governance logic;
-- security baseline;
-- publication boundaries;
-- convention and protocol files, including full normative texts for core legal instruments;
-- visible donor files for audit, validation, FMP analysis, naming, identity, continuity, and templates.
+- licensing strategy and relicensing controls;
+- governance and contribution rules;
+- responsible-use and child-safety principles;
+- trademark and brand boundaries;
+- security and reporting;
+- validation, audit, and publication protocols;
+- naming and visual identity;
+- TraceLog and continuity safeguards;
+- reusable repository templates and documentary standards.
 
-It is a donor layer, not the whole theory corpus, not the whole archive, and not a dump zone.
-It may still carry complete normative texts when a foundational document would be misleading or useless in bridge-only form.
+It is not:
 
-## Main public surfaces
+- the whole Terra or FMP theory corpus;
+- a law firm, court, state authority, or treaty body;
+- an automatic licensing mechanism for linked repositories;
+- proof of certification, partnership, compliance, or scientific validation;
+- a storage layer for confidential records, secrets, or raw archive residue.
 
-- GitHub Pages: [aiuz-terra-codex-ecosystem.github.io/terra-legal](https://aiuz-terra-codex-ecosystem.github.io/terra-legal/)
-- Repository root: [github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal)
-- Citation metadata: [CITATION.cff](./CITATION.cff)
-- Living trace: [TRACELOG.md](./TRACELOG.md)
+## Legal structure
+
+### Licensing and rights
+
+- [Licensing and Rights Scope](./LEGAL.md)
+- [Repository Licensing Notice](./LICENSE)
+- [Archived Terra Public License Draft Status](./LICENSE.md)
+- [Relicensing Protocol](./RELICENSING_PROTOCOL.md)
+- [Repository License Map](./REPOSITORY_LICENSE_MAP.md)
+- [Terra Legal Framework Strategy](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
+- [Third-Party Notices](./THIRD_PARTY_NOTICES.md)
+- [Attribution Notice](./NOTICE)
+
+### Standard license texts
+
+- [CC BY 4.0](./LICENSES/CC-BY-4.0.txt)
+- [Apache License 2.0](./LICENSES/Apache-2.0.txt)
+
+### Responsible use and identity
+
+- [Responsible Use Policy](./RESPONSIBLE_USE_POLICY.md)
+- [Trademark and Brand Policy](./TRADEMARK_AND_BRAND_POLICY.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Security Policy](./SECURITY.md)
+
+### Contributions and governance
+
+- [Contributor Terms](./CONTRIBUTOR_TERMS.md)
+- [Contribution Guide](./CONTRIBUTING.md)
+- [Governance](./GOVERNANCE.md)
+- [Repository Protocol](./REPOSITORY_PROTOCOL.md)
+- [Linking Instructions](./LINKING-INSTRUCTIONS.md)
 
 ## Portfolio licensing strategy
 
-The connected GitHub portfolio has been inventoried at repository level before any mass license change.
+The connected GitHub portfolio has been mapped at repository level before any mass license change.
 
 - [Complete Repository License Map](./REPOSITORY_LICENSE_MAP.md)
 - [Terra Legal Framework Strategy](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
 - [Relicensing Protocol](./RELICENSING_PROTOCOL.md)
 - [Portfolio Licensing Audit](./audits/2026-06-14-license-portfolio-strategy.md)
 
-Current strategic rule:
+Strategic defaults for future rights-cleared material:
 
-- no automatic portfolio-wide Terra Public License propagation;
-- no mass replacement of root license files;
-- standard licenses selected by object class and repository role;
-- Universal Convention, Responsible Use, brand, privacy, contribution, and commercial rules kept as separate legal layers;
-- repository-by-repository rights audit before migration.
+| Object class | Target approach |
+|---|---|
+| Original scholarly and documentary material | CC BY 4.0 |
+| New, fully owned software and implementation files | Apache-2.0 |
+| Existing valid MIT, GPL, or CC BY-SA material | Preserve pending compatibility and ownership review |
+| Original corpus metadata and annotations | CC BY 4.0 with item-level rights |
+| Third-party works | Original rights status |
+| Names, logos, and certification marks | Separate brand and trademark policy |
+| Ethical and safety obligations | Responsible-use and contractual layers |
 
-## Publication automation
+These are selection rules, not automatic blanket grants.
 
-This donor repository exposes the publication chain for:
+## Documentary protocols
 
-- release bundle creation on tagged releases;
-- Zenodo DOI synchronization after release publication;
-- Terra audit of the visible donor surface.
+### Source, Detox, packaging, and trace
 
-The DOI field remains pending until a successful published release is verified.
+- [Rule 0 Source-First Protocol](./RULE_0_SOURCE_FIRST_PROTOCOL.md)
+- [Detox Engine Protocol](./DETOX_ENGINE_PROTOCOL.md)
+- [TraceLog Protocol](./TRACELOG_PROTOCOL.md)
+- [Living TraceLog](./TRACELOG.md)
+- [Full Packaging Protocol](./FULL_PACKAGING_PROTOCOL.md)
+- [Donor Source Registry](./DONOR_SOURCE_REGISTRY.md)
 
-## Core files
+### Validation and audit
 
-### Legal, governance, and participation
+- [Validation Protocol](./VALIDATION_PROTOCOL.md)
+- [Audit Regulation](./AUDIT_REGULATION.md)
+- [FMP Analysis Protocol](./FMP_ANALYSIS_PROTOCOL.md)
+- [Bibliography Sync Protocol](./BIBLIOGRAPHY_SYNC_PROTOCOL.md)
 
-- [LICENSE.md](./LICENSE.md)
-- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
-- [CONTRIBUTING.md](./CONTRIBUTING.md)
-- [GOVERNANCE.md](./GOVERNANCE.md)
-- [SECURITY.md](./SECURITY.md)
-- [REPOSITORY_LICENSE_MAP.md](./REPOSITORY_LICENSE_MAP.md)
-- [TERRA_LEGAL_FRAMEWORK_STRATEGY.md](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
-- [RELICENSING_PROTOCOL.md](./RELICENSING_PROTOCOL.md)
+### Documentation and repository standards
 
-### Audit, validation, and analysis
+- [Standards](./STANDARDS.md)
+- [Documentation Standard](./DOCUMENTATION-STANDARD.md)
+- [Technical Glossary](./TECHNICAL_GLOSSARY.md)
+- [GitHub Layer Model](./GITHUB_LAYER_MODEL.md)
+- [Terra Documentary Layer](./TERRA_DOCUMENTARY_LAYER.md)
+- [Repository Template Protocol](./FRACTAL_REPOSITORY_TEMPLATE_PROTOCOL.md)
+- [Document Templates](./DOCUMENT_TEMPLATES.md)
 
-- [AUDIT_REGULATION.md](./AUDIT_REGULATION.md)
-- [VALIDATION_PROTOCOL.md](./VALIDATION_PROTOCOL.md)
-- [FMP_ANALYSIS_PROTOCOL.md](./FMP_ANALYSIS_PROTOCOL.md)
-- [BIBLIOGRAPHY_SYNC_PROTOCOL.md](./BIBLIOGRAPHY_SYNC_PROTOCOL.md)
+## Naming, brand, and continuity
 
-### Documentary and repository standards
-
-- [STANDARDS.md](./STANDARDS.md)
-- [DOCUMENTATION-STANDARD.md](./DOCUMENTATION-STANDARD.md)
-- [TECHNICAL_GLOSSARY.md](./TECHNICAL_GLOSSARY.md)
-- [GITHUB_LAYER_MODEL.md](./GITHUB_LAYER_MODEL.md)
-- [TERRA_DOCUMENTARY_LAYER.md](./TERRA_DOCUMENTARY_LAYER.md)
-- [FRACTAL_REPOSITORY_TEMPLATE_PROTOCOL.md](./FRACTAL_REPOSITORY_TEMPLATE_PROTOCOL.md)
-- [DOCUMENT_TEMPLATES.md](./DOCUMENT_TEMPLATES.md)
-
-### Rule, Detox, packaging, and donor trace
-
-- [RULE_0_SOURCE_FIRST_PROTOCOL.md](./RULE_0_SOURCE_FIRST_PROTOCOL.md)
-- [DETOX_ENGINE_PROTOCOL.md](./DETOX_ENGINE_PROTOCOL.md)
-- [FULL_PACKAGING_PROTOCOL.md](./FULL_PACKAGING_PROTOCOL.md)
-- [DONOR_SOURCE_REGISTRY.md](./DONOR_SOURCE_REGISTRY.md)
-- [TRACELOG_PROTOCOL.md](./TRACELOG_PROTOCOL.md)
-- [TRACELOG.md](./TRACELOG.md)
-
-### Naming, brand, and visual identity
-
-- [NAMING_STANDARD.md](./NAMING_STANDARD.md)
-- [NAMING_CARD_TEMPLATE.md](./NAMING_CARD_TEMPLATE.md)
+- [Naming Standard](./NAMING_STANDARD.md)
+- [Name Card Template](./NAMING_CARD_TEMPLATE.md)
 - [Naming Registry](./naming/registry/README.md)
-- [BRAND_IDENTITY_STANDARD.md](./BRAND_IDENTITY_STANDARD.md)
-- [VISUAL_IDENTITY_GUIDE.md](./VISUAL_IDENTITY_GUIDE.md)
-- [Terra Legal stylesheet](./design/terra-legal.css)
+- [Brand Identity Standard](./BRAND_IDENTITY_STANDARD.md)
+- [Visual Identity Guide](./VISUAL_IDENTITY_GUIDE.md)
+- [Terra Legal Stylesheet](./design/terra-legal.css)
+- [Invisible Shadow Continuity Bridge](./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md)
 
-### Continuity and living philosophy bridge
+## Ethical and governance charter
 
-- [INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md](./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md)
-- [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
-- [terra_living_protocols_constitution.md](./terra_living_protocols_constitution.md)
-- [terra-main-directive-v7.0.md](./terra-main-directive-v7.0.md)
-- [terra-sequence-protocol-v7.0.md](./terra-sequence-protocol-v7.0.md)
-- [PUBLICATION_RULE.md](./PUBLICATION_RULE.md)
-- [REPOSITORY_PROTOCOL.md](./REPOSITORY_PROTOCOL.md)
+- [Terra Universal Convention](./TERRA_UNIVERSAL_CONVENTION.md)
+- [Terra Living Protocols Constitution](./terra_living_protocols_constitution.md)
+- [Terra Main Directive v7.0](./terra-main-directive-v7.0.md)
+- [Terra Sequence Protocol v7.0](./terra-sequence-protocol-v7.0.md)
 
-## Template scaffold
+The Universal Convention is an internal ethical and governance charter. It is not a treaty, state law, or automatic additional condition on a standard public license.
 
-Reusable starter scaffold for new repositories:
+## Linking another repository
 
-- [`templates/fractal_repository_template`](./templates/fractal_repository_template)
+A repository may cite or adopt selected donor documents from `terra-legal`.
 
-## Reading path
+Linking does not automatically:
 
-1. Start with [README.md](./README.md)
-2. Continue to [TERRA_DOCUMENTARY_LAYER.md](./TERRA_DOCUMENTARY_LAYER.md)
-3. Read [RULE_0_SOURCE_FIRST_PROTOCOL.md](./RULE_0_SOURCE_FIRST_PROTOCOL.md)
-4. Read [DETOX_ENGINE_PROTOCOL.md](./DETOX_ENGINE_PROTOCOL.md)
-5. Read [TRACELOG_PROTOCOL.md](./TRACELOG_PROTOCOL.md)
-6. Read [REPOSITORY_LICENSE_MAP.md](./REPOSITORY_LICENSE_MAP.md)
-7. Read [TERRA_LEGAL_FRAMEWORK_STRATEGY.md](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
-8. Read [RELICENSING_PROTOCOL.md](./RELICENSING_PROTOCOL.md)
-9. Read [INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md](./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md)
-10. Read [NAMING_STANDARD.md](./NAMING_STANDARD.md)
-11. Read [BRAND_IDENTITY_STANDARD.md](./BRAND_IDENTITY_STANDARD.md)
-12. Read [FULL_PACKAGING_PROTOCOL.md](./FULL_PACKAGING_PROTOCOL.md)
-13. Read [DONOR_SOURCE_REGISTRY.md](./DONOR_SOURCE_REGISTRY.md)
-14. Continue to [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
-15. Then read the main directive, sequence protocol, layer model, audit, validation, publication, and template files.
+- apply a license;
+- transfer copyright;
+- create official Terra status;
+- create certification, partnership, or endorsement.
 
-## Ecosystem use
+Use [LINKING-INSTRUCTIONS.md](./LINKING-INSTRUCTIONS.md) and document local licensing separately.
 
-Other repositories may:
+## Automation status
 
-- inherit files directly from here;
-- adapt them with repo-local bridge language;
-- link back here as the donor layer;
-- keep stricter local rules where needed for safety or source integrity.
+Release, audit, and Zenodo workflows exist in the repository. Their presence does not prove that every external release, DOI deposit, audit, or publication step has completed successfully.
 
-## Boundary
+External status must be verified from the relevant workflow run, release, and repository record.
 
-This repository should remain compact, readable, and normative.
-It should not absorb theory corpora, raw archives, or shadow duplicates.
-Foundational legal texts may appear here in full when the legal donor layer would otherwise degrade into pointers without substantive content.
+## Current open work
 
-## Known unresolved issue
+- complete file-level rights classification for historical files;
+- audit contributors, dependencies, copied templates, and external actions;
+- align release and DOI metadata after stabilization is merged and released;
+- review custom legal, privacy, child-data, trademark, and commercial instruments with qualified counsel;
+- normalize remaining historical references and multilingual companion files.
 
-The repository currently contains incompatible license declarations across `LICENSE`, `LICENSE.md`, `CITATION.cff`, and earlier badges. The portfolio strategy does not choose a final `terra-legal` license or alter authorship. Resolution requires the repository-specific rights and legal review defined in the Relicensing Protocol.
-
-## Author
+## Author and maintainer
 
 **Abdurashid Abdukarimov**
 
 - ORCID: [0009-0000-6394-4912](https://orcid.org/0009-0000-6394-4912)
+- Email: `a.abdukarimov@fractal-metascience.org`
 - Foundation: Fractal Metascience Foundation
 - Location: Tashkent, Uzbekistan
