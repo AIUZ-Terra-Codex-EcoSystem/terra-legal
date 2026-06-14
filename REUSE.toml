@@ -7,6 +7,7 @@ version = 1
 path = [
   "LEGAL.md",
   "NOTICE",
+  "THIRD_PARTY_NOTICES.md",
   "CONTRIBUTOR_TERMS.md",
   "CONTRIBUTING.md",
   "GOVERNANCE.md",
@@ -22,8 +23,10 @@ path = [
   ".github/PULL_REQUEST_TEMPLATE/stabilization.md",
   "audits/README.md",
   "audits/2026-06-14-terra-legal-stabilization-v2.md",
+  "audits/2026-06-14-pr3-rule0-reconciliation.md",
   "traces/README.md",
-  "traces/TL-2026-06-14-004.md"
+  "traces/TL-2026-06-14-004.md",
+  "traces/TL-2026-06-14-005.md"
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
@@ -33,9 +36,10 @@ SPDX-FileComment = "Explicitly classified stabilization documents. This mapping 
 [[annotations]]
 path = [
   "index.html",
-  "design/terra-legal.css"
+  "design/terra-legal.css",
+  ".github/workflows/terra-audit.yml"
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
 SPDX-License-Identifier = "Apache-2.0"
-SPDX-FileComment = "Repository-local public interface implementation."
+SPDX-FileComment = "Repository-local public interface and audit workflow implementation."
