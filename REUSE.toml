@@ -1,34 +1,36 @@
-# Initial REUSE-style mapping for terra-legal.
-# This file is a stabilization aid, not a substitute for file-by-file legal review.
-
 version = 1
 
+# This is an intentionally limited stabilization mapping.
+# Unlisted historical files are not silently relicensed.
+
 [[annotations]]
-path = "**/*.md"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
+path = [
+  "LEGAL.md",
+  "NOTICE",
+  "CONTRIBUTOR_TERMS.md",
+  "CONTRIBUTING.md",
+  "GOVERNANCE.md",
+  "LINKING-INSTRUCTIONS.md",
+  "REPOSITORY_PROTOCOL.md",
+  "PUBLICATION_RULE.md",
+  "STANDARDS.md",
+  "VALIDATION_PROTOCOL.md",
+  "AUDIT_REGULATION.md",
+  "DOCUMENTATION-STANDARD.md",
+  "DOCUMENT_TEMPLATES.md",
+  "audits/2026-06-14-terra-legal-stabilization-v2.md"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
 SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "Explicitly classified stabilization documents. This mapping does not retroactively classify unlisted historical files."
 
 [[annotations]]
-path = "**/*.html"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
-SPDX-License-Identifier = "CC-BY-4.0"
-
-[[annotations]]
-path = "**/*.css"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
+path = [
+  "index.html",
+  "design/terra-legal.css"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
 SPDX-License-Identifier = "Apache-2.0"
-
-[[annotations]]
-path = ".github/workflows/*.yml"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
-SPDX-License-Identifier = "Apache-2.0"
-
-[[annotations]]
-path = "legal-drafts/**"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
-SPDX-License-Identifier = "LicenseRef-Terra-Legal-Draft"
-
-[[annotations]]
-path = "LICENSES/**"
-SPDX-FileCopyrightText = "See upstream license publisher"
-SPDX-License-Identifier = "LicenseRef-External-License-Text"
+SPDX-FileComment = "Repository-local public interface implementation."
