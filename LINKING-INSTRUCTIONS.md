@@ -1,122 +1,148 @@
-# 🔗 LINKING INSTRUCTIONS
+# Linking a Repository to terra-legal
 
-**How to Connect Your Repository to Terra Legal Layer**
+## Purpose
 
----
+This guide explains how another repository may reference `terra-legal` as a governance and documentary donor layer.
 
-## 🎯 OVERVIEW
+**A link does not automatically change the other repository's license, ownership, official status, or legal obligations.**
 
-This guide explains how to link any repository in the Terra Ecosystem
-to the .terra-legal governance framework.
+Each repository must select and document its own licensing structure under the [Relicensing Protocol](./RELICENSING_PROTOCOL.md).
 
-By linking, your repository:
-- Inherits Terra Public License v1.0
-- Adopts Terra Code of Conduct
-- Becomes part of the official Terra Ecosystem
-- Gets listed in the Terra Registry
+## Correct repository address
 
----
+Use:
 
-## 🚀 QUICK LINK (3 steps)
+`https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal`
 
-### Step 1 — Add .terra-legal reference to README
+Do not use the deprecated name `.terra-legal` in new links, submodules, badges, or documentation.
+
+## What linking may mean
+
+A repository may link to `terra-legal` to indicate that it consults or adopts specified donor documents, such as:
+
+- Code of Conduct;
+- Security Policy;
+- contribution rules;
+- validation and audit protocols;
+- naming and visual-identity standards;
+- TraceLog and continuity rules;
+- portfolio licensing strategy.
+
+The adopting repository must state exactly which documents it adopts and whether they are copied, adapted, or referenced.
+
+## What linking does not mean
+
+Linking does not by itself:
+
+- apply Terra Public License v1.0;
+- apply CC BY 4.0 or Apache-2.0;
+- relicense existing files;
+- transfer copyright;
+- create a partnership, agency, certification, or endorsement;
+- add a repository to an official registry;
+- make the Universal Convention a hidden additional license condition;
+- authorize use of logos, certification badges, or official status language.
+
+## Minimal README reference
 
 ```markdown
-[![Terra Legal](https://img.shields.io/badge/license-TPL--1.0-7c6aff)](https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal)
-[![Child Safety First](https://img.shields.io/badge/child_safety-first-00d4aa)](https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal/blob/main/CODE_OF_CONDUCT.md)
+## Governance and legal references
 
-## 📜 Legal & Governance
+This repository consults selected donor documents from
+[terra-legal](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal).
 
-This project is governed by the [Terra Legal Framework](https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal):
+Adopted documents:
+- [Code of Conduct](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/CODE_OF_CONDUCT.md)
+- [Security Policy](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/SECURITY.md)
+- [Relicensing Protocol](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/RELICENSING_PROTOCOL.md)
 
-- **License:** [Terra Public License v1.0](https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal/blob/main/LICENSE.md)
-- **Code of Conduct:** [Terra Code of Conduct](https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal/blob/main/CODE_OF_CONDUCT.md)
-- **Security:** [Security Policy](https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal/blob/main/SECURITY.md)
-- **Contributing:** [Contribution Guide](https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal/blob/main/CONTRIBUTING.md)
+Repository-specific licensing is defined locally in `LICENSE`, `LEGAL.md`,
+`LICENSES/`, and file-level SPDX or REUSE records.
 ```
 
-### Step 2 — Create minimal LICENSE file
+## Badge example
 
-```
-Terra Public License v1.0
-
-Copyright (c) 2025-2026 Abdurashid Abdukarimov
-ORCID: 0009-0000-6394-4912
-Fractal Metascience Foundation, Tashkent, Uzbekistan
-
-Full license: https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal/blob/main/LICENSE.md
-
-Child Safety First. Educational Freedom. Ethical Technology.
+```markdown
+[![Governance donor: terra-legal](https://img.shields.io/badge/governance-terra--legal-2E8B57)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal)
 ```
 
-### Step 3 — Add CITATION.cff
+Do not label this badge `license` unless the local repository actually uses a verified license identified in its own files.
 
-Use the template from DOCUMENTATION-STANDARD.md.
+## Repository-specific legal package
 
----
+A repository adopting the donor layer should prepare, as applicable:
 
-## 📋 FULL INTEGRATION (recommended)
+- `LICENSE` — short scope notice;
+- `LEGAL.md` — repository-specific rights and exclusions;
+- `LICENSES/` — canonical license texts;
+- `REUSE.toml` or SPDX headers;
+- `THIRD_PARTY_NOTICES.md`;
+- `CONTRIBUTING.md`;
+- `CODE_OF_CONDUCT.md`;
+- `SECURITY.md`;
+- `CITATION.cff`;
+- data, corpus, media, privacy, trademark, or commercial policies required by the repository role.
 
-For complete integration, copy these files to your repository:
+## License selection by object class
 
-| Source | Destination | Action |
-|--------|-------------|--------|
-| .terra-legal/CODE_OF_CONDUCT.md | your-repo/CODE_OF_CONDUCT.md | Copy |
-| .terra-legal/CONTRIBUTING.md | your-repo/CONTRIBUTING.md | Copy + customize |
-| .terra-legal/SECURITY.md | your-repo/SECURITY.md | Copy |
+Typical target structure:
 
-Or use git submodule:
+| Object | Typical target |
+|---|---|
+| Original articles, monographs, documentation, and diagrams | CC BY 4.0 |
+| New project-owned software and workflows | Apache-2.0 |
+| Existing correctly licensed MIT or GPL code | Preserve pending compatibility and ownership review |
+| Original corpus metadata and annotations | CC BY 4.0 with item-level rights |
+| Third-party texts, images, datasets, scans, or archival objects | Original rights status |
+| Logos, names, and certification marks | Separate Trademark and Brand Policy |
+| Ethical and safety principles | Responsible Use Policy and contractual instruments |
 
-```bash
-git submodule add https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal .terra-legal
-ln -s .terra-legal/CODE_OF_CONDUCT.md CODE_OF_CONDUCT.md
-ln -s .terra-legal/SECURITY.md SECURITY.md
-```
+This is a starting matrix, not an automatic decision.
 
----
+## Adoption record
 
-## 🏗️ TERRA ECOSYSTEM STRUCTURE
+The adopting repository should record:
 
-```
-Terra Ecosystem
-│
-├── .terra-legal/              ← This repository (legal layer)
-│   ├── LICENSE.md             (TPL-1.0)
-│   ├── CODE_OF_CONDUCT.md
-│   ├── CONTRIBUTING.md
-│   ├── SECURITY.md
-│   ├── DOCUMENTATION-STANDARD.md
-│   ├── LINKING-INSTRUCTIONS.md
-│   ├── CHANGELOG.md
-│   └── GOVERNANCE.md
-│
-├── AIUZ-Terra-codex/          ← Educational platform
-├── FMP-monograph/             ← Academic monograph
-└── [your-repo]/               ← Links to .terra-legal
-```
+- donor documents read;
+- exact versions or commit references;
+- local adaptations;
+- repository-specific license decision;
+- files excluded from the default license;
+- third-party rights;
+- operator approval;
+- TraceLog ID.
 
----
+## Submodules and copied files
 
-## ✅ VERIFICATION CHECKLIST
+A submodule preserves the donor repository as a separate project. It does not merge licensing scopes.
 
-After linking, verify:
+When copying a donor file:
 
-- [ ] LICENSE or LICENSE.md present with TPL-1.0 reference
-- [ ] README.md contains Terra Legal section with badges
-- [ ] CODE_OF_CONDUCT.md present
-- [ ] SECURITY.md present
-- [ ] CITATION.cff present with correct ORCID
-- [ ] Repository topics include fractal-metascience and fmp
+1. preserve source and attribution;
+2. preserve the applicable license;
+3. identify local changes;
+4. update internal links;
+5. do not imply that the copied file makes the whole repository officially certified or licensed.
 
----
+## Verification checklist
 
-## 📞 REGISTER YOUR REPOSITORY
+- [ ] Correct `terra-legal` URL used
+- [ ] Local repository role declared
+- [ ] Local `LICENSE` and `LEGAL.md` present
+- [ ] License texts and SPDX identifiers match
+- [ ] `CITATION.cff` does not contradict the license files
+- [ ] Third-party rights and exclusions visible
+- [ ] Donor documents and adaptations identified
+- [ ] No false certification, partnership, or endorsement claim
+- [ ] TraceLog record created
+- [ ] Detox completed before, during, and after integration
 
-**Email:** a.abdukarimov@fractal-metascience.org
-**Subject:** [TERRA REGISTRY] your-repo-name
-**Include:** Repository URL, project description, primary language
+## Contact
 
----
+Questions about donor-layer adoption:
 
-*© 2025 Abdurashid Abdukarimov. Terra Ecosystem.*
-*Version: 1.0.0 — March 2026*
+`a.abdukarimov@fractal-metascience.org`
+
+Suggested subject:
+
+`[TERRA LEGAL ADOPTION] repository-name`
