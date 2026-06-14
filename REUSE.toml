@@ -24,6 +24,8 @@ path = [
   "RISK_AND_RELEASE_GATE_PROTOCOL.md",
   "DETOX_ENGINE_PROTOCOL.md",
   "TRACELOG_PROTOCOL.md",
+  "FINAL_VALIDATION_AUDIT.md",
+  "TL_007.md",
   "DOCUMENTATION-STANDARD.md",
   "DOCUMENT_TEMPLATES.md",
   "PULL_REQUEST_REVIEW_CHECKLIST.md",
@@ -53,4 +55,4 @@ path = [
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
 SPDX-License-Identifier = "Apache-2.0"
-SPDX-FileComment = "Repository-local public interface and approved workflow implementation. The legacy Zenodo workflow remains outside this approved mapping pending separate review."
+SPDX-FileComment = "Repository-local public interface and approved workflow implementation."
