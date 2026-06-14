@@ -2,7 +2,7 @@
 
 **Repository:** `terra-legal`  
 **Trace class:** public  
-**Creator signature:** Abdurashid Abdukarimov — ORCID 0009-0000-6394-4912
+**Creator signature:** Abdurashid Abdulkhamitovich Abdukarimov — ORCID 0009-0000-6394-4912
 
 ## TL-2026-06-14-001
 
@@ -78,25 +78,6 @@ Complete.
 Validation result: `valid with repair notes`.
 
 Audit record: `audits/2026-06-14-naming-identity-trace-continuity.md`.
-
-### Key commit references
-
-- `4fd38c672a219349e709eee190e380ac86d71517` — TraceLog protocol
-- `20cd8b83199873a6007706d332d2b804468f571f` — naming standard
-- `65ac28851fdc3c3dba75ac19e1d45e7e60caadcf` — brand identity standard
-- `40e0fe5d60ad32151480728c863e3aaa1a0a6ed6` — shared stylesheet
-- `7360d57fccf862528da6090f5afbaba2cacf8f43` — Invisible Shadow bridge
-- `9ec18660a9fc3e79d808bba4f0791f398c81bec0` — README integration
-- `46f10da1064ae29786aaf7cbf7e0aeac72f27497` — integration audit
-- `56fe17d61a5242843218b74dc67cc2e941aa6fa9` — changelog integration
-
-### Unresolved risks
-
-- legal metadata conflict requires a separate operator decision;
-- some legacy `.terra-legal` links remain;
-- `index.html` still uses its earlier embedded style;
-- Russian and Uzbek Latin companion files are not yet present;
-- publication workflows remain partially demonstrative.
 
 ### Final declaration
 
@@ -190,3 +171,102 @@ Its ethical principles remain source material for the future Responsible Use and
 Complete with mandatory next-stage conditions.
 
 No mass relicensing is authorized by this trace. The next stage is a file-level and rights-holder audit, followed by separate operator decisions and reviewable migration pull requests.
+
+---
+
+## TL-2026-06-14-003
+
+- **Status:** stabilized with file-level audit pending
+- **Operator instruction:** stabilize `terra-legal` after the portfolio license map and legal framework strategy.
+- **Target:** `AIUZ-Terra-Codex-EcoSystem/terra-legal`
+- **Role:** repository-level license, policy, citation, third-party, responsible-use, and trademark stabilization.
+
+### Source-first record
+
+Before changes, the current `LICENSE`, `LICENSE.md`, `CITATION.cff`, README, portfolio license map, legal framework strategy, relicensing protocol, and TraceLog were inspected. Official CC BY 4.0, Apache-2.0, SPDX, and REUSE sources were consulted to avoid inventing a private format for standard license scope.
+
+### Detox before
+
+Complete.
+
+Detected risks:
+
+- `LICENSE` used CC BY 4.0 but named `Abdurashid Khamdamov`;
+- `LICENSE.md` used Terra Public License as if it were the default repository license;
+- `CITATION.cff` stated `CC0-1.0`;
+- the repository mixed documents, policies, legal drafts, CSS, workflows, identity files, and third-party references;
+- trademark and responsible-use language were not separated from copyright licensing.
+
+### Detox during
+
+Complete.
+
+Controls applied:
+
+- no repository history was rewritten;
+- earlier public grants were not described as revoked;
+- Terra Public License was preserved as a draft legal artifact instead of deleted;
+- repository-authored documentation and software-like files were separated by object class;
+- external materials, marks, and third-party rights were excluded from blanket relicensing;
+- Universal Convention and responsible-use duties were stated as policy and governance layers, not hidden downstream restrictions on CC BY 4.0 or Apache-2.0.
+
+### Created
+
+- `legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md`
+- `LICENSES/CC-BY-4.0.txt`
+- `LICENSES/Apache-2.0.txt`
+- `LEGAL.md`
+- `RESPONSIBLE_USE_POLICY.md`
+- `TRADEMARK_POLICY.md`
+- `THIRD_PARTY_NOTICES.md`
+- `REUSE.toml`
+- `audits/2026-06-14-terra-legal-stabilization.md`
+
+### Updated
+
+- `LICENSE`
+- `LICENSE.md`
+- `CITATION.cff`
+- `README.md`
+- `LIVING_INDEX.md`
+- `CHANGELOG.md`
+- `TRACELOG.md`
+
+### Commit references
+
+- `e9613886e1dac0853a55fc4b5c7eaee1bd876597` — Terra Public License draft archive
+- `b5950fee79f4e15b9abb93af7dc5d1477e04bf45` — scoped root license notice
+- `506b06c6506b914a07846d2b1660df8b4a7fa6a0` — stabilized License Policy
+- `6f0f2790e6a8a0cef7f4f7766de6b8826e6e8eb6` — CC BY 4.0 license reference
+- `b198b5964f974bb81e4ff55c17ce4c4d05e688ae` — Apache-2.0 license reference
+- `2769630a4bfb5ff2545dbef3e387b09a7e54f920` — Legal Scope and Exclusions
+- `4022fb63838e13d0ceb720eeb5cb1005018a04f6` — Responsible Use Policy
+- `b871f19b3c014c20cc09632b2f3e6b706d79cac7` — Trademark and Brand Policy
+- `04a73f992ed114caa9348774c932637477a3c8c1` — Third-Party Notices
+- `20943eca93c5877a797829ec239b8af6e5293921` — REUSE-style mapping
+- `4f5a0d040d63254b434e1adeea2a4e53a1b209d6` — citation metadata alignment
+- `2eeb78857e9b50591ee096bc6f94536736cbe88c` — README stabilization
+- `2f63b57e2a7e408d6b5cc856571c37c5e0d3a5d3` — Living Index stabilization
+- `91e070a59480b2f64b8b884d19de253b7ab24403` — stabilization audit
+- `a85667bb23d68e1350f53b7323345a3a74d81f64` — changelog stabilization record
+
+### Detox after
+
+Complete.
+
+Validation result: `stabilized with file-level audit pending`.
+
+Audit record: `audits/2026-06-14-terra-legal-stabilization.md`.
+
+### Remaining risks
+
+- full file-level SPDX headers are not inserted into every file;
+- local license reference files point to official canonical texts rather than embedding every full paragraph;
+- workflows and older templates still need dependency and third-party review;
+- GitHub Pages visual migration still needs validation;
+- Zenodo metadata remains pending;
+- professional legal review is required before commercial, child-facing, certification, or partner deployment uses custom Terra policy terms.
+
+### Final declaration
+
+`terra-legal` no longer presents CC BY 4.0, CC0, and Terra Public License as simultaneous default repository licenses. The repository now has a scoped multi-license policy, draft-license separation, responsible-use policy, trademark policy, third-party register, citation alignment, and stabilization audit.
