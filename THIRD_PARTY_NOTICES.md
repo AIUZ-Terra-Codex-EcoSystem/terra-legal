@@ -1,7 +1,7 @@
 # Third-Party Notices
 
 **Repository:** `terra-legal`  
-**Status:** initial stabilization register
+**Status:** workflow and dependency register initiated
 
 ## Purpose
 
@@ -24,9 +24,26 @@ The repository references public legal tools and license texts including:
 
 These materials are governed by their own publishers' terms and official sources.
 
-### GitHub and automation services
+### GitHub Actions and automation dependencies
 
-Badges, workflow labels, GitHub Actions, and GitHub metadata are governed by their respective providers and the terms of the GitHub platform or action authors.
+The current workflow layer calls external GitHub Actions:
+
+- `actions/checkout@v4` — maintained by GitHub and distributed under the MIT License upstream;
+- `softprops/action-gh-release@v2` — maintained by its upstream authors and distributed under the MIT License upstream.
+
+The version tags above are dependency references, not copies owned by Terra. Their upstream repositories, notices, release tags, security posture, and license terms control. A future hardening pass should evaluate pinning each action to a reviewed full commit SHA while retaining an explanatory version comment.
+
+The workflow files authored in this repository remain governed by the repository's software-like file policy (`Apache-2.0`), but that policy does not relicense the external actions they invoke.
+
+### GitHub platform and automation services
+
+Badges, workflow labels, GitHub Actions execution, release infrastructure, and GitHub metadata are governed by their respective providers and the terms of the GitHub platform or action authors.
+
+### Zenodo metadata handling
+
+The file `.github/workflows/zenodo-release.yml` is currently a repository metadata helper. It writes an already known DOI and version into `CITATION.cff`; it does not itself deposit files in Zenodo, create a Zenodo record, or mint a DOI.
+
+Zenodo records, APIs, metadata, logos, and platform services remain governed by Zenodo/CERN terms and the terms applicable to each deposited record.
 
 ### External law and policy references
 
@@ -49,8 +66,17 @@ Add a notice here when a repository file includes or depends on:
 - external standards or legal texts;
 - copied templates;
 - datasets or database contents;
-- material from institutions, archives, museums, publishers, or media organizations.
+- material from institutions, archives, museums, publishers, or media organizations;
+- external GitHub Actions, packages, APIs, hosted services, or reusable workflow components.
+
+For each dependency or copied component, record at least:
+
+- exact name and upstream source;
+- version, tag, or commit used;
+- upstream license or rights status;
+- whether the material is copied, linked, invoked, transformed, or merely cited;
+- date and method of verification.
 
 ## Review status
 
-This is an initial register. A full file-level third-party audit remains pending under `RELICENSING_PROTOCOL.md`.
+This register now covers the visible workflow dependencies and major external-reference categories. A full file-level third-party audit remains pending under `RELICENSING_PROTOCOL.md`.
