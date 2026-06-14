@@ -19,8 +19,6 @@ path = [
   "DOCUMENTATION-STANDARD.md",
   "DOCUMENT_TEMPLATES.md",
   "PULL_REQUEST_REVIEW_CHECKLIST.md",
-  "PR_BODY_STABILIZATION_V2.md",
-  "STABILIZATION_STATUS.md",
   ".github/PULL_REQUEST_TEMPLATE/stabilization.md",
   "audits/README.md",
   "audits/2026-06-14-terra-legal-stabilization-v2.md",
