@@ -1,90 +1,159 @@
-# Legal Scope and Exclusions
+# Terra Legal — Licensing and Rights Scope
 
-**Repository:** `terra-legal`  
-**Status:** stabilization notice  
-**Effective from:** 2026-06-14 stabilization commits
+**Repository:** `AIUZ-Terra-Codex-EcoSystem/terra-legal`  
+**Status:** stabilization notice pending full file-level rights audit  
+**Effective for this stabilization branch:** 2026-06-14  
+**Named author and maintainer:** Abdurashid Abdulkhamitovich Abdukarimov  
+**ORCID:** 0009-0000-6394-4912
 
-## Repository character
+## 1. No single blanket license
 
-`terra-legal` is a mixed legal, governance, validation, audit, naming, identity, TraceLog, continuity, publication, and licensing donor repository.
+This repository contains several object classes:
 
-It contains several different classes of material. Those classes do not all share the same legal treatment.
+- legal and governance documents;
+- scientific and documentary prose;
+- standards and templates;
+- HTML, CSS, scripts, and workflow files;
+- official license texts;
+- archived legal drafts;
+- third-party references and donor material.
 
-## Object classes
+One license does not automatically govern every file.
 
-### 1. Repository-authored documentation
+A file is licensed only when its applicable license is identified by:
 
-Examples:
+1. an SPDX header;
+2. an adjacent `.license` file;
+3. `REUSE.toml`;
+4. a directory-specific notice; or
+5. an explicit file-level statement.
 
-- standards;
-- protocols;
-- policies;
-- audit records;
-- repository maps;
-- explanatory Markdown documents;
-- publication and relicensing strategy files.
+Unannotated pre-existing files retain their historical licensing status and are not silently relicensed by this document.
 
-Default license: `CC-BY-4.0`.
+## 2. Default target licenses
 
-### 2. Repository-authored software-like assets
+The repository is being stabilized toward the following structure.
 
-Examples:
+### Original documentary material
 
-- CSS files;
-- scripts;
-- workflow logic;
-- machine-readable configuration;
-- lightweight implementation helpers.
+Original prose, policies, standards, explanations, diagrams, and research-facing documentation created for this repository are intended to use:
 
-Default license: `Apache-2.0`.
+**Creative Commons Attribution 4.0 International — `CC-BY-4.0`**
 
-### 3. Legal-development drafts
+This applies only where the relevant rights are held and the file is explicitly marked or covered by `REUSE.toml`.
 
-Examples:
+### Software and implementation material
 
-- Terra Public License drafts;
-- future custom license drafts;
-- commercial framework drafts;
-- policy prototypes.
+Original software-like material, including CSS, scripts, automation, and workflow implementation, is intended to use:
 
-Status: draft legal artifacts. They are not the default license for this repository unless expressly approved and adopted later.
+**Apache License 2.0 — `Apache-2.0`**
 
-### 4. Official external license and standards texts
+This applies only where the relevant rights are held and the file is explicitly marked or covered by `REUSE.toml`.
 
-External license texts, external legal materials, external standards, and references are governed by their own terms.
+### Official license texts
 
-This repository may reference or store local pointers to them for audit and interoperability, but does not claim authorship over them.
+Canonical license texts in `LICENSES/` remain governed by their own terms and status.
 
-### 5. Brand, names, and marks
+## 3. Historical notices and earlier grants
 
-Names, logos, badges, certification marks, and visual identity elements are governed by `TRADEMARK_POLICY.md` and related identity standards.
+Earlier repository versions contained conflicting statements involving:
 
-Open content and software licenses do not grant trademark permission.
+- CC BY 4.0;
+- CC0-1.0;
+- Terra Public License v1.0;
+- inconsistent authorship metadata.
 
-### 6. Third-party material
+This stabilization does not claim that earlier public grants have disappeared. Copies and versions already distributed may continue to be governed by the terms validly applied to them.
 
-Any third-party text, image, code, dataset, font, template, article, standard, legal source, or archive item remains under its original rights status unless an explicit file-level notice says otherwise and the repository has authority to license it.
+The historical Terra Public License draft remains accessible through `legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md` and repository history. It is not the active blanket license of this repository.
 
-### 7. Personal data and confidential material
+## 4. Terra Universal Convention
 
-No license in this repository grants permission to process personal data, confidential material, private communications, medical records, credentials, or other protected material.
+`TERRA_UNIVERSAL_CONVENTION.md` is an internal ethical and governance charter.
 
-If such material appears accidentally, it must be removed or protected under the repository's security and TraceLog rules.
+It is not:
 
-## Earlier grants
+- a treaty;
+- state law;
+- an internationally ratified convention;
+- a replacement for a copyright or software license;
+- an automatic additional restriction on CC BY 4.0 or Apache-2.0.
 
-Earlier public releases or copies may contain older licensing statements. This stabilization notice does not claim to revoke earlier valid grants. It defines the intended stabilized licensing structure for the repository from the current state forward.
+It may become contractually binding only when expressly incorporated into a valid agreement, service term, partnership instrument, contributor agreement, or certification framework.
 
-## License selection rule
+## 5. Responsible use
 
-When a file is ambiguous:
+`RESPONSIBLE_USE_POLICY.md` states the repository's ethical and safety expectations.
 
-1. read the file-level notice first;
-2. read the folder-level notice if present;
-3. apply `LICENSE.md`;
-4. consult `REPOSITORY_LICENSE_MAP.md` and `TERRA_LEGAL_FRAMEWORK_STRATEGY.md`;
-5. if uncertainty remains, treat the file as `review required` rather than relicensing it by assumption.
+It does not modify the permissions granted by a standard public license unless a separate valid contract expressly incorporates it.
 
-## No legal advice
+## 6. Trademarks and identity
 
-This repository is an internal legal-governance and documentation framework. It does not replace advice from qualified counsel in the relevant jurisdiction.
+Copyright and software licenses do not grant a general right to use Terra, FMP, Fractal Metascience Foundation, logos, badges, certification language, or visual identity in a way that implies endorsement or official status.
+
+See `TRADEMARK_POLICY.md`, `BRAND_IDENTITY_STANDARD.md`, and `NAMING_STANDARD.md`.
+
+## 7. Third-party material
+
+No repository-wide notice automatically relicenses:
+
+- third-party license texts;
+- quotations;
+- external standards;
+- images, logos, scans, maps, or photographs;
+- contributed material whose rights have not been verified;
+- linked or referenced works;
+- material used under an exception or limitation.
+
+See `THIRD_PARTY_NOTICES.md` and file-level provenance.
+
+## 8. Contributions
+
+A contributor must have the right to submit the contribution.
+
+Contribution terms are defined in `CONTRIBUTOR_TERMS.md` and `CONTRIBUTING.md`.
+
+No contribution transfers ownership merely because it is submitted. The applicable license grant must be explicit and compatible with the file's existing license.
+
+## 9. Attribution
+
+For repository-authored material explicitly licensed under CC BY 4.0, the requested attribution is:
+
+> Abdukarimov, Abdurashid Abdulkhamitovich. *terra-legal*. Fractal Metascience Foundation, Tashkent, Uzbekistan. ORCID 0009-0000-6394-4912. Repository: `AIUZ-Terra-Codex-EcoSystem/terra-legal`.
+
+Reasonable attribution adapted to the medium is acceptable. Changes should be identified.
+
+## 10. No endorsement
+
+Reuse, citation, adaptation, or redistribution does not imply:
+
+- endorsement;
+- certification;
+- partnership;
+- institutional affiliation;
+- legal approval;
+- scientific validation;
+- official Terra status.
+
+## 11. Personal data and confidential material
+
+No repository license grants permission to process personal data, confidential material, private communications, medical records, credentials, or other protected information.
+
+If such material appears accidentally, it must be removed or protected under `SECURITY.md`, TraceLog, and applicable law.
+
+## 12. No legal-advice representation
+
+This repository contains internal governance, licensing strategy, and documentary frameworks. It does not create a lawyer-client relationship and does not replace jurisdiction-specific advice from a qualified lawyer.
+
+## 13. Current stabilization boundary
+
+The present branch resolves the most visible contradictions and creates a reviewable legal structure. It does not yet declare every historical file fully cleared.
+
+Completion requires:
+
+- contributor and ownership review;
+- file-level license classification;
+- third-party and dependency review;
+- alignment of release and DOI metadata;
+- validation of all SPDX and REUSE mappings;
+- professional review where custom restrictions, privacy, child data, trademarks, or commercial terms are involved.
