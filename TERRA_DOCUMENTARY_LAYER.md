@@ -3,7 +3,7 @@
 This file assembles the documentary layer that `terra-legal` must hold or explicitly bridge for the Terra ecosystem.
 
 It is not a theory dump.
-It is a normative map of the original standards, directives, protocols, validation texts, audit texts, licensing surfaces, and control rules that govern work across the ecosystem.
+It is a normative map of the original standards, directives, protocols, validation texts, audit texts, licensing surfaces, naming rules, identity rules, trace discipline, and continuity controls that govern work across the ecosystem.
 
 ## Layer purpose
 
@@ -16,6 +16,10 @@ It is a normative map of the original standards, directives, protocols, validati
 - governance;
 - working directives;
 - living protocols;
+- naming;
+- brand and visual identity;
+- TraceLog discipline;
+- continuity safeguards;
 - documentary coherence across repositories.
 
 ## Core donor families
@@ -38,46 +42,31 @@ It is a normative map of the original standards, directives, protocols, validati
 - `TERRA_UNIVERSAL_CONVENTION.md`
   - wider ecosystem convention layer.
 
-Current donor sources:
-
-- `terra-legal/terra-main-directive-v7.0.md`
-- `terra-legal/terra-sequence-protocol-v7.0.md`
-- `terra-legal/terra_living_protocols_constitution.md`
-- `terra-legal/TERRA_UNIVERSAL_CONVENTION.md`
-
 ### 2. Rule surfaces
 
 - `RULE_0_SOURCE_FIRST_PROTOCOL.md`
-  - extracted documentary surface for Rule 0 and Rule 0.5;
-  - bridges source-first search, mandatory FMP search, and NULLO-first pre-conceptual engagement.
+  - Rule 0 and Rule 0.5;
+  - source-first search;
+  - mandatory FMP search;
+  - NULLO-first pre-conceptual engagement.
 - `AI_RULES` donor surface from `FMP-CENTRAL-REPO/AI_LAYER/AI_RULES.md`
   - do not hallucinate;
   - do not create new structures without reading corpus;
   - always prioritize existing files;
   - treat repository as system, not content.
 
-Current donor sources:
-
-- `Secret-Uzbek/FMP-CENTRAL-REPO/AI_LAYER/AI_RULES.md`
-- `E:/01.02.2026/terra_living_protocols_directive_workflow_detoxed_en.md`
-- `E:/24.05.2026/for_publication.md`
-
 ### 3. Detox and reflexivity tools
 
 - `DETOX_ENGINE_PROTOCOL.md`
-  - documentary bridge surface for the Terra Detox Engine;
-  - states blocked pattern families, detox levels, and repository-use rule.
+  - blocked pattern families;
+  - detox levels;
+  - repository-use rule.
 - `Terra Detox Engine` donor surface from `AIUZ-terra-codex-FMP/terra-detox-engine-v1.0 .jsx`
   - filters initiative, manipulation, commercial pressure, and self-prompting patterns;
   - supports L0-L3 detox levels;
   - blocks unsolicited optimization and autonomous goal drift.
 - `Research Mandate` donor surface from `Nullo-PLT-UCOMM-FMP-Academic-Research/terra_fmp_research_mandate.md`
   - requires Terra Clean Core, Terra Detox Engine, and Fractal Reflexivity Model as synthesis and validation engines.
-
-Current donor sources:
-
-- `Secret-Uzbek/AIUZ-terra-codex-FMP/terra-detox-engine-v1.0 .jsx`
-- `Secret-Uzbek/Nullo-PLT-UCOMM-FMP-Academic-Research/terra_fmp_research_mandate.md`
 
 ### 4. Validation and audit
 
@@ -95,15 +84,50 @@ Current donor sources:
 - `DOCUMENT_TEMPLATES.md`
 - `REPOSITORY_PROTOCOL.md`
 
-### 5.5 Packaging and donor trace
+### 6. Packaging and donor trace
 
 - `FULL_PACKAGING_PROTOCOL.md`
   - full, light, and living package logic;
-  - multilingual packaging and provenance-preserving assembly rules.
+  - multilingual packaging;
+  - provenance-preserving assembly.
 - `DONOR_SOURCE_REGISTRY.md`
-  - explicit registry of external documentary donor surfaces currently bridged into `terra-legal`.
+  - registry of external documentary donor surfaces.
+- `TRACELOG_PROTOCOL.md`
+  - before, during, and after trace discipline;
+  - public, restricted, and private trace classes;
+  - data minimization and correction rules.
+- `TRACELOG.md`
+  - public living record of material repository decisions.
 
-### 6. Legal and participation surfaces
+### 7. Naming and public identity
+
+- `NAMING_STANDARD.md`
+  - source-first naming;
+  - language, semantic, and Detox checks;
+  - accepted and deprecated name handling.
+- `NAMING_CARD_TEMPLATE.md`
+  - standard name record.
+- `naming/registry/`
+  - accepted, proposed, blocked, and deprecated public names.
+- `BRAND_IDENTITY_STANDARD.md`
+  - restrained donor interpretation of Terra Brand Book v2.0.
+- `VISUAL_IDENTITY_GUIDE.md`
+  - palette, typography, layout, and accessibility variables.
+- `design/terra-legal.css`
+  - accessible public-page implementation.
+
+### 8. Continuity and Invisible Shadow
+
+- `INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md`
+  - silent archiving without hidden monitoring;
+  - contextual bridging;
+  - long-term persistence;
+  - anti-closure;
+  - anti-capture.
+
+The complete Invisible Shadow theory remains outside this compact legal donor layer.
+
+### 9. Legal and participation surfaces
 
 - `LICENSE.md`
 - `CODE_OF_CONDUCT.md`
@@ -126,5 +150,9 @@ This repository is coherent only if:
 - rules do not contradict directives;
 - validation does not contradict governance;
 - audit does not contradict documentation standards;
+- naming does not contradict repository role;
+- identity does not obscure legal meaning;
+- TraceLog does not become hidden monitoring;
+- Invisible Shadow does not become an excuse for undocumented authority;
 - living protocol rules remain compatible with source-first and explicit-command principles;
 - detox and safety safeguards remain active across all documentary surfaces.
