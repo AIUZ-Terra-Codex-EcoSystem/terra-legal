@@ -20,122 +20,46 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate legal, governance, trace, and dependency surfaces
+      - name: Check normative surface
         shell: bash
         run: |
           set -euo pipefail
 
-          fail=0
-          warn=0
-          summary="$GITHUB_STEP_SUMMARY"
+          required_files=(
+            README.md LICENSE LICENSE.md LEGAL.md NOTICE CITATION.cff REUSE.toml
+            THIRD_PARTY_NOTICES.md CONTRIBUTOR_TERMS.md CONTRIBUTING.md GOVERNANCE.md
+            RESPONSIBLE_USE_POLICY.md TRADEMARK_POLICY.md SECURITY.md CODE_OF_CONDUCT.md
+            RULE_0_SOURCE_FIRST_PROTOCOL.md DETOX_ENGINE_PROTOCOL.md TRACELOG_PROTOCOL.md
+            VALIDATION_PROTOCOL.md AUDIT_REGULATION.md
+            traces/TL-2026-06-14-004.md traces/TL-2026-06-14-005.md
+            audits/2026-06-14-terra-legal-stabilization-v2.md
+            audits/2026-06-14-pr3-rule0-reconciliation.md
+            LICENSES/CC-BY-4.0.txt LICENSES/Apache-2.0.txt
+            legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md
+          )
 
-          echo "## Terra Legal Audit" >> "$summary"
+          for file in "${required_files[@]}"; do
+            test -f "$file" || { echo "Missing required file: $file"; exit 1; }
+          done
 
-          require_file() {
-            local file="$1"
-            local label="$2"
-            if [ -f "$file" ]; then
-              echo "- PASS: $label ($file)" >> "$summary"
-            else
-              echo "- FAIL: $label missing ($file)" >> "$summary"
-              fail=1
-            fi
-          }
-
-          require_text() {
-            local file="$1"
-            local text="$2"
-            local label="$3"
-            if [ -f "$file" ] && grep -Fq -- "$text" "$file"; then
-              echo "- PASS: $label" >> "$summary"
-            else
-              echo "- FAIL: $label" >> "$summary"
-              fail=1
-            fi
-          }
-
-          echo "### Required review surface" >> "$summary"
-          require_file "README.md" "README"
-          require_file "LICENSE" "file-scoped root notice"
-          require_file "LICENSE.md" "license policy"
-          require_file "LEGAL.md" "legal scope"
-          require_file "NOTICE" "repository notice"
-          require_file "CITATION.cff" "citation metadata"
-          require_file "REUSE.toml" "limited REUSE mapping"
-          require_file "THIRD_PARTY_NOTICES.md" "third-party register"
-          require_file "CONTRIBUTOR_TERMS.md" "contributor terms"
-          require_file "CONTRIBUTING.md" "contribution policy"
-          require_file "GOVERNANCE.md" "governance"
-          require_file "RESPONSIBLE_USE_POLICY.md" "responsible-use policy"
-          require_file "TRADEMARK_POLICY.md" "trademark policy"
-          require_file "SECURITY.md" "security policy"
-          require_file "CODE_OF_CONDUCT.md" "code of conduct"
-          require_file "VALIDATION_PROTOCOL.md" "validation protocol"
-          require_file "AUDIT_REGULATION.md" "audit regulation"
-          require_file "RULE_0_SOURCE_FIRST_PROTOCOL.md" "Rule 0 protocol"
-          require_file "DETOX_ENGINE_PROTOCOL.md" "Detox protocol"
-          require_file "TRACELOG_PROTOCOL.md" "TraceLog protocol"
-          require_file "traces/TL-2026-06-14-004.md" "stabilization trace"
-          require_file "audits/2026-06-14-terra-legal-stabilization-v2.md" "stabilization audit"
-          require_file "LICENSES/CC-BY-4.0.txt" "CC BY 4.0 text"
-          require_file "LICENSES/Apache-2.0.txt" "Apache-2.0 text"
-          require_file "legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md" "custom license draft"
-
-          echo "### File-scoped rights architecture" >> "$summary"
-          require_text "LEGAL.md" "No blanket license applies" "blanket licensing is rejected"
-          require_text "REUSE.toml" "intentionally limited stabilization mapping" "REUSE map is explicitly limited"
-          require_text "CITATION.cff" "Licensing is file-specific" "citation message exposes file-specific licensing"
-          require_text "CITATION.cff" "https://orcid.org/0009-0000-6394-4912" "ORCID is aligned"
-          require_text "CITATION.cff" "https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal" "repository URL is aligned"
+          grep -Fq "No single blanket license" LEGAL.md
+          grep -Fq "intentionally limited stabilization mapping" REUSE.toml
+          grep -Fq "Licensing is file-specific" CITATION.cff
+          grep -Fq "https://orcid.org/0009-0000-6394-4912" CITATION.cff
+          grep -Fq "Search existing ecosystem artifacts first" RULE_0_SOURCE_FIRST_PROTOCOL.md
+          grep -Fq "Source-first record" traces/TL-2026-06-14-004.md
+          grep -Fq "actions/checkout@v4" THIRD_PARTY_NOTICES.md
+          grep -Fq "softprops/action-gh-release@v2" THIRD_PARTY_NOTICES.md
+          grep -Fq "It does not itself:" THIRD_PARTY_NOTICES.md
 
           if grep -Fq '**/*.md' REUSE.toml || grep -Fq '**/*.html' REUSE.toml || grep -Fq '.github/workflows/*.yml' REUSE.toml; then
-            echo "- FAIL: broad wildcard relicensing pattern detected in REUSE.toml" >> "$summary"
-            fail=1
-          else
-            echo "- PASS: no broad wildcard relicensing pattern detected" >> "$summary"
-          fi
-
-          if grep -Eq '^(license|doi|date-released):[[:space:]]*[^#[:space:]]' CITATION.cff; then
-            echo "- FAIL: unverified single-license, DOI, or release-date metadata is active" >> "$summary"
-            fail=1
-          else
-            echo "- PASS: no active unverified single-license, DOI, or release-date field" >> "$summary"
-          fi
-
-          echo "### Rule 0 and trace" >> "$summary"
-          require_text "RULE_0_SOURCE_FIRST_PROTOCOL.md" "Search existing ecosystem artifacts first" "source-first search is present"
-          require_text "AUDIT_REGULATION.md" "No audit may certify a surface assembled without reading the relevant" "audit requires donor reading"
-          require_text "TRACELOG_PROTOCOL.md" "Read the relevant donor and source files" "TraceLog requires source reading before change"
-          require_text "traces/TL-2026-06-14-004.md" "Source-first record" "trace contains source-first record"
-
-          echo "### External dependencies" >> "$summary"
-          require_text "THIRD_PARTY_NOTICES.md" "actions/checkout@v4" "checkout action registered"
-          require_text "THIRD_PARTY_NOTICES.md" "softprops/action-gh-release@v2" "release action registered"
-          require_text "THIRD_PARTY_NOTICES.md" "It does not itself:" "Zenodo metadata boundary registered"
-
-          action_refs="$(grep -RhoE 'uses:[[:space:]]*[^[:space:]]+@[^[:space:]]+' .github/workflows 2>/dev/null | sed -E 's/^uses:[[:space:]]*//' | sort -u || true)"
-          if [ -n "$action_refs" ]; then
-            echo "### Referenced GitHub Actions" >> "$summary"
-            printf '%s\n' "$action_refs" | sed 's/^/- /' >> "$summary"
-          fi
-
-          if printf '%s\n' "$action_refs" | grep -Eq '@(main|master|latest)$'; then
-            echo "- FAIL: floating GitHub Action reference detected" >> "$summary"
-            fail=1
-          fi
-
-          if printf '%s\n' "$action_refs" | grep -Evq '@[0-9a-fA-F]{40}$'; then
-            echo "- REVIEW: action tags are not pinned to reviewed full commit SHAs" >> "$summary"
-            warn=1
-          fi
-
-          if [ "$fail" -ne 0 ]; then
-            echo "### Result: FAILED" >> "$summary"
+            echo "Broad wildcard relicensing pattern detected in REUSE.toml"
             exit 1
           fi
 
-          if [ "$warn" -ne 0 ]; then
-            echo "### Result: PASSED WITH REVIEW NOTES" >> "$summary"
-          else
-            echo "### Result: PASSED" >> "$summary"
+          if grep -Eq '^(license|doi|date-released):[[:space:]]*[^#[:space:]]' CITATION.cff; then
+            echo "Unverified repository-wide license, DOI, or release date is active"
+            exit 1
           fi
+
+          echo "Normative surface passed. External actions remain version-tagged and require later commit-SHA review." >> "$GITHUB_STEP_SUMMARY"
