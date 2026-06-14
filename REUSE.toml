@@ -18,7 +18,9 @@ path = [
   "AUDIT_REGULATION.md",
   "DOCUMENTATION-STANDARD.md",
   "DOCUMENT_TEMPLATES.md",
-  "audits/2026-06-14-terra-legal-stabilization-v2.md"
+  "PULL_REQUEST_REVIEW_CHECKLIST.md",
+  "audits/2026-06-14-terra-legal-stabilization-v2.md",
+  "traces/TL-2026-06-14-004.md"
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
