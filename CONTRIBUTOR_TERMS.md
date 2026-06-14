@@ -1,7 +1,7 @@
 # Terra Legal Contributor Terms
 
 **Repository:** `terra-legal`  
-**Status:** contribution terms for reviewable submissions  
+**Status:** draft on a review branch — not yet operative  
 **Maintainer:** Abdurashid Abdulkhamitovich Abdukarimov — ORCID 0009-0000-6394-4912
 
 ## Purpose
@@ -10,9 +10,25 @@ These terms clarify what a contributor represents when submitting code, document
 
 They do not transfer ownership automatically and do not authorize the contributor to submit material they do not have the right to contribute.
 
+## Effective scope and non-retroactivity
+
+These terms become operative only after:
+
+1. explicit approval by the Lead Maintainer; and
+2. publication on the repository's default branch.
+
+They apply prospectively to a contribution when:
+
+- it is intentionally submitted after the operative version is published; or
+- the contributor expressly accepts these terms through a pull-request sign-off or another written record.
+
+These terms do not retroactively change the ownership, license, authorship, or contractual status of an earlier contribution merely because this file is later merged or amended.
+
+A future amendment must state its effective boundary. Material changes must not be applied retroactively without the affected contributor's express agreement or another valid legal basis.
+
 ## Contributor certification
 
-By intentionally submitting a contribution for inclusion, the contributor certifies that:
+When these terms are operative or expressly accepted, a contributor intentionally submitting a contribution for inclusion certifies that:
 
 1. the contribution is original to the contributor, or the contributor has sufficient permission to submit it;
 2. any third-party material is identified with its source and license;
@@ -37,7 +53,7 @@ A contribution to an unclassified file does not become licensed merely because i
 
 Contributors retain copyright in their original contributions unless a separate written assignment states otherwise.
 
-By submitting an accepted contribution, the contributor grants the rights required by the applicable repository license.
+By submitting an accepted contribution under operative or expressly accepted terms, the contributor grants the rights required by the applicable repository license.
 
 No assignment to the Fractal Metascience Foundation, Terra, FMP, AIUZ, a GitHub organization, or a maintainer is implied without a separate written agreement.
 
@@ -81,7 +97,7 @@ For material contributions, the pull request should include:
 
 `Signed-off-by: Full Name <email>`
 
-The sign-off confirms the contributor certification stated above. It is not a copyright assignment.
+The sign-off confirms the contributor certification stated above and records express acceptance when these terms are not yet otherwise operative. It is not a copyright assignment.
 
 ## Rejection or removal
 
