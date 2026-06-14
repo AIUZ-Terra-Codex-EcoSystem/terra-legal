@@ -1,0 +1,4 @@
+stabilize/terra-legal-licensing-v2
+status: prepared for review; not merged
+automatic merge: prohibited
+trace: TL-2026-06-14-004
