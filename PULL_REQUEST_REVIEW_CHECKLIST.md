@@ -1,8 +1,11 @@
 # Terra Legal Stabilization — Pull Request Review Checklist
 
 **Branch:** `stabilize/terra-legal-licensing-v2`  
-**Trace:** `TL-2026-06-14-004`  
-**Audit:** `audits/2026-06-14-terra-legal-stabilization-v2.md`
+**Primary stabilization trace:** `TL-2026-06-14-004`  
+**Rule 0 reconciliation trace:** `TL-2026-06-14-005`  
+**Merge-readiness trace:** `TL-2026-06-14-006`  
+**Primary audit:** `audits/2026-06-14-terra-legal-stabilization-v2.md`  
+**Merge-readiness audit:** `audits/2026-06-14-pr2-merge-readiness.md`
 
 ## Architecture decision
 
@@ -31,6 +34,14 @@
 - [ ] Confirm that `CITATION.cff` does not state a false single license, release date, or DOI.
 - [ ] Confirm that `REUSE.toml` maps only reviewed files and does not use blanket historical wildcards.
 
+## Contributor Terms protected decision
+
+- [ ] Confirm that Contributor Terms become operative only after explicit Lead Maintainer approval and publication on the default branch.
+- [ ] Confirm that Contributor Terms apply prospectively and do not retroactively change earlier contributions.
+- [ ] Confirm that sign-off records express acceptance where the terms are not otherwise operative.
+- [ ] Record whether professional legal review is completed, explicitly deferred for an interim policy, or required before merge.
+- [ ] Record the Lead Maintainer's protected legal decision in the PR and TraceLog.
+
 ## Governance and linking
 
 - [ ] Confirm that linking to `terra-legal` does not apply a license automatically.
@@ -43,6 +54,14 @@
 - [ ] Confirm that release and DOI claims require verification.
 - [ ] Confirm third-party exclusions and historical grant preservation.
 - [ ] Confirm that `index.html` uses the shared stylesheet and presents the legal boundary accurately.
+- [ ] Confirm that no obsolete temporary marker such as `PR2_NOT_OPENED.md` remains.
+
+## Technical validation
+
+- [ ] Confirm the latest Terra Legal Audit run succeeds after the final change set.
+- [ ] Compare the branch with `main` immediately before merge and confirm it is not behind.
+- [ ] Confirm PR #3 remains closed and unmerged.
+- [ ] Confirm GitHub Action tag pinning remains an explicitly recorded follow-up item.
 
 ## Remaining limitations
 
@@ -56,4 +75,5 @@
 - [ ] Approve architecture for merge.
 - [ ] Request specified changes.
 - [ ] Block pending additional rights evidence.
+- [ ] Block pending protected legal decision.
 - [ ] Block pending professional legal review.
