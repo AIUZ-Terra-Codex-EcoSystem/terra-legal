@@ -20,24 +20,34 @@ Versioning: [Semantic Versioning](https://semver.org/)
 - `VISUAL_IDENTITY_GUIDE.md` — palette, typography, spacing, diagram, and accessibility guide.
 - `design/terra-legal.css` — accessible shared stylesheet.
 - `INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md` — continuity, anti-closure, and anti-capture bridge.
-- `audits/2026-06-14-naming-identity-trace-continuity.md` — integration validation and audit record.
+- `REPOSITORY_LICENSE_MAP.md` — complete repository-level inventory for 29 connected GitHub repositories.
+- `TERRA_LEGAL_FRAMEWORK_STRATEGY.md` — layered Rule-0-based legal strategy for content, software, data, brand, governance, and commercial terms.
+- `RELICENSING_PROTOCOL.md` — repository-by-repository rights, migration, Detox, validation, and audit sequence.
+- `audits/2026-06-14-naming-identity-trace-continuity.md` — naming and identity integration audit.
+- `audits/2026-06-14-license-portfolio-strategy.md` — portfolio licensing inventory and strategy audit.
 
 ### Changed
 
 - Expanded README, Living Index, standards, documentary layer, donor registry, glossary, validation, audit, repository, publication, and template protocol surfaces.
 - Extended the reusable repository README template with naming, identity, TraceLog, and continuity sections.
 - Replaced the misleading root license badge with `review required` while preserving all substantive license files unchanged.
+- Added the portfolio licensing map, legal framework strategy, and relicensing protocol to the public reading path.
 
 ### Known issues
 
 - Conflicting license and authorship declarations remain unresolved across `LICENSE`, `LICENSE.md`, `CITATION.cff`, and older template surfaces.
+- Several repositories still contain Terra Public License copies, damaged copies, incomplete stubs, or obsolete `.terra-legal` pointers.
+- Some existing CC0, GPL, MIT, and Creative Commons metadata conflict with repository README or citation metadata.
+- Contributor, ownership, dependency, publisher, media, and item-level corpus rights audits remain pending.
 - Some legacy `.terra-legal` links remain to be normalized.
 - The active GitHub Pages `index.html` still uses the earlier embedded visual style.
 - Multilingual companion files for the new donor surfaces remain pending.
 
 ### Planned
 
-- Separate operator decision on licensing and authorship metadata.
+- Repository-by-repository rights audit under `RELICENSING_PROTOCOL.md`.
+- Separate operator decisions for each target license and ownership identity.
+- Draft Terra Responsible Use Policy, Trademark and Brand Policy, Contributor Policy, Data and Corpus Rights Policy, and Publication Rights Policy.
 - Verified normalization of legacy repository links.
 - Public-page migration to the shared accessible stylesheet.
 - Russian and Uzbek Latin companion surfaces for core new documents.
