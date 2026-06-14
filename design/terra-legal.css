@@ -1,0 +1,142 @@
+:root {
+  --terra-green: #2e8b57;
+  --terra-blue: #4a90e2;
+  --terra-orange: #ff8c42;
+  --terra-purple: #7b66dc;
+  --deep-gray: #2c3e50;
+  --soft-gray: #f5f5f5;
+  --white: #ffffff;
+  --light-blue: #e8f4fd;
+  --success: #237a45;
+  --warning: #9a6500;
+  --error: #b8322a;
+  --info: #14798b;
+  --muted: #586866;
+  --line: #d9ddd9;
+  --radius-small: 6px;
+  --radius-card: 12px;
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--soft-gray);
+  color: var(--deep-gray);
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #2f6fb3;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--terra-orange);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Montserrat, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.terra-page {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 32px 0 64px;
+}
+
+.terra-hero,
+.terra-card,
+.terra-section {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}
+
+.terra-hero,
+.terra-section {
+  padding: 32px;
+}
+
+.terra-card {
+  padding: 24px;
+}
+
+.terra-accent {
+  color: var(--terra-green);
+}
+
+.terra-theory {
+  border-left: 4px solid var(--terra-purple);
+}
+
+.terra-process {
+  border-left: 4px solid #c96522;
+}
+
+.terra-info {
+  background: var(--light-blue);
+  border-left: 4px solid var(--info);
+}
+
+.terra-warning {
+  border-left: 4px solid var(--warning);
+}
+
+.terra-error {
+  border-left: 4px solid var(--error);
+}
+
+.terra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.terra-muted {
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .terra-page {
+    width: min(100% - 24px, 1120px);
+    padding-top: 20px;
+  }
+
+  .terra-hero,
+  .terra-section,
+  .terra-card {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
