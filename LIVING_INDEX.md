@@ -1,7 +1,7 @@
 # Living Index
 
 Repository: terra-legal
-Layer role: normative donor layer for Terra legal, governance, audit, validation, documentation, directives, and protocol surfaces.
+Layer role: normative donor layer for Terra legal, governance, audit, validation, documentation, directives, naming, identity, TraceLog, and continuity bridge surfaces.
 
 ## Entry path
 
@@ -9,21 +9,28 @@ Layer role: normative donor layer for Terra legal, governance, audit, validation
 2. TERRA_DOCUMENTARY_LAYER.md
 3. RULE_0_SOURCE_FIRST_PROTOCOL.md
 4. DETOX_ENGINE_PROTOCOL.md
-5. FULL_PACKAGING_PROTOCOL.md
-6. DONOR_SOURCE_REGISTRY.md
-7. terra_living_protocols_constitution.md
-8. terra-main-directive-v7.0.md
-9. terra-sequence-protocol-v7.0.md
-10. TERRA_UNIVERSAL_CONVENTION.md
-11. STANDARDS.md
-12. DOCUMENTATION-STANDARD.md
-13. TECHNICAL_GLOSSARY.md
-14. GITHUB_LAYER_MODEL.md
-15. AUDIT_REGULATION.md
-16. VALIDATION_PROTOCOL.md
-17. FMP_ANALYSIS_PROTOCOL.md
-18. PUBLICATION_RULE.md
-19. REPOSITORY_PROTOCOL.md
+5. TRACELOG_PROTOCOL.md
+6. TRACELOG.md
+7. INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md
+8. NAMING_STANDARD.md
+9. NAMING_CARD_TEMPLATE.md
+10. BRAND_IDENTITY_STANDARD.md
+11. VISUAL_IDENTITY_GUIDE.md
+12. FULL_PACKAGING_PROTOCOL.md
+13. DONOR_SOURCE_REGISTRY.md
+14. terra_living_protocols_constitution.md
+15. terra-main-directive-v7.0.md
+16. terra-sequence-protocol-v7.0.md
+17. TERRA_UNIVERSAL_CONVENTION.md
+18. STANDARDS.md
+19. DOCUMENTATION-STANDARD.md
+20. TECHNICAL_GLOSSARY.md
+21. GITHUB_LAYER_MODEL.md
+22. AUDIT_REGULATION.md
+23. VALIDATION_PROTOCOL.md
+24. FMP_ANALYSIS_PROTOCOL.md
+25. PUBLICATION_RULE.md
+26. REPOSITORY_PROTOCOL.md
 
 ## Documentary layer families
 
@@ -54,6 +61,17 @@ Layer role: normative donor layer for Terra legal, governance, audit, validation
   - terra-main-directive-v7.0.md
   - terra-sequence-protocol-v7.0.md
   - TERRA_UNIVERSAL_CONVENTION.md
+- Trace and continuity:
+  - TRACELOG_PROTOCOL.md
+  - TRACELOG.md
+  - INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md
+- Naming and identity:
+  - NAMING_STANDARD.md
+  - NAMING_CARD_TEMPLATE.md
+  - naming/registry/README.md
+  - BRAND_IDENTITY_STANDARD.md
+  - VISUAL_IDENTITY_GUIDE.md
+  - design/terra-legal.css
 
 ## Use rule
 
@@ -66,4 +84,5 @@ When new normative files are added here, they must identify:
 
 - donor source location;
 - reason for inclusion in terra-legal;
-- whether the file is a literal donor text, extracted protocol surface, or bridge document.
+- whether the file is a literal donor text, extracted protocol surface, or bridge document;
+- TraceLog relation for material changes.
