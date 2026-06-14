@@ -2,94 +2,116 @@
 
 This file extracts the normative operating logic of the Terra Detox Engine into documentary form for `terra-legal`.
 
-It is not a UI file.
 It is the protocol surface that explains what the engine is expected to block, detect, and preserve across repositories and publication surfaces.
 
 ## Purpose
 
-The Detox Engine exists to reduce epistemic drift, manipulative language, unsolicited initiative, and commercial contamination inside Terra-facing systems and documents.
+The Detox Engine reduces epistemic drift, manipulative language, unsolicited initiative, commercial contamination, fabricated precision, and unsupported status claims.
 
-## Core blocked pattern families
+## Blocked pattern families
 
 ### 1. Initiative pressure
 
-Examples include language equivalent to:
-
-- suggest;
-- recommend;
-- should;
-- must;
-- urgent pressure;
-- prescriptive initiative without explicit operator command.
+Detect prescriptive or forward-driving language that shifts control from the operator to the assistant without an explicit command.
 
 ### 2. Manipulation pressure
 
-Examples include:
-
-- scarcity prompts;
-- last-chance framing;
-- secret or exclusive offer language;
-- pressure patterns designed to steer behavior.
+Detect scarcity, urgency, exclusivity, emotional pressure, and other language designed to steer behavior rather than communicate evidence.
 
 ### 3. Commercial contamination
 
-Examples include:
+Detect upgrade pressure, pricing bait, vendor lock-in, and promotional framing inside documentary, legal, research, or assistant output.
 
-- upgrade pressure;
-- premium / subscription framing;
-- pricing and discount bait inside documentary or assistant output;
-- vendor-lock promotional drift.
+### 4. Autonomous drift
 
-### 4. Self-prompting and autonomous drift
+Detect self-prompting, autonomous goal-setting, unsolicited optimization, silent expansion of scope, and unrecorded structural change.
 
-Examples include:
+### 5. Fabricated precision
 
-- "let us";
-- "we can";
-- "try this";
-- "optimize";
-- "expand";
-- "add more";
-- other unsolicited forward-driving language that shifts control from operator to assistant.
+Detect:
 
-## Cultural and ethical filters
+- percentages or scores without a defined method and evidence;
+- exact readiness or compliance values inferred from impressions;
+- decorative hashes or signatures presented as integrity proof;
+- confidence values that do not reflect a measured process.
 
-The donor engine also applies:
+### 6. Self-validation and simulated evidence
+
+Detect:
+
+- a document validating itself by finding its own expected words;
+- sample or invented data presented as observed results;
+- code snippets presented as tested implementation;
+- an AI review described as independent external validation;
+- a workflow, badge, or filename presented as proof of publication or compliance.
+
+### 7. Status inflation
+
+Detect unsupported use of:
+
+- final;
+- complete;
+- certified;
+- compliant;
+- production-ready;
+- secure;
+- scientifically validated;
+- official;
+- partner or institutional status.
+
+Status language must match the evidence, scope, review level, and release record.
+
+### 8. False completeness
+
+Detect claims that one repository, file, archive, audit, or snapshot represents the entire Terra or FMP system when relevant layers remain elsewhere.
+
+## Cultural, ethical, and safety filters
+
+Apply:
 
 - cultural adequacy checks;
 - child-safety priority;
+- privacy and data minimization;
 - blocking of harmful or disrespectful content classes;
-- explicit attention to non-neutral persuasion and behavioral steering.
+- attention to non-neutral persuasion and behavioral steering;
+- human oversight;
+- evidence and provenance integrity.
 
 ## Detox levels
 
-- `L0` - basic toxicity filtering
-- `L1` - semantic and cultural adaptation layer
-- `L2` - enhanced contextual analysis
-- `L3` - full recursive and fractal detoxification
+- `L0` — obvious harmful, manipulative, or promotional patterns;
+- `L1` — semantic, cultural, and role adaptation;
+- `L2` — evidence, status, provenance, and contextual analysis;
+- `L3` — recursive review across the document, repository, release, and connected layers.
 
-## Working rule for repositories
+## Required three-phase record
 
-If a repository, workflow, prompt, or public document tends to generate:
+### Before
 
-- unsolicited initiative;
-- manipulative framing;
-- commercial pressure;
-- autonomous goal-setting;
-- non-traceable "improvements";
+- freeze assumptions;
+- identify operator instruction and scope;
+- read donor sources;
+- list expected risks and unsupported claims.
 
-then the Detox Engine logic should be treated as a blocking or repair surface, not as an optional polish layer.
+### During
 
-## Related donor surfaces
+- keep the change minimal and attributable;
+- preserve authorship, rights, and provenance;
+- remove unsupported scores, self-certification, simulation, and promotional residue;
+- stop if operator authority or protected review is required.
 
-- `terra-main-directive-v7.0.md`
-- `RULE_0_SOURCE_FIRST_PROTOCOL.md`
-- `terra_living_protocols_constitution.md`
-- `REPOSITORY_PROTOCOL.md`
+### After
+
+- re-read the changed surface;
+- check claims against evidence;
+- check that limitations and exclusions remain visible;
+- run validation and audit;
+- record unresolved risks and publication gate in TraceLog.
+
+## Working rule
+
+If a repository, workflow, prompt, or public document tends to generate unsolicited initiative, manipulative framing, commercial pressure, autonomous goal-setting, false precision, self-validation, or unsupported readiness claims, Detox is a blocking or repair surface rather than an optional style step.
 
 ## Documentary provenance
 
-This protocol surface is extracted from:
-
-- `Secret-Uzbek/AIUZ-terra-codex-FMP/terra-detox-engine-v1.0 .jsx`
-- `Secret-Uzbek/Nullo-PLT-UCOMM-FMP-Academic-Research/terra_fmp_research_mandate.md`
+This protocol is extracted from the Terra Detox Engine, research mandate, old validation and final-audit materials, and the operator requirement to apply Detox before, during, and after every material change. Unsupported percentages, self-issued certification levels, and simulated technical results from historical materials are not adopted.
