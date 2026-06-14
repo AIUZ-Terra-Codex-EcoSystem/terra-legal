@@ -1,10 +1,47 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
+Terra Legal Repository — Licensing Notice
 
-Copyright (c) 2025 Abdurashid Khamdamov
+Copyright © 2025-2026 Abdurashid Abdukarimov
 ORCID: 0009-0000-6394-4912
 Fractal Metascience Foundation, Tashkent, Uzbekistan
 
-Licensed under CC BY 4.0.
-https://creativecommons.org/licenses/by/4.0/legalcode
+THIS IS A MULTI-LICENSE REPOSITORY.
 
-You are free to Share and Adapt with Attribution.
+There is no single blanket license for every file.
+
+1. Files explicitly identified as CC-BY-4.0 are licensed under the
+   Creative Commons Attribution 4.0 International Public License.
+   Canonical text: LICENSES/CC-BY-4.0.txt
+
+2. Files explicitly identified as Apache-2.0 are licensed under the
+   Apache License, Version 2.0.
+   Canonical text: LICENSES/Apache-2.0.txt
+
+3. File-level licensing is determined by SPDX headers, adjacent .license
+   files, REUSE.toml, directory-specific notices, or explicit file notices.
+
+4. Unannotated pre-existing files are not silently relicensed by this notice.
+   Their historical licensing status remains subject to file-level and
+   release-level review.
+
+5. LICENSE.md records the archived status of the former Terra Public License
+   draft. That draft is not the active blanket license of this repository.
+
+6. Standard license texts, third-party materials, quotations, logos, marks,
+   linked works, and external standards retain their own rights and terms.
+
+7. Copyright and software licenses do not grant endorsement, certification,
+   partnership, or general trademark permission.
+
+Read the controlling scope statement in:
+
+    LEGAL.md
+
+Also review:
+
+    REUSE.toml
+    THIRD_PARTY_NOTICES.md
+    TRADEMARK_AND_BRAND_POLICY.md
+    RESPONSIBLE_USE_POLICY.md
+    CONTRIBUTOR_TERMS.md
+
+Historical public grants are not represented as revoked by this stabilization.
