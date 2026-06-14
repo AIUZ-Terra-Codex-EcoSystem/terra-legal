@@ -1,156 +1,151 @@
-# 🤝 CONTRIBUTING TO TERRA ECOSYSTEM
+# Contributing to terra-legal
 
-**Welcome to the Terra Ecosystem Community**
+`terra-legal` is a normative donor repository. Contributions may affect licensing, governance, child safety, privacy, publication, naming, identity, or cross-repository inheritance. Changes therefore require visible provenance and review.
 
----
+## Before contributing
 
-## 🎯 OUR MISSION
+Read:
 
-Terra Ecosystem builds **ethical educational technologies** that prioritize:
+1. [LEGAL.md](./LEGAL.md)
+2. [CONTRIBUTOR_TERMS.md](./CONTRIBUTOR_TERMS.md)
+3. [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
+4. [RESPONSIBLE_USE_POLICY.md](./RESPONSIBLE_USE_POLICY.md)
+5. [RULE_0_SOURCE_FIRST_PROTOCOL.md](./RULE_0_SOURCE_FIRST_PROTOCOL.md)
+6. [DETOX_ENGINE_PROTOCOL.md](./DETOX_ENGINE_PROTOCOL.md)
+7. [TRACELOG_PROTOCOL.md](./TRACELOG_PROTOCOL.md)
+8. [DOCUMENTATION-STANDARD.md](./DOCUMENTATION-STANDARD.md)
 
-1. **👶 Child Safety First** — Every contribution must protect children's rights and wellbeing
-2. **🌍 Educational Freedom** — Open access to knowledge for all people
-3. **⚖️ Ethical Technology** — AI and code that serves humanity, not exploits it
-4. **🤝 Community Collaboration** — Together we build planetary-scale solutions
-5. **🔒 Protective Enforcement** — We guard our community from harm
-
----
-
-## 🚀 GETTING STARTED
-
-### 1. Read the License
-
-Before contributing, please read the **[Terra Public License v1.0](./LICENSE.md)**.
-
-By contributing, you agree to:
-- Protect children's rights in all your work
-- Follow ethical standards (no surveillance, no exploitation, no harm)
-- Share your contributions under the same license
-
-### 2. Set Up Your Environment
+## Repository setup
 
 ```bash
-git clone https://github.com/AIUZ-Terra-Codex-EcoSystem/.terra-legal.git
-cd .terra-legal
-git checkout -b feature/your-contribution-name
+git clone https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal.git
+cd terra-legal
+git checkout -b feature/clear-change-name
 ```
 
-### 3. Understand the Structure
+Do not use the obsolete repository name `.terra-legal` in new links, scripts, submodules, or documentation.
 
+## Contribution scope
+
+Useful contributions include:
+
+- correcting legal or licensing contradictions;
+- improving provenance and source references;
+- repairing broken links and encoding;
+- adding verified translations;
+- improving accessibility and documentary clarity;
+- reviewing privacy, child-safety, security, or responsible-use language;
+- adding file-level SPDX and REUSE information;
+- identifying third-party rights or dependency obligations;
+- testing release, citation, audit, and publication workflows.
+
+Do not submit:
+
+- confidential material;
+- credentials or access tokens;
+- personal data not necessary for the public record;
+- copied legal text without source and rights information;
+- fabricated citations, authority, partnerships, certifications, or validation;
+- unreviewed commercial fee schedules;
+- a new blanket license for the whole ecosystem without a rights audit.
+
+## Licensing of contributions
+
+This is a multi-license repository.
+
+A contribution follows the license assigned to the target file or directory through an SPDX header, adjacent `.license` file, `REUSE.toml`, or explicit notice.
+
+Typical classifications are:
+
+- documentary material: `CC-BY-4.0`;
+- software and implementation material: `Apache-2.0`.
+
+Unclassified files must be classified before merge. Submission does not silently relicense third-party or historically licensed material.
+
+## Contributor certification
+
+Material pull requests should include:
+
+```text
+Signed-off-by: Full Name <email>
 ```
-.terra-legal/
-├── LICENSE.md                 # Terra Public License v1.0
-├── CONTRIBUTING.md            # How to contribute
-├── SECURITY.md                # How to report vulnerabilities
-├── CODE_OF_CONDUCT.md         # Community ethics and behavior
-├── DOCUMENTATION-STANDARD.md  # How to write documentation
-└── LINKING-INSTRUCTIONS.md    # How to connect your repo to this layer
-```
 
----
+The sign-off certifies the statements in [CONTRIBUTOR_TERMS.md](./CONTRIBUTOR_TERMS.md), including that the contributor has the right to submit the material. It is not a copyright assignment.
 
-## 📜 CODE OF CONDUCT
+## Required workflow
 
-Please read our **[Code of Conduct](./CODE_OF_CONDUCT.md)** before participating.
+1. Search the repository and donor corpus before drafting.
+2. Open an issue for a material legal, governance, privacy, licensing, trademark, or policy change.
+3. Create a focused branch.
+4. Make the smallest coherent change.
+5. Record sources, assumptions, affected files, and unresolved risks.
+6. Apply Detox before, during, and after the change.
+7. Update TraceLog where the change is material.
+8. Submit a pull request with a clear rationale.
+9. Do not merge until required review is complete.
 
-Key principles:
-- Be respectful and inclusive
-- Prioritize child safety in all discussions
-- No harassment, discrimination, or harmful behavior
-- Report violations to a.abdukarimov@fractal-metascience.org
+## Pull request description
 
----
-
-## 🔧 HOW TO CONTRIBUTE
-
-### Types of Contributions
-
-| Type | Description | Example |
-|------|-------------|---------|
-| 📝 Documentation | Improve clarity, fix typos, add translations | Fix grammar in LICENSE.md |
-| 🐛 Bug Reports | Report issues with license text or structure | "Section 3.2 is unclear" |
-| 💡 Feature Requests | Suggest new sections or improvements | "Add AI-specific clause" |
-| ⚖️ Legal Review | Help validate compliance with local laws | "GDPR Article 8 needs update" |
-| 🌍 Localization | Translate documents to your language | Russian, Uzbek, Spanish versions |
-
-### Making Changes
-
-1. **Fork** the repository
-2. **Create a branch**: `git checkout -b feature/your-change`
-3. **Make your changes** following our [Documentation Standard](./DOCUMENTATION-STANDARD.md)
-4. **Test** your changes locally
-5. **Submit a Pull Request** with clear description
-
----
-
-## 📥 PULL REQUEST GUIDELINES
-
-### Before Submitting
-
-- [ ] I have read the [Terra Public License](./LICENSE.md)
-- [ ] I have read the [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [ ] My changes follow the [Documentation Standard](./DOCUMENTATION-STANDARD.md)
-- [ ] I have tested my changes locally
-- [ ] I have updated relevant documentation
-
-### PR Template
+Use this structure:
 
 ```markdown
-## Description
-[Brief description of changes]
+## Purpose
 
-## Type of Change
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Documentation update
-- [ ] Legal/compliance update
-- [ ] Localization
+## Source-first record
+- Sources read:
+- Existing files affected:
 
-## Checklist
-- [ ] Changes tested locally
-- [ ] Documentation updated
-- [ ] No breaking changes (or documented if breaking)
+## Change type
+- [ ] Documentation
+- [ ] Licensing or rights
+- [ ] Governance
+- [ ] Responsible use or child safety
+- [ ] Privacy or security
+- [ ] Naming or brand
+- [ ] Workflow or implementation
+- [ ] Translation
 
-## Related Issues
-[Link to any related issues]
+## Rights and provenance
+- Applicable license:
+- Third-party material:
+- Contributor sign-off:
+
+## Detox
+- Before:
+- During:
+- After:
+
+## Validation
+- Links checked:
+- Metadata checked:
+- Unresolved risks:
+
+## TraceLog
+- Trace ID:
 ```
 
-### Review Process
+## Review levels
 
-1. **Automated Checks** — Format and structure validation
-2. **Community Review** — 48 hours for community feedback
-3. **Legal Review** — Required for license changes
-4. **Merge** — By maintainers after approval
+### Editorial
 
----
+Typos, formatting, and non-substantive link repair may be approved by the maintainer after validation.
 
-## 🛡️ SECURITY
+### Normative
 
-To report security vulnerabilities, see **[SECURITY.md](./SECURITY.md)**.
+Changes to governance, validation, audit, publication, naming, identity, or responsible-use rules require a documented rationale and TraceLog entry.
 
-**Do NOT** disclose vulnerabilities publicly before they are resolved.
+### Legal
 
----
+Changes to licenses, contributor rights, copyright ownership, privacy obligations, commercial terms, trademarks, jurisdiction, dispute resolution, or child-data requirements require a dedicated legal review. Professional counsel may be required before merge or release.
 
-## 📞 QUESTIONS?
+## Child-safety and security reports
 
-| Topic | Contact |
-|-------|---------|
-| General Contributions | a.abdukarimov@fractal-metascience.org |
-| Legal Questions | a.abdukarimov@fractal-metascience.org |
-| Security Issues | a.abdukarimov@fractal-metascience.org |
-| Child Safety Concerns | a.abdukarimov@fractal-metascience.org (priority) |
+Do not place sensitive evidence in a public issue.
 
----
+Use the process in [SECURITY.md](./SECURITY.md) and minimize personal data.
 
-## 🌟 THANK YOU
+## Maintainer
 
-Thank you for contributing to Terra Ecosystem!
-
-Your work helps protect children and build ethical technology for the future.
-
-**Together we build a better world.** 🌍✨
-
----
-
-*© 2025 Abdurashid Abdukarimov. Terra Ecosystem.*
+Abdurashid Abdukarimov  
+ORCID: 0009-0000-6394-4912  
+Email: `a.abdukarimov@fractal-metascience.org`
