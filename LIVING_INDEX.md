@@ -1,7 +1,7 @@
 # Living Index
 
 Repository: terra-legal
-Layer role: normative donor layer for Terra legal, governance, audit, validation, documentation, directives, naming, identity, TraceLog, and continuity bridge surfaces.
+Layer role: normative donor layer for Terra legal, governance, audit, validation, documentation, directives, portfolio licensing, naming, identity, TraceLog, and continuity bridge surfaces.
 
 ## Entry path
 
@@ -11,31 +11,37 @@ Layer role: normative donor layer for Terra legal, governance, audit, validation
 4. DETOX_ENGINE_PROTOCOL.md
 5. TRACELOG_PROTOCOL.md
 6. TRACELOG.md
-7. INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md
-8. NAMING_STANDARD.md
-9. NAMING_CARD_TEMPLATE.md
-10. BRAND_IDENTITY_STANDARD.md
-11. VISUAL_IDENTITY_GUIDE.md
-12. FULL_PACKAGING_PROTOCOL.md
-13. DONOR_SOURCE_REGISTRY.md
-14. terra_living_protocols_constitution.md
-15. terra-main-directive-v7.0.md
-16. terra-sequence-protocol-v7.0.md
-17. TERRA_UNIVERSAL_CONVENTION.md
-18. STANDARDS.md
-19. DOCUMENTATION-STANDARD.md
-20. TECHNICAL_GLOSSARY.md
-21. GITHUB_LAYER_MODEL.md
-22. AUDIT_REGULATION.md
-23. VALIDATION_PROTOCOL.md
-24. FMP_ANALYSIS_PROTOCOL.md
-25. PUBLICATION_RULE.md
-26. REPOSITORY_PROTOCOL.md
+7. REPOSITORY_LICENSE_MAP.md
+8. TERRA_LEGAL_FRAMEWORK_STRATEGY.md
+9. RELICENSING_PROTOCOL.md
+10. INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md
+11. NAMING_STANDARD.md
+12. NAMING_CARD_TEMPLATE.md
+13. BRAND_IDENTITY_STANDARD.md
+14. VISUAL_IDENTITY_GUIDE.md
+15. FULL_PACKAGING_PROTOCOL.md
+16. DONOR_SOURCE_REGISTRY.md
+17. terra_living_protocols_constitution.md
+18. terra-main-directive-v7.0.md
+19. terra-sequence-protocol-v7.0.md
+20. TERRA_UNIVERSAL_CONVENTION.md
+21. STANDARDS.md
+22. DOCUMENTATION-STANDARD.md
+23. TECHNICAL_GLOSSARY.md
+24. GITHUB_LAYER_MODEL.md
+25. AUDIT_REGULATION.md
+26. VALIDATION_PROTOCOL.md
+27. FMP_ANALYSIS_PROTOCOL.md
+28. PUBLICATION_RULE.md
+29. REPOSITORY_PROTOCOL.md
 
 ## Documentary layer families
 
-- Legal and governance:
+- Legal, licensing, and governance:
   - LICENSE.md
+  - REPOSITORY_LICENSE_MAP.md
+  - TERRA_LEGAL_FRAMEWORK_STRATEGY.md
+  - RELICENSING_PROTOCOL.md
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
   - GOVERNANCE.md
@@ -51,6 +57,7 @@ Layer role: normative donor layer for Terra legal, governance, audit, validation
   - VALIDATION_PROTOCOL.md
   - FMP_ANALYSIS_PROTOCOL.md
   - BIBLIOGRAPHY_SYNC_PROTOCOL.md
+  - audits/2026-06-14-license-portfolio-strategy.md
 - Directives and living protocols:
   - TERRA_DOCUMENTARY_LAYER.md
   - RULE_0_SOURCE_FIRST_PROTOCOL.md
