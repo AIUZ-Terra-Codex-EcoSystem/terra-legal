@@ -1,10 +1,33 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
+Terra Legal Repository License Notice
 
-Copyright (c) 2025 Abdurashid Khamdamov
-ORCID: 0009-0000-6394-4912
-Fractal Metascience Foundation, Tashkent, Uzbekistan
+Copyright (c) 2025-2026 Abdurashid Abdulkhamitovich Abdukarimov.
+ORCID: 0009-0000-6394-4912.
+Fractal Metascience Foundation, Tashkent, Uzbekistan.
 
-Licensed under CC BY 4.0.
-https://creativecommons.org/licenses/by/4.0/legalcode
+This repository is a mixed legal, governance, documentation, and light implementation donor repository.
+It is not governed by a single blanket license for every file.
 
-You are free to Share and Adapt with Attribution.
+Default licensing from this stabilization commit forward:
+
+1. Original documentation, standards, policies, protocols, audit records, maps, Markdown texts, and explanatory materials created for this repository are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), unless a file states otherwise.
+
+2. Project-owned software-like files, stylesheets, scripts, workflow logic, and configuration files created for this repository are licensed under the Apache License, Version 2.0, unless a file states otherwise.
+
+3. Terra legal drafts, including the Terra Public License draft, are preserved as draft legal artifacts and are not the default repository license unless a later reviewed version expressly says so.
+
+4. Third-party materials, official external license texts, external standards, quoted legal references, dependencies, trademarks, logos, and brand marks are not relicensed by this notice.
+
+5. Names, logos, certification marks, badges, and visual identity elements are governed by the repository's Trademark and Brand Policy and are not granted under CC BY 4.0 or Apache-2.0 except where nominative reference is legally permitted.
+
+See:
+
+- LICENSE.md
+- LEGAL.md
+- LICENSES/CC-BY-4.0.txt
+- LICENSES/Apache-2.0.txt
+- RESPONSIBLE_USE_POLICY.md
+- TRADEMARK_POLICY.md
+- THIRD_PARTY_NOTICES.md
+- legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md
+
+Earlier public grants, if any, are not withdrawn by this notice. This notice governs the repository scope from this stabilization state forward, subject to file-level notices and applicable law.
