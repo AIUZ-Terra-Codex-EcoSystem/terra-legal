@@ -3,219 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terra Legal: file-scoped licensing, governance, responsible use, audit, naming, identity, TraceLog, and continuity donor layer.">
   <title>Terra Legal</title>
+  <link rel="stylesheet" href="./design/terra-legal.css">
   <style>
-    :root {
-      --bg: #f2efe6;
-      --ink: #1d2b28;
-      --muted: #586866;
-      --line: #cbbfa7;
-      --card: #fbf8f1;
-      --accent: #0f6b57;
-      --accent-soft: #d7ebe5;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      background: radial-gradient(circle at top, #fcfaf5 0%, var(--bg) 58%, #e7e0d0 100%);
-      color: var(--ink);
-      line-height: 1.55;
-    }
-
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 20px 80px;
-    }
-
-    .hero {
-      display: grid;
-      gap: 18px;
-      padding: 28px;
-      border: 1px solid var(--line);
-      background: linear-gradient(135deg, rgba(251,248,241,0.96), rgba(235,243,240,0.92));
-      box-shadow: 0 18px 50px rgba(35, 44, 42, 0.08);
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 0.82rem;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      line-height: 1.02;
-      max-width: 10ch;
-    }
-
-    .lead {
-      max-width: 70ch;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-      margin-top: 24px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      padding: 18px;
-    }
-
-    .card h2 {
-      margin: 0 0 10px;
-      font-size: 1.15rem;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    .section {
-      margin-top: 34px;
-      padding: 24px;
-      background: rgba(251,248,241,0.82);
-      border: 1px solid var(--line);
-    }
-
-    .section h2 {
-      margin-top: 0;
-      font-size: 1.35rem;
-    }
-
-    ul {
-      margin: 12px 0 0;
-      padding-left: 20px;
-    }
-
-    li + li { margin-top: 8px; }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    .links {
-      display: grid;
-      gap: 12px;
-      margin-top: 16px;
-    }
-
-    .linkbox {
-      padding: 14px 16px;
-      border: 1px solid var(--line);
-      background: white;
-    }
-
-    .linkbox strong {
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .footer {
-      margin-top: 26px;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
+    .hero-title { max-width: 14ch; margin: 0; font-size: clamp(2.3rem, 6vw, 4.6rem); }
+    .eyebrow { color: var(--terra-green); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .lead { max-width: 76ch; color: var(--muted); }
+    .section-gap { margin-top: 24px; }
+    .link-list { display: grid; gap: 10px; padding-left: 20px; }
+    .status { border-left: 4px solid var(--warning); }
+    .continuity { border-left: 4px solid var(--terra-purple); }
+    .boundary { background: var(--light-blue); border-left: 4px solid var(--terra-blue); }
+    .footer { margin-top: 32px; color: var(--muted); font-size: .92rem; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <section class="hero">
+  <main class="terra-page">
+    <header class="terra-hero">
       <div class="eyebrow">AIUZ Terra Codex Eco System</div>
-      <h1>Terra Legal</h1>
-      <div class="lead">
-        Compact legal, governance, publication, and protocol donor layer for the
-        wider Terra ecosystem. This page is a readable public entrance into the
-        explicit normative spine, not the whole archive.
-      </div>
-    </section>
+      <h1 class="hero-title">Terra Legal</h1>
+      <p class="lead">
+        Normative donor layer for file-scoped licensing, governance, responsible use,
+        validation, audit, publication, naming, identity, TraceLog, and continuity.
+      </p>
+      <p class="lead">
+        This repository is not the whole Terra archive or theory corpus, and it is not
+        a law firm, court, treaty body, or automatic licensing mechanism for linked repositories.
+      </p>
+    </header>
 
-    <section class="grid">
-      <article class="card">
-        <h2>What it is</h2>
-        <p>
-          A compact perimeter for rules, participation, governance, publication,
-          and the explicit Terra legal-operational spine.
-        </p>
-      </article>
-      <article class="card">
-        <h2>What it is not</h2>
-        <p>
-          Not the entire Terra archive, not a dump zone, and not a replacement
-          for the full FMP corpus.
-        </p>
-      </article>
-      <article class="card">
-        <h2>Why it matters</h2>
-        <p>
-          It gives other live repositories one coherent donor layer instead of
-          leaving legal and protocol logic scattered across mirrors and drafts.
-        </p>
-      </article>
-    </section>
-
-    <section class="section">
-      <h2>Explicit Normative Spine</h2>
+    <section class="terra-section status section-gap">
+      <h2>Stabilization status</h2>
+      <p>
+        The former appearance that CC BY 4.0, CC0-1.0, and Terra Public License v1.0
+        simultaneously governed the whole repository has been replaced by an explicit
+        file-scoped structure.
+      </p>
       <ul>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/TERRA_UNIVERSAL_CONVENTION.md">TERRA UNIVERSAL CONVENTION</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/terra_living_protocols_constitution.md">Terra Living Protocols Constitution</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/terra-main-directive-v7.0.md">Terra Main Directive v7.0</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/terra-sequence-protocol-v7.0.md">Terra Sequence Protocol v7.0</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/PUBLICATION_RULE.md">Publication Rule</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/REPOSITORY_PROTOCOL.md">Repository Protocol</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/GOVERNANCE.md">Governance</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/SECURITY.md">Security</a></li>
-        <li><a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/blob/main/DOCUMENTATION-STANDARD.md">Documentation Standard</a></li>
+        <li>No single blanket license applies to every file.</li>
+        <li>The former Terra Public License is preserved as an archived draft.</li>
+        <li>Historical grants are not represented as revoked.</li>
+        <li>Unclassified historical files remain pending rights review.</li>
+      </ul>
+      <p><a href="./LEGAL.md">Read the controlling licensing and rights scope</a></p>
+    </section>
+
+    <section class="terra-grid section-gap" aria-label="Repository role">
+      <article class="terra-card">
+        <h2>Licensing</h2>
+        <p>File-level SPDX, REUSE, canonical license texts, historical-grant preservation, and third-party exclusions.</p>
+      </article>
+      <article class="terra-card">
+        <h2>Governance</h2>
+        <p>Reviewable editorial, normative, protected legal, security, and emergency-safety decisions.</p>
+      </article>
+      <article class="terra-card">
+        <h2>Responsible use</h2>
+        <p>Child safety, privacy, human oversight, anti-manipulation, integrity, security, and cultural respect.</p>
+      </article>
+      <article class="terra-card">
+        <h2>Continuity</h2>
+        <p>TraceLog, provenance, contextual bridging, anti-closure, and anti-capture safeguards.</p>
+      </article>
+    </section>
+
+    <section class="terra-section section-gap">
+      <h2>Legal and rights stack</h2>
+      <ul class="link-list">
+        <li><a href="./LICENSE">Repository licensing notice</a></li>
+        <li><a href="./LEGAL.md">Licensing and rights scope</a></li>
+        <li><a href="./LICENSE.md">Archived Terra Public License draft status</a></li>
+        <li><a href="./REUSE.toml">Initial file-level REUSE map</a></li>
+        <li><a href="./THIRD_PARTY_NOTICES.md">Third-party notices and rights register</a></li>
+        <li><a href="./RESPONSIBLE_USE_POLICY.md">Responsible Use Policy</a></li>
+        <li><a href="./TRADEMARK_AND_BRAND_POLICY.md">Trademark and Brand Policy</a></li>
+        <li><a href="./CONTRIBUTOR_TERMS.md">Contributor Terms</a></li>
+        <li><a href="./RELICENSING_PROTOCOL.md">Relicensing Protocol</a></li>
       </ul>
     </section>
 
-    <section class="section">
-      <h2>Use in the Ecosystem</h2>
-      <ul>
-        <li>Live repositories may inherit files directly from this donor layer.</li>
-        <li>They may adapt them with local bridge language when needed.</li>
-        <li>Compact normative files belong here; heavy engines and raw mirrors do not.</li>
-        <li>The wider hidden standards layer continues to be reviewed and normalized around this core.</li>
+    <section class="terra-section section-gap">
+      <h2>Standard license texts</h2>
+      <ul class="link-list">
+        <li><a href="./LICENSES/CC-BY-4.0.txt">Creative Commons Attribution 4.0 International</a></li>
+        <li><a href="./LICENSES/Apache-2.0.txt">Apache License 2.0</a></li>
+      </ul>
+      <p>These texts apply only where a file-level notice or REUSE record assigns the corresponding license.</p>
+    </section>
+
+    <section class="terra-section section-gap">
+      <h2>Operating sequence</h2>
+      <ol>
+        <li>Read the relevant sources and current rights state under Rule 0.</li>
+        <li>Classify the object: documentation, software, data, media, brand, third-party material, or archive.</li>
+        <li>Apply Detox before, during, and after the change.</li>
+        <li>Work through a reviewable branch or pull request for material changes.</li>
+        <li>Preserve historical grants, provenance, aliases, and exclusions.</li>
+        <li>Validate licensing scope, metadata, links, and public claims.</li>
+        <li>Record material decisions in TraceLog.</li>
+      </ol>
+    </section>
+
+    <section class="terra-section continuity section-gap">
+      <h2>Continuity and Invisible Shadow</h2>
+      <p>
+        The repository uses Invisible Shadow as a continuity bridge: preserving context,
+        marking missing evidence, resisting false closure, and preventing trace from becoming
+        hidden monitoring.
+      </p>
+      <p><a href="./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md">Read the continuity bridge</a></p>
+    </section>
+
+    <section class="terra-section section-gap">
+      <h2>Normative documentary spine</h2>
+      <ul class="link-list">
+        <li><a href="./RULE_0_SOURCE_FIRST_PROTOCOL.md">Rule 0 Source-First Protocol</a></li>
+        <li><a href="./DETOX_ENGINE_PROTOCOL.md">Detox Engine Protocol</a></li>
+        <li><a href="./TRACELOG_PROTOCOL.md">TraceLog Protocol</a></li>
+        <li><a href="./TRACELOG.md">Living TraceLog</a></li>
+        <li><a href="./GOVERNANCE.md">Governance</a></li>
+        <li><a href="./VALIDATION_PROTOCOL.md">Validation Protocol</a></li>
+        <li><a href="./AUDIT_REGULATION.md">Audit Regulation</a></li>
+        <li><a href="./PUBLICATION_RULE.md">Publication Rule</a></li>
+        <li><a href="./REPOSITORY_PROTOCOL.md">Repository Protocol</a></li>
+        <li><a href="./TERRA_UNIVERSAL_CONVENTION.md">Terra Universal Convention</a></li>
       </ul>
     </section>
 
-    <section class="section">
-      <h2>External Surfaces</h2>
-      <div class="links">
-        <div class="linkbox">
-          <strong>Repository</strong>
-          <a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal">github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal</a>
-        </div>
-        <div class="linkbox">
-          <strong>Main Vitrine</strong>
-          <a href="https://fractal-metascience.org/">fractal-metascience.org</a>
-        </div>
-        <div class="linkbox">
-          <strong>FMP Central Public Surface</strong>
-          <a href="https://secret-uzbek.github.io/FMP-CENTRAL-REPO/">secret-uzbek.github.io/FMP-CENTRAL-REPO</a>
-        </div>
-      </div>
-      <div class="footer">
-        Terra Legal is part of the broader FMP and Terra ecosystem and should
-        stay compact, readable, and normative.
-      </div>
+    <section class="terra-section boundary section-gap">
+      <h2>Linking boundary</h2>
+      <p>
+        Referencing or adopting selected donor documents does not automatically apply a license,
+        transfer copyright, create certification, or establish partnership or official Terra status.
+      </p>
+      <p><a href="./LINKING-INSTRUCTIONS.md">Read the linking instructions</a></p>
     </section>
-  </div>
+
+    <section class="terra-section section-gap">
+      <h2>External surfaces</h2>
+      <p><strong>Repository:</strong> <a href="https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal">github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal</a></p>
+      <p><strong>Main vitrine:</strong> <a href="https://fractal-metascience.org/">fractal-metascience.org</a></p>
+      <p><strong>FMP Central:</strong> <a href="https://secret-uzbek.github.io/FMP-CENTRAL-REPO/">secret-uzbek.github.io/FMP-CENTRAL-REPO</a></p>
+    </section>
+
+    <footer class="footer">
+      <p>Maintainer: Abdurashid Abdukarimov · ORCID 0009-0000-6394-4912 · Fractal Metascience Foundation, Tashkent.</p>
+      <p>This repository provides documentary and governance frameworks, not jurisdiction-specific legal advice.</p>
+    </footer>
+  </main>
 </body>
 </html>
