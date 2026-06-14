@@ -1,0 +1,13 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Canonical URL: https://creativecommons.org/licenses/by/4.0/
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+SPDX identifier: CC-BY-4.0
+
+This file records the canonical license reference used by this repository for original documentation, standards, policies, protocols, maps, audit records, and explanatory materials unless a file states otherwise.
+
+For the full authoritative legal code, use the Creative Commons canonical URL above.
+
+Repository attribution request:
+
+Abdukarimov, Abdurashid A. terra-legal: Terra Legal, Governance, TraceLog, Identity, and Licensing Donor Repository. Fractal Metascience Foundation, Tashkent. ORCID: 0009-0000-6394-4912.
