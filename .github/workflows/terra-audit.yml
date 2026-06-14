@@ -31,9 +31,10 @@ jobs:
             RESPONSIBLE_USE_POLICY.md TRADEMARK_POLICY.md SECURITY.md CODE_OF_CONDUCT.md
             RULE_0_SOURCE_FIRST_PROTOCOL.md DETOX_ENGINE_PROTOCOL.md TRACELOG_PROTOCOL.md
             VALIDATION_PROTOCOL.md AUDIT_REGULATION.md
-            traces/TL-2026-06-14-004.md traces/TL-2026-06-14-005.md
+            traces/TL-2026-06-14-004.md traces/TL-2026-06-14-005.md traces/TL-2026-06-14-006.md
             audits/2026-06-14-terra-legal-stabilization-v2.md
             audits/2026-06-14-pr3-rule0-reconciliation.md
+            audits/2026-06-14-pr2-merge-readiness.md
             LICENSES/CC-BY-4.0.txt LICENSES/Apache-2.0.txt
             legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md
           )
@@ -42,12 +43,17 @@ jobs:
             test -f "$file" || { echo "Missing required file: $file"; exit 1; }
           done
 
+          test ! -e PR2_NOT_OPENED.md || { echo "Obsolete pre-PR marker is present"; exit 1; }
+
           grep -Fq "No single blanket license" LEGAL.md
           grep -Fq "intentionally limited stabilization mapping" REUSE.toml
           grep -Fq "Licensing is file-specific" CITATION.cff
           grep -Fq "https://orcid.org/0009-0000-6394-4912" CITATION.cff
           grep -Fq "Search existing ecosystem artifacts first" RULE_0_SOURCE_FIRST_PROTOCOL.md
           grep -Fq "Source-first record" traces/TL-2026-06-14-004.md
+          grep -Fq "TL-2026-06-14-006" audits/2026-06-14-pr2-merge-readiness.md
+          grep -Fq "do not retroactively change" CONTRIBUTOR_TERMS.md
+          grep -Fq "explicit approval by the Lead Maintainer" CONTRIBUTOR_TERMS.md
           grep -Fq "actions/checkout@v4" THIRD_PARTY_NOTICES.md
           grep -Fq "softprops/action-gh-release@v2" THIRD_PARTY_NOTICES.md
           grep -Fq "It does not itself:" THIRD_PARTY_NOTICES.md
