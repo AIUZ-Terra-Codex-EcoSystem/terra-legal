@@ -1,0 +1,30 @@
+version = 1
+
+# This is an intentionally limited first-stage mapping.
+# Unlisted historical files are not silently relicensed.
+
+[[annotations]]
+path = [
+  "LEGAL.md",
+  "LICENSE.md",
+  "NOTICE",
+  "RESPONSIBLE_USE_POLICY.md",
+  "TRADEMARK_AND_BRAND_POLICY.md",
+  "THIRD_PARTY_NOTICES.md",
+  "CONTRIBUTOR_TERMS.md",
+  "REUSE.toml",
+  "audits/2026-06-14-terra-legal-stabilization.md"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdukarimov <a.abdukarimov@fractal-metascience.org>"
+SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "First-stage stabilization documents. This mapping does not retroactively classify unlisted historical files."
+
+[[annotations]]
+path = [
+  "design/terra-legal.css"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Abdurashid Abdukarimov <a.abdukarimov@fractal-metascience.org>"
+SPDX-License-Identifier = "Apache-2.0"
+SPDX-FileComment = "Repository-local stylesheet implementation."
