@@ -1,20 +1,22 @@
 cff-version: 1.2.0
-message: "If you use, quote, or build on this donor repository, please cite it as below."
+message: "If you use, quote, or build on this donor repository, please cite it as below. Licensing is file-specific; see LEGAL.md."
 type: software
 title: "terra-legal"
 authors:
-  - family-names: Abdukarimov
-    given-names: Abdurashid
+  - family-names: "Abdukarimov"
+    given-names: "Abdurashid"
     orcid: "https://orcid.org/0009-0000-6394-4912"
-    affiliation: "Fractal Metascience Foundation, Tashkent"
+    affiliation: "Fractal Metascience Foundation, Tashkent, Uzbekistan"
+    email: "a.abdukarimov@fractal-metascience.org"
 repository-code: "https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal"
-abstract: "Normative donor repository for the Terra ecosystem: legal, governance, validation, audit, and publication bridge files."
+abstract: "Normative donor repository for Terra legal, governance, validation, audit, publication, naming, identity, TraceLog, continuity, and portfolio licensing strategy. Rights and licenses are assigned at file level; see LEGAL.md and REUSE.toml."
 keywords:
-  - fractal-metascience
-  - terra
-  - legal
-  - open-science
-license: CC0-1.0
-date-released: "2026-04-30"
+  - "fractal-metascience"
+  - "terra"
+  - "legal-governance"
+  - "open-science"
+  - "licensing"
+  - "responsible-use"
 version: "1.0.0"
-# doi: "10.5281/zenodo.TODO"
+date-released: "2026-04-30"
+# DOI remains pending until a verified published release is deposited.
