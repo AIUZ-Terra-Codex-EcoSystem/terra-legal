@@ -20,6 +20,7 @@ path = [
   "DOCUMENT_TEMPLATES.md",
   "PULL_REQUEST_REVIEW_CHECKLIST.md",
   "PR_BODY_STABILIZATION_V2.md",
+  "STABILIZATION_STATUS.md",
   "audits/README.md",
   "audits/2026-06-14-terra-legal-stabilization-v2.md",
   "traces/README.md",
