@@ -1,0 +1,14 @@
+Apache License, Version 2.0
+
+Canonical URL: https://www.apache.org/licenses/LICENSE-2.0
+SPDX identifier: Apache-2.0
+
+This file records the canonical license reference used by this repository for project-owned software-like files, including stylesheets, scripts, workflows, configuration, and light implementation assets unless a file states otherwise.
+
+For the full authoritative license text, use the Apache Software Foundation canonical URL above.
+
+Repository notice:
+
+Copyright (c) 2025-2026 Abdurashid Abdulkhamitovich Abdukarimov.
+ORCID: 0009-0000-6394-4912.
+Fractal Metascience Foundation, Tashkent, Uzbekistan.
