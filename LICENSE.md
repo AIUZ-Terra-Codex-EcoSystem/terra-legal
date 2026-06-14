@@ -1,296 +1,104 @@
-# Terra Public License v1.0
+# License Policy
 
-License for ethically oriented educational technologies.
+**Repository:** `terra-legal`  
+**Status:** stabilized multi-license policy  
+**Effective from:** 2026-06-14 stabilization commits  
+**Copyright holder for repository-authored material unless otherwise stated:** Abdurashid Abdulkhamitovich Abdukarimov  
+**ORCID:** 0009-0000-6394-4912
 
-## Status
+## Purpose
 
-- Author: Abdurashid Abdukarimov
-- Version: 1.0.0
-- Date created: July 16, 2025
-- Applicability: Terra ecosystem and related projects
-- Jurisdiction: international law plus relevant local educational standards
+`terra-legal` is a mixed donor repository containing legal and governance documents, standards, protocols, policies, audit records, maps, public-page assets, and light implementation files.
 
-## Preamble
+A single blanket license is not accurate for all file classes. This policy defines the repository-level default while preserving file-level exceptions and third-party rights.
 
-Terra Public License v1.0 (`TPL-1.0`) is designed for educational and
-ethical-technology contexts where child safety, data protection, and
-civilizational responsibility are not optional afterthoughts.
+## Default licensing rule
 
-Its purpose is to combine:
+Unless a file, folder, or embedded notice states otherwise:
 
-- open and collaborative use where legitimate;
-- explicit child-protection duties;
-- ethical restrictions against exploitative use;
-- a legal path for commercial licensing when public-good conditions are not
-  enough.
+### Documentation and policy material
 
-## Legal foundation
+Original repository-authored documentation, standards, protocols, policies, audit records, maps, Markdown files, explanatory texts, and publication-facing donor materials are licensed under:
 
-This license is framed in reference to:
+**Creative Commons Attribution 4.0 International**  
+**SPDX:** `CC-BY-4.0`  
+Canonical URL: <https://creativecommons.org/licenses/by/4.0/>
 
-- UN Convention on the Rights of the Child
-- GDPR Article 8
-- COPPA
-- UNESCO AI Ethics Recommendation
-- Terra Universal Convention
+### Software-like material
 
-## Core philosophy
+Project-owned stylesheets, scripts, workflows, configuration files, and software-like implementation files are licensed under:
 
-The governing principle of this license is:
+**Apache License, Version 2.0**  
+**SPDX:** `Apache-2.0`  
+Canonical URL: <https://www.apache.org/licenses/LICENSE-2.0>
 
-**Child Safety First**
+## Canonical license texts
 
-Any legitimate use of Terra-linked software or related materials must improve
-children's lives or, at minimum, avoid harm to their physical, psychological,
-or intellectual development.
+Canonical local copies are stored in:
 
-## Definitions
+- `LICENSES/CC-BY-4.0.txt`
+- `LICENSES/Apache-2.0.txt`
 
-### Software
+If a local copy is ever found to differ from the official text, the official license text controls for the corresponding SPDX identifier.
 
-Source code, binaries, documentation, and related materials distributed under
-`TPL-1.0`.
+## Terra Public License draft status
 
-### Children
+The former `LICENSE.md` text named `Terra Public License v1.0` has been moved to:
 
-Persons under 18 years of age, or under the age of majority in the relevant
-jurisdiction.
+- `legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md`
 
-### Children's data
+Its status is:
 
-Any information directly or indirectly related to children, including:
+**Draft — not approved for automatic portfolio-wide application**
 
-- personal identifiers;
-- educational information;
-- behavioral data;
-- biometric data;
-- communication records;
-- geolocation information.
+It is preserved as a historical and developmental legal artifact, not as the default license for `terra-legal`.
 
-### Educational purpose
+## What is not licensed by this policy
 
-Use for teaching, upbringing, learning, and the development of children's
-abilities in formal or informal educational contexts.
+This policy does not license or relicense:
 
-### Commercial use
+- third-party texts, images, scans, legal materials, standards, articles, archives, or datasets;
+- external license texts except under their own terms;
+- dependencies, GitHub Actions, fonts, templates, or libraries created by others;
+- trademarks, logos, badges, certification marks, and visual identity marks;
+- private, confidential, partner, or unpublished material;
+- personal data or rights of publicity;
+- material governed by a separate file-level notice.
 
-Use for profit, including product sales, paid services, advertising, or
-monetization of user data.
+## Brand and names
 
-### Ethical standards
+Use of names, marks, logos, badges, certification claims, and confusingly similar branding is governed by:
 
-Requirements derived from the Terra ethical/governance layer and relevant child
-protection standards.
+- `TRADEMARK_POLICY.md`
+- `BRAND_IDENTITY_STANDARD.md`
+- `NAMING_STANDARD.md`
 
-### Derivative work
+CC BY 4.0 and Apache-2.0 do not grant trademark rights.
 
-Any modification, translation, adaptation, or extension of licensed materials.
+## Ethical and responsible use layer
 
-## Permitted use
+The Terra Universal Convention and responsible-use rules are governance and ethical layers. They do not automatically add downstream legal restrictions to materials already licensed under CC BY 4.0, Apache-2.0, or another standard public license.
 
-### Educational use
+For Terra-operated services, partnerships, certifications, commercial deployments, or managed communities, responsible-use obligations may become binding through separate agreements, terms, policies, or participation rules.
 
-Fully permitted where child-safety and legal requirements are met, including:
+See:
 
-- schools, universities, and educational institutions;
-- family and homeschooling contexts;
-- non-profit educational initiatives;
-- public-good educational programs;
-- academic research on educational effectiveness.
+- `RESPONSIBLE_USE_POLICY.md`
+- `TERRA_UNIVERSAL_CONVENTION.md`
+- `TERRA_LEGAL_FRAMEWORK_STRATEGY.md`
 
-### Development and modification
+## Earlier grants
 
-Permitted when aligned with ethical standards, including:
+Earlier public licensing statements may remain relevant to copies and versions already received under those terms. This stabilization policy does not claim to withdraw any earlier valid grant.
 
-- bug fixes and performance improvements;
-- new educational features;
-- ports and integrations;
-- localization and cultural adaptation;
-- research and development of new pedagogical tools.
+Future repository versions should use this scoped policy unless a later reviewed policy replaces it.
 
-## Prohibited use
+## Attribution request
 
-Strictly prohibited:
+When citing or reusing repository-authored documentation under CC BY 4.0, use:
 
-- collection of children's data for commercial sale;
-- manipulative or addictive mechanics aimed at children;
-- use of children's content without parental consent;
-- targeted advertising to children;
-- intentional weakening of child-protection systems;
-- creation of backdoors to children's data;
-- bypassing parental controls;
-- harmful content directed at children;
-- promotion of pseudoscience or discriminatory misuse;
-- monetization of children's behavioral data;
-- deceptive or hidden exploitative practices.
+> Abdukarimov, Abdurashid A. `terra-legal`: Terra Legal, Governance, TraceLog, Identity, and Licensing Donor Repository. Fractal Metascience Foundation, Tashkent. ORCID: 0009-0000-6394-4912.
 
-## Mandatory obligations
+## No legal advice disclaimer
 
-Any legitimate use must satisfy the following.
-
-### Child-safety compliance
-
-- GDPR Article 8 compliance where applicable;
-- COPPA compliance where applicable;
-- UNESCO AI ethics alignment;
-- compliance with relevant local child-protection law.
-
-### Transparency and reporting
-
-- public privacy policy for child-related data handling;
-- regular security and safety review of child-related components;
-- incident-response logic for child-safety issues;
-- public accountability for ethical compliance.
-
-### Parental rights
-
-- meaningful parental control over children's data;
-- understandable parent-facing interfaces;
-- opt-in consent for child-affecting features;
-- deletion path on parental request where required.
-
-## Commercial use
-
-Commercial use requires a separate agreement.
-
-### Application path
-
-Requests should be directed to:
-
-- `a.abdukarimov@fractal-metascience.org`
-
-Commercial review may include:
-
-- technical review of planned use;
-- ethical validation;
-- legal review for child-safety compliance.
-
-### Example licensing structure
-
-#### Startup license
-
-- Revenue threshold: under $1M ARR
-- Fee: $1,000/year
-- Requirement: basic child-safety compliance
-
-#### SMB license
-
-- Revenue threshold: $1M-$10M ARR
-- Fee: $10,000/year plus 1% revenue share
-- Requirement: enhanced safety compliance and regular audits
-
-#### Enterprise license
-
-- Revenue threshold: above $10M ARR
-- Fee: negotiable plus 2-5% revenue share
-- Requirement: full ecosystem partnership or equivalent compliance layer
-
-## International and cultural requirements
-
-This license expects adaptation to:
-
-- regional data-protection rules;
-- education-law requirements;
-- child-rights obligations;
-- cultural and religious compatibility where the deployment context requires it.
-
-Typical compatibility layers may include:
-
-- Islamic educational and family contexts;
-- Christian educational and family contexts;
-- Buddhist educational and family contexts;
-- Hindu educational and family contexts;
-- multilingual and region-specific educational standards.
-
-## Enforcement and violations
-
-### Detection
-
-Possible detection paths include:
-
-- code-similarity checks;
-- domain and app-surface monitoring;
-- community reports;
-- whistleblower submissions;
-- child-safety incident reporting.
-
-### Graduated response
-
-#### Warning
-
-- official notice;
-- cure period;
-- possible voluntary licensing path.
-
-#### Cease and desist
-
-- formal stop-use demand;
-- tighter compliance deadline;
-- possible financial penalties.
-
-#### Legal action
-
-- copyright enforcement;
-- damages claims;
-- injunctive relief;
-- seizure or disabling of violating products where lawful.
-
-#### Criminal referral
-
-Used where threats to children or unlawful exploitation justify escalation to
-law enforcement or child-protection authorities.
-
-## Fines and damages
-
-Financial consequences depend on severity, scale, commerciality, and whether
-children were placed at risk.
-
-The previously drafted threshold examples remain part of the intended
-enforcement orientation, but exact recoveries depend on applicable law,
-evidence, and jurisdiction.
-
-## Contributor and patent posture
-
-### Contributor rights
-
-Contributors retain copyright in their own contributions unless another written
-agreement says otherwise.
-
-Approved contributions may include:
-
-- a license grant back to Terra ecosystem projects;
-- attribution rights;
-- defensive protection against abusive downstream misuse.
-
-### Patent posture
-
-The intended posture is defensive rather than aggressive:
-
-- no patent trolling against legitimate educational use;
-- preference for defensive cross-licensing;
-- strong preference for open access to child-safety and accessibility
-  innovations.
-
-## Support contacts
-
-- General licensing: `a.abdukarimov@fractal-metascience.org`
-- Commercial licensing: `a.abdukarimov@fractal-metascience.org`
-- Compliance issues: `a.abdukarimov@fractal-metascience.org`
-- Child-safety violations: `a.abdukarimov@fractal-metascience.org`
-- Legal enforcement: `a.abdukarimov@fractal-metascience.org`
-
-## License maintenance
-
-This license may be revised in response to:
-
-- changes in child-protection law;
-- new technological threat models;
-- ethical or legal lessons from real deployments;
-- serious review from educational, legal, or safety communities.
-
-## Final note
-
-`TPL-1.0` is not only a legal instrument.
-It is also a boundary-setting document for technology that claims educational or
-ethical legitimacy while operating in child-related or high-responsibility
-contexts.
+This policy organizes repository licensing and governance. It is not a substitute for jurisdiction-specific legal advice from a qualified lawyer.
