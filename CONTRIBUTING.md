@@ -72,6 +72,8 @@ Signed-off-by: Full Name <email>
 
 The sign-off certifies the statements in [CONTRIBUTOR_TERMS.md](./CONTRIBUTOR_TERMS.md), including that the contributor has the right to submit the material. It is not a copyright assignment.
 
+Until Contributor Terms are operative on the default branch, the sign-off also records express acceptance of the reviewed terms for that pull request. Opening a pull request without sign-off does not retroactively alter the legal status of earlier contributions.
+
 ## Required workflow
 
 1. Search the repository and donor corpus before drafting.
