@@ -190,3 +190,123 @@ Its ethical principles remain source material for the future Responsible Use and
 Complete with mandatory next-stage conditions.
 
 No mass relicensing is authorized by this trace. The next stage is a file-level and rights-holder audit, followed by separate operator decisions and reviewable migration pull requests.
+
+---
+
+## TL-2026-06-14-003
+
+- **Status:** stabilization package prepared for review — not merged
+- **Operator instruction:** stabilize `terra-legal` as the first repository under the portfolio legal strategy.
+- **Branch:** `stabilize/terra-legal-licensing-v1`
+- **Base commit:** `46460fd1490c927bd007cbc08d138ca2f5a6e2d5`
+- **Audit record:** `audits/2026-06-14-terra-legal-stabilization.md`
+
+### Source-first record
+
+Before changes, the conflicting root license, Terra Public License draft, CC0 citation metadata, README, contribution rules, linking instructions, governance, publication, repository, standards, validation, audit, TraceLog, and public page were read. Official CC BY 4.0, Apache-2.0, SPDX, and REUSE sources were used for the standard-license and file-level structure.
+
+### Detox before
+
+Complete.
+
+Detected problems:
+
+- CC BY 4.0, CC0-1.0, and Terra Public License simultaneously presented as repository licensing positions;
+- incorrect surname in the root copyright notice;
+- no file-level scope or canonical `LICENSES/` structure;
+- automatic license inheritance and official-status claims through linking;
+- obsolete `.terra-legal` references;
+- governance processes not supported by a defined membership or implemented voting structure;
+- ethical, commercial, child-safety, privacy, brand, and copyright functions collapsed into one custom license.
+
+### Stabilization changes
+
+Created:
+
+- `LEGAL.md`;
+- `RESPONSIBLE_USE_POLICY.md`;
+- `TRADEMARK_AND_BRAND_POLICY.md`;
+- `THIRD_PARTY_NOTICES.md`;
+- `CONTRIBUTOR_TERMS.md`;
+- `LICENSES/CC-BY-4.0.txt`;
+- `LICENSES/Apache-2.0.txt`;
+- `NOTICE`;
+- `REUSE.toml`;
+- `audits/2026-06-14-terra-legal-stabilization.md`.
+
+Updated:
+
+- `LICENSE`;
+- `LICENSE.md`;
+- `CITATION.cff`;
+- `README.md`;
+- `LIVING_INDEX.md`;
+- `CHANGELOG.md`;
+- `CONTRIBUTING.md`;
+- `GOVERNANCE.md`;
+- `LINKING-INSTRUCTIONS.md`;
+- `REPOSITORY_PROTOCOL.md`;
+- `PUBLICATION_RULE.md`;
+- `STANDARDS.md`;
+- `VALIDATION_PROTOCOL.md`;
+- `AUDIT_REGULATION.md`;
+- `index.html`.
+
+### Detox during
+
+Complete with containment.
+
+- all changes were placed on a dedicated branch;
+- no Git history was rewritten;
+- no claim was made that earlier public grants disappeared;
+- historical unclassified files were not silently relicensed;
+- the former Terra Public License was preserved through a pinned historical link and reclassified as an archived draft;
+- standard license texts were stored under standard identifiers without adding Terra restrictions;
+- Responsible Use, Universal Convention, trademark, contributor, and third-party rules were separated from copyright and software permissions;
+- automatic certification, partnership, endorsement, and linked-repository license inheritance claims were removed;
+- professional-review requirements were kept visible.
+
+### Key commit references
+
+- `4d5a38f8155961022c7402eba5973f4d257e0792` — `LEGAL.md`
+- `6234bdaee2ae19938e4543c0c788b91550e1948a` — Responsible Use Policy
+- `7d9eeacc9b8a98562dc2fd60225268f01584a6e7` — Trademark and Brand Policy
+- `d80a3a503f4f3cd83b88a8e7f04eec1087a1aaf1` — third-party register
+- `df51aa6454db37cfa58a74cad06513d89d098513` — contributor terms
+- `23703ea989dac06367f7140ce4aba909c933d338` — root licensing notice
+- `1268f6acacdd0d4fcce5432a6b6349cff160e489` — Terra Public License archive status
+- `cd76aa28ff0ab24067d560166c10461ff22e4b05` — REUSE map
+- `bf1daeec868295c3b233e32c8b0b3873cd57190f` — citation metadata correction
+- `916f86b7feddad3a980cfbbe0416138c123b1e77` — governance stabilization
+- `eb0b2f3aef7535209ae176b52c4d706b26193ef3` — README stabilization
+- `4355ef42cec8d11f7bcefff3fa7d4a006f8a7c9f` — public-page stabilization
+- `a8e6c7c16cc98f00f034e37648f67676ddc5ed61` — stabilization audit
+- `64710c2a32dd0249ee9fcd1320091550e22d4305` — stabilization changelog
+
+### Detox after
+
+Complete for the branch package.
+
+Validation status:
+
+- visible root-license contradiction: resolved on branch;
+- citation metadata contradiction: resolved on branch;
+- automatic linked-repository license inheritance: removed;
+- file-level rights structure: initialized, not complete;
+- historical grant continuity: preserved;
+- public page and reading path: aligned;
+- complete historical rights clearance: pending;
+- professional legal review: pending where jurisdiction-specific obligations arise.
+
+### Unresolved risks
+
+- historical file-by-file classification remains incomplete;
+- contributor, dependency, workflow, template, icon, font, media, and donor-rights audits remain incomplete;
+- prior release and Zenodo metadata require verification;
+- any future use of the Fractal Metascience Foundation as a rights-holding legal entity requires documentary confirmation of legal status and assignments;
+- trademarks, privacy, child data, commercial terms, governing law, liability, warranties, and dispute resolution require qualified review;
+- multilingual controlling legal versions are deferred until the English structure is approved.
+
+### Final declaration
+
+The stabilization package is prepared on a dedicated branch and is ready for pull-request review. It is not merged and does not declare the repository fully rights-cleared.
