@@ -1,34 +1,58 @@
-# Initial REUSE-style mapping for terra-legal.
-# This file is a stabilization aid, not a substitute for file-by-file legal review.
-
 version = 1
 
+# This is an intentionally limited stabilization mapping.
+# Unlisted historical files are not silently relicensed.
+
 [[annotations]]
-path = "**/*.md"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
+path = [
+  "LEGAL.md",
+  "NOTICE",
+  "THIRD_PARTY_NOTICES.md",
+  "CONTRIBUTOR_TERMS.md",
+  "CONTRIBUTING.md",
+  "GOVERNANCE.md",
+  "LINKING-INSTRUCTIONS.md",
+  "REPOSITORY_PROTOCOL.md",
+  "PUBLICATION_RULE.md",
+  "STANDARDS.md",
+  "VALIDATION_AUDIT_STACK.md",
+  "EVIDENCE_AND_PROVENANCE_PROTOCOL.md",
+  "VALIDATION_PROTOCOL.md",
+  "INDEPENDENT_REVIEW_PROTOCOL.md",
+  "AUDIT_REGULATION.md",
+  "AUDIT_COMPLETION_PROTOCOL.md",
+  "RISK_AND_RELEASE_GATE_PROTOCOL.md",
+  "DETOX_ENGINE_PROTOCOL.md",
+  "TRACELOG_PROTOCOL.md",
+  "FINAL_VALIDATION_AUDIT.md",
+  "TL_007.md",
+  "DOCUMENTATION-STANDARD.md",
+  "DOCUMENT_TEMPLATES.md",
+  "PULL_REQUEST_REVIEW_CHECKLIST.md",
+  ".github/PULL_REQUEST_TEMPLATE/stabilization.md",
+  "decisions/2026-06-14-publication-decision.md",
+  "audits/README.md",
+  "audits/2026-06-14-terra-legal-stabilization-v2.md",
+  "audits/2026-06-14-pr3-rule0-reconciliation.md",
+  "audits/2026-06-14-pr2-merge-readiness.md",
+  "traces/README.md",
+  "traces/TL-2026-06-14-004.md",
+  "traces/TL-2026-06-14-005.md",
+  "traces/TL-2026-06-14-006.md"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
 SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "Explicitly classified stabilization documents. This mapping does not retroactively classify unlisted historical files."
 
 [[annotations]]
-path = "**/*.html"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
-SPDX-License-Identifier = "CC-BY-4.0"
-
-[[annotations]]
-path = "**/*.css"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
+path = [
+  "index.html",
+  "design/terra-legal.css",
+  ".github/workflows/terra-audit.yml",
+  ".github/workflows/release-and-publish.yml"
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
 SPDX-License-Identifier = "Apache-2.0"
-
-[[annotations]]
-path = ".github/workflows/*.yml"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
-SPDX-License-Identifier = "Apache-2.0"
-
-[[annotations]]
-path = "legal-drafts/**"
-SPDX-FileCopyrightText = "2025-2026 Abdurashid Abdulkhamitovich Abdukarimov"
-SPDX-License-Identifier = "LicenseRef-Terra-Legal-Draft"
-
-[[annotations]]
-path = "LICENSES/**"
-SPDX-FileCopyrightText = "See upstream license publisher"
-SPDX-License-Identifier = "LicenseRef-External-License-Text"
+SPDX-FileComment = "Repository-local public interface and approved workflow implementation."

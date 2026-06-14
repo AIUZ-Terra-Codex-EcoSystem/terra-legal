@@ -1,116 +1,88 @@
-# 🔒 SECURITY POLICY
+# Security Policy
 
-**Terra Ecosystem Security Reporting**
+**Repository:** `terra-legal`  
+**Maintainer contact:** `a.abdukarimov@fractal-metascience.org`  
+**Status:** public reporting and documentary security policy
 
----
+## Scope
 
-## 🚨 REPORTING A VULNERABILITY
+This repository contains legal, governance, validation, audit, publication, identity, and workflow material. Security review therefore includes:
 
-We take security seriously, especially when it affects children's safety.
+- accidental publication of credentials or private material;
+- unsafe workflow permissions or dependencies;
+- integrity of public documents and releases;
+- misleading security or production-readiness claims;
+- privacy and child-safety implications;
+- local or network-accessible Terra services referenced by the repository.
 
-### How to Report
+This policy does not claim the existence of a staffed security, legal, or child-protection team.
 
-**Email:** a.abdukarimov@fractal-metascience.org  
-**Subject Line:** [SECURITY] Brief description  
-**Expected Response:** Within 48 hours
+## Reporting
 
-### What to Include
+Report a suspected security issue privately by email:
 
-```
-- Description of the vulnerability
-- Steps to reproduce
-- Potential impact (especially on children)
-- Suggested fix (if any)
-- Your contact information
-```
+`a.abdukarimov@fractal-metascience.org`
 
-### What NOT to Do
+Use subject prefix: `[SECURITY]`.
 
-- ❌ Do NOT disclose publicly before resolution
-- ❌ Do NOT exploit the vulnerability
-- ❌ Do NOT access data you shouldn't access
+Include only the information needed to understand the issue:
 
----
+- affected repository, file, workflow, release, or service;
+- concise description;
+- steps needed to confirm the problem where safe;
+- likely impact;
+- suggested correction where available.
 
-## 📊 SECURITY SCOPE
+Do not publish sensitive evidence in a public issue.
 
-### In Scope
+No fixed response time is promised. Reports are reviewed according to severity, available capacity, and the need to protect affected persons or systems.
 
-| Component | Priority |
-|-----------|----------|
-| Child data protection | 🔴 Critical |
-| Authentication systems | 🔴 Critical |
-| API endpoints | 🟠 High |
-| Documentation integrity | 🟡 Medium |
-| License enforcement | 🟡 Medium |
+## Severity
 
-### Out of Scope
+- `critical` — immediate serious safety, privacy, rights, or system-integrity risk;
+- `high` — material risk requiring correction before public reliance or deployment;
+- `medium` — limited risk affecting integrity, access, or maintainability;
+- `low` — minor issue or hardening opportunity.
 
-- Theoretical vulnerabilities without proof of concept
-- Issues requiring unlikely user actions
-- Already-known issues in public tracker
+Child-safety and unnecessary personal-data exposure receive priority containment.
 
----
+## Local Terra service boundary
 
-## 🔄 RESPONSE PROCESS
+A local Terra AI service is not production-ready merely because it starts successfully or returns successful responses.
 
-| Stage | Timeline | Description |
-|-------|----------|-------------|
-| Acknowledgment | 48 hours | We confirm receipt of your report |
-| Assessment | 7 days | We evaluate severity and impact |
-| Fix Development | 30 days | We develop and test a fix |
-| Disclosure | After fix | Coordinated disclosure with reporter |
+Before use beyond the operator's own device, review:
 
-### Severity Levels
+- whether the service is limited to the local device or visible on a wider network;
+- access control;
+- data and log handling;
+- input validation;
+- dependency and update status;
+- development-server warnings;
+- shutdown and correction path;
+- whether children, vulnerable persons, or personal data may be involved.
 
-| Level | Response Time | Description |
-|-------|---------------|-------------|
-| 🔴 Critical | 24 hours | Active exploitation, child safety risk |
-| 🟠 High | 7 days | Potential data exposure, security bypass |
-| 🟡 Medium | 30 days | Limited impact, requires specific conditions |
-| 🟢 Low | 90 days | Minimal impact, informational |
+A development server must remain classified as development until a separate deployment and security review is completed.
 
----
+## Workflow and dependency security
 
-## 🛡️ CHILD SAFETY PRIORITY
+- use minimum required workflow permissions;
+- record every external action or dependency;
+- prefer reviewed immutable commit references for GitHub Actions;
+- do not treat a successful workflow as proof of legal compliance, complete security, publication, or scientific validation;
+- verify release and DOI status from actual external records;
+- keep credentials outside committed files.
 
-Any vulnerability that could affect children's safety receives:
+## Coordinated correction
 
-1. **Immediate escalation** to security team
-2. **Priority fix** before any other work
-3. **Enhanced testing** before deployment
-4. **Proactive notification** to affected parties
+When a material issue is confirmed:
 
----
+1. contain the affected public or operational surface;
+2. preserve only the evidence necessary for review;
+3. apply the smallest safe correction;
+4. repeat validation, audit, Detox, and the publication gate;
+5. record a safe public summary in TraceLog;
+6. avoid publishing details that would increase harm.
 
-## 📜 CONFIDENTIALITY
+## Limitations
 
-We respect reporter confidentiality:
-
-- Your identity is kept private unless you consent
-- We coordinate disclosure timing with you
-- We credit you in security advisories (if desired)
-
----
-
-## 🌍 INTERNATIONAL COOPERATION
-
-For cross-border security issues, we cooperate with:
-
-- Local law enforcement (when required)
-- International child protection agencies
-- Industry security groups (CERT, etc.)
-
----
-
-## 📞 CONTACTS
-
-| Role | Contact |
-|------|---------|
-| Security Team | a.abdukarimov@fractal-metascience.org |
-| Child Safety | a.abdukarimov@fractal-metascience.org (priority) |
-| Legal | a.abdukarimov@fractal-metascience.org |
-
----
-
-*© 2025 Abdurashid Abdukarimov. Terra Ecosystem.*
+This policy is a repository reporting and review process. It is not a warranty, certification, promise of complete security, or substitute for qualified professional assessment.

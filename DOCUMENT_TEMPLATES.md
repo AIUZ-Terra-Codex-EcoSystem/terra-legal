@@ -1,338 +1,462 @@
-# 🏗️ TERRA DOCUMENT TEMPLATES - УНИФИЦИРОВАННЫЕ ШАБЛОНЫ
+# Terra Document Templates
 
-**ВЕРСИЯ:** 1.0 | **СТАТУС:** ГОТОВ К ПРИМЕНЕНИЮ\
-**ЦЕЛЬ:** Унификация всех технических документов AIUZ-Terra Ecosystem
+**Repository:** `terra-legal`  
+**Purpose:** reviewable templates for technical, governance, legal, audit, trace, publication, and rights documents
 
-***
+## Template rule
 
-## 📋 TEMPLATE 1: TECHNICAL SPECIFICATION
+A template is a structure, not evidence.
+
+Placeholders must be replaced with verified information or removed. Do not publish a template containing invented metrics, certification, compliance, encryption, users, partners, legal status, performance, or implementation claims.
+
+Every material document follows:
+
+1. Rule 0 source review;
+2. object and rights classification;
+3. Detox before, during, and after drafting;
+4. validation;
+5. audit;
+6. TraceLog recording where material.
+
+---
+
+## Template 1 — Repository README
 
 ```markdown
-# 🔧 [COMPONENT_NAME] - [SHORT_DESCRIPTION]
+# [Repository name]
 
-**ВЕРСИЯ:** [VERSION] | **СТАТУС:** [STATUS]  
-**АРХИТЕКТУРА:** [ARCH_TYPE] | **PARADIGM:** [PARADIGM]
+> [One factual sentence describing the repository.]
 
-## 🧠 ФИЛОСОФИЯ И ПРИНЦИПЫ
+## Repository role
 
-### CORE PRINCIPLES:
-1. **QARIYA** - Деревенская мудрость как основа
-2. **Child Safety First** - Абсолютная безопасность детей
-3. **Cultural Preservation** - Сохранение традиций
-4. **Ethical AI** - Мораль встроена в код
-5. **Vendor Independence** - Полная свобода
+This repository is:
 
-## 🏗️ АРХИТЕКТУРА СИСТЕМЫ
+- [primary layer and function]
 
-### 📦 ОСНОВНЫЕ КОМПОНЕНТЫ:
-[COMPONENT_DETAILS_YAML]
+This repository is not:
 
-## 🔒 БЕЗОПАСНОСТЬ И ПРИВАТНОСТЬ
+- [important boundary]
 
-### TERRA SHIELD PROTOCOL:
-[SECURITY_FRAMEWORK_YAML]
+## Current status
 
-## 🌐 ТЕХНИЧЕСКИЕ СПЕЦИФИКАЦИИ
+- Status: [concept / draft / prototype / implemented / released / archived / blocked]
+- Last verified: [YYYY-MM-DD]
+- Verification method: [method or `not yet verified`]
 
-### SYSTEM REQUIREMENTS:
-[TECHNICAL_SPECS_YAML]
+## Reading path
 
-### API ARCHITECTURE:
-[API_SPECS_YAML]
+1. [first file]
+2. [second file]
+3. [third file]
 
-## 🔧 ВАЛИДАЦИОННЫЕ ТРЕБОВАНИЯ
+## Main contents
 
-### ✅ ОБЯЗАТЕЛЬНЫЕ ПРОВЕРКИ:
+- `[path]` — [role]
+- `[path]` — [role]
 
-#### ФУНКЦИОНАЛЬНОСТЬ:
-- [ ] [FUNCTIONAL_TEST_1]
-- [ ] [FUNCTIONAL_TEST_2]
-- [ ] [FUNCTIONAL_TEST_N]
+## Licensing and rights
 
-#### БЕЗОПАСНОСТЬ:
-- [ ] Child Safety протоколы активны
-- [ ] Данные зашифрованы
-- [ ] Приватность соблюдена
-- [ ] Нет уязвимостей безопасности
-- [ ] Родительский контроль работает
+- Scope: [`LICENSE` / `LEGAL.md`]
+- File-level records: [`REUSE.toml` / SPDX headers / adjacent `.license` files]
+- Third-party notices: [`THIRD_PARTY_NOTICES.md`]
+- Historical grants or exclusions: [summary]
 
-#### ПРОИЗВОДИТЕЛЬНОСТЬ:
-- [ ] [PERFORMANCE_METRIC_1]
-- [ ] [PERFORMANCE_METRIC_2]
-- [ ] [PERFORMANCE_METRIC_N]
+## Citation
 
-#### СОВМЕСТИМОСТЬ:
-- [ ] [COMPATIBILITY_TEST_1]
-- [ ] [COMPATIBILITY_TEST_2]
-- [ ] [COMPATIBILITY_TEST_N]
+- `CITATION.cff`
+- DOI: [verified DOI or `not assigned`]
 
-## 📊 СТАТУС ВАЛИДАЦИИ
+## Governance, security, and responsible use
 
-**ТЕКУЩИЙ СТАТУС:** 🔍 [VALIDATION_STATUS]
+- `GOVERNANCE.md`
+- `CONTRIBUTING.md`
+- `SECURITY.md`
+- `RESPONSIBLE_USE_POLICY.md` or donor link
 
-**КРИТИЧНОСТЬ:** [CRITICALITY_LEVEL]  
-**ЗАВИСИМОСТИ:** [DEPENDENCIES]
+## Provenance and limitations
 
-**ГОТОВ К ВАЛИДАЦИИ:** [READINESS_STATUS]
+- Donor sources: [list]
+- Known limitations: [list]
+- Unresolved review: [list]
+
+## Maintainer
+
+[Verified name, role, ORCID, and contact]
+```
 
 ---
 
-**Автор:** Абдурашид Абдукаримов  
-**Email:** a.abdukarimov@fractal-metascience.org  
-**DID:** aiuz:did:aiuz:stakeholder:abdukarimov_aaahash1234567890
-
-**Terra Compliance Check:**  
-✅ Child Safety: [SAFETY_STATUS]  
-✅ Vendor Independence: [INDEPENDENCE_STATUS]  
-✅ Cultural Sensitivity: [CULTURAL_STATUS]  
-✅ Ethical AI: [ETHICAL_STATUS]
-```
-
-***
-
-## 📋 TEMPLATE 2: GOVERNANCE DOCUMENT
+## Template 2 — Technical specification
 
 ```markdown
-# 🏛️ [GOVERNANCE_COMPONENT] - [GOVERNANCE_TYPE]
+# [Component name] — Technical Specification
 
-**VERSION:** [VERSION] | **STATUS:** [STATUS]  
-**PARADIGM:** Традиционная мудрость + Современные технологии  
-**PHILOSOPHY:** QARIYA в цифровую эпоху
+## Document control
 
-## 🌾 ФИЛОСОФСКИЕ ОСНОВЫ
+- Version: [version]
+- Status: [draft / review / implemented / tested / deprecated]
+- Date: [YYYY-MM-DD]
+- Maintainer: [verified person or entity]
+- Applicable license: [SPDX identifier or rights note]
+- Trace ID: [ID]
 
-### QARIYA PRINCIPLES:
-1. **Collective Wisdom** - Коллективная мудрость важнее индивидуального мнения
-2. **Elder Guidance** - Уважение к опыту и знаниям старших
-3. **Community First** - Благо сообщества превыше личной выгоды
-4. **Consensus Building** - Решения через диалог, а не голосование
-5. **Cultural Preservation** - Сохранение традиций и ценностей
+## Purpose
 
-## 🏗️ АРХИТЕКТУРА УПРАВЛЕНИЯ
+[Problem and intended function.]
 
-### 📊 СТРУКТУРА СООБЩЕСТВА:
-[COMMUNITY_STRUCTURE_YAML]
+## Scope
 
-### 🎭 СИСТЕМА РОЛЕЙ И РЕПУТАЦИИ:
-[REPUTATION_SYSTEM_YAML]
+Included:
 
-## 🗳️ ПРОЦЕСС ПРИНЯТИЯ РЕШЕНИЙ
+- [item]
 
-### 📋 ТИПЫ РЕШЕНИЙ:
-[DECISION_TYPES_YAML]
+Excluded:
 
-### 🤝 CONSENSUS BUILDING ALGORITHM:
-[CONSENSUS_PROCESS_YAML]
+- [item]
 
-## 🛡️ ЗАЩИТА ОТ ЗЛОУПОТРЕБЛЕНИЙ
+## Current implementation status
 
-### 🚨 ANTI-GAMING MECHANISMS:
-[PROTECTION_SYSTEMS_YAML]
+- Implemented: [verified functions]
+- Proposed: [not yet implemented functions]
+- External dependencies: [list]
 
-### ⚖️ КОНФЛИКТ-РЕЗОЛЮЦИЯ:
-[CONFLICT_RESOLUTION_YAML]
+## Architecture
 
-## 📈 МЕТРИКИ И KPI
+### Components
 
-### 📊 GOVERNANCE HEALTH INDICATORS:
-[HEALTH_METRICS_YAML]
+| Component | Role | Input | Output | Status |
+|---|---|---|---|---|
+| [name] | [role] | [input] | [output] | [status] |
 
-## 🔧 ВАЛИДАЦИОННЫЕ ТРЕБОВАНИЯ
+### Data flows
 
-### ✅ КРИТИЧЕСКИЕ ПРОВЕРКИ:
-[VALIDATION_CHECKLIST]
+[Text description and diagram link.]
 
-## 📊 СТАТУС ВАЛИДАЦИИ
+## Security and privacy
 
-**ТЕКУЩИЙ СТАТУС:** [STATUS]
-**КРИТИЧНОСТЬ:** [CRITICALITY]
-**ГОТОВ К ВАЛИДАЦИИ:** [READINESS]
+- Data classes: [public / restricted / private]
+- Secrets handling: [method]
+- Retention: [rule]
+- Access control: [method]
+- Threat assumptions: [list]
+- Unresolved risks: [list]
+
+## Child and vulnerable-person safeguards
+
+[Applicable only when relevant. State `not applicable` with reason rather than inventing controls.]
+
+## Interfaces
+
+[API, file, protocol, command, or user interface specifications.]
+
+## Dependencies and third-party rights
+
+| Component | Source | Version | License | Notice required |
+|---|---|---|---|---|
+| [name] | [source] | [version] | [license] | [yes/no/details] |
+
+## Verification
+
+| Requirement | Test or evidence | Result | Date |
+|---|---|---|---|
+| [requirement] | [method] | [pass/fail/not tested] | [date] |
+
+## Limitations
+
+[Known technical, empirical, legal, or operational limitations.]
+
+## Change history
+
+[Material changes and TraceLog references.]
+```
 
 ---
 
-**Автор:** Абдурашид Абдукаримов  
-**Email:** a.abdukarimov@fractal-metascience.org  
-**DID:** aiuz:did:aiuz:stakeholder:abdukarimov_aaahash1234567890
-
-**Terra Compliance Check:**  
-✅ Child Safety: Встроенная защита детей  
-✅ Vendor Independence: Независимость от вендоров  
-✅ Cultural Sensitivity: Основан на традиционной мудрости  
-✅ Ethical AI: Мораль как основа всех решений
-```
-
-***
-
-## 📋 TEMPLATE 3: SECURITY PROTOCOL
+## Template 3 — Governance or policy document
 
 ```markdown
-# 🛡️ [SECURITY_COMPONENT] - [SECURITY_TYPE]
+# [Policy or governance title]
 
-**VERSION:** [VERSION] | **STATUS:** [STATUS]  
-**CLASSIFICATION:** [CLASSIFICATION_LEVEL]  
-**PARADIGM:** Paranoid Security + Cultural Sensitivity
+## Status and authority
 
-## 🔒 ФИЛОСОФИЯ БЕЗОПАСНОСТИ
+- Status: [draft / active / superseded / archived]
+- Decision owner: [verified role]
+- Effective date: [date or `not yet effective`]
+- Applies to: [defined participants or surfaces]
+- Does not apply to: [boundary]
+- Trace ID: [ID]
 
-### TERRA SHIELD PRINCIPLES:
-1. **Child Safety First** - Дети защищены на всех уровнях
-2. **Privacy by Design** - Приватность встроена в архитектуру
-3. **Cultural Respect** - Безопасность не нарушает традиции
-4. **Vendor Independence** - Никаких внешних зависимостей
-5. **Ethical Protection** - Защита служит добру
+## Purpose
 
-## 🏗️ АРХИТЕКТУРА БЕЗОПАСНОСТИ
+[Purpose and problem addressed.]
 
-### 🛡️ ЗАЩИТНЫЕ СЛОИ:
-[SECURITY_LAYERS_YAML]
+## Definitions
 
-### 🔐 КРИПТОГРАФИЧЕСКИЕ ПРОТОКОЛЫ:
-[CRYPTO_PROTOCOLS_YAML]
+[Only necessary defined terms.]
 
-## 👶 CHILD SAFETY FRAMEWORK
+## Roles and authority
 
-### 🚨 ЗАЩИТНЫЕ МЕХАНИЗМЫ:
-[CHILD_PROTECTION_YAML]
+| Role | Authority | Limits | Appointment or source |
+|---|---|---|---|
+| [role] | [authority] | [limits] | [source] |
 
-### 📊 МОНИТОРИНГ И КОНТРОЛЬ:
-[MONITORING_SYSTEMS_YAML]
+## Decision process
 
-## 🌍 КУЛЬТУРНАЯ БЕЗОПАСНОСТЬ
+1. [proposal]
+2. [evidence review]
+3. [conflict review]
+4. [decision]
+5. [record]
+6. [appeal or correction]
 
-### 🎭 КУЛЬТУРНЫЕ ПРОТОКОЛЫ:
-[CULTURAL_SECURITY_YAML]
+## Emergency process
 
-### 🛡️ ТРАДИЦИОННЫЕ ЗАЩИТЫ:
-[TRADITIONAL_PROTECTION_YAML]
+[Temporary protective action, evidence preservation, data minimization, and post-action review.]
 
-## 🔧 ВАЛИДАЦИОННЫЕ ТРЕБОВАНИЯ
+## Transparency and privacy
 
-### ✅ SECURITY CHECKLIST:
-[SECURITY_VALIDATION]
+[What is public, restricted, or private.]
 
-## 📊 СТАТУС ВАЛИДАЦИИ
+## Conflicts of interest
 
-**ТЕКУЩИЙ СТАТУС:** [STATUS]
-**КРИТИЧНОСТЬ:** МАКСИМАЛЬНАЯ
-**ГОТОВ К ВАЛИДАЦИИ:** [READINESS]
+[Disclosure and recusal rules.]
+
+## Review and amendment
+
+[How material changes are proposed, reviewed, approved, and traced.]
+
+## Limitations
+
+[Jurisdictional, institutional, operational, and professional-review limits.]
+```
 
 ---
 
-**Автор:** Абдурашид Абдукаримов  
-**Email:** a.abdukarimov@fractal-metascience.org  
-**DID:** aiuz:did:aiuz:stakeholder:abdukarimov_aaahash1234567890
-
-**Terra Compliance Check:**  
-✅ Child Safety: Параноидальный уровень защиты  
-✅ Vendor Independence: Полная независимость  
-✅ Cultural Sensitivity: Уважение к традициям  
-✅ Ethical AI: Этичные принципы безопасности
-```
-
-***
-
-## 📋 TEMPLATE 4: PROTOCOL STANDARD
+## Template 4 — Licensing and rights scope
 
 ```markdown
-# 📋 [PROTOCOL_NAME] - [PROTOCOL_TYPE]
+# [Repository or package] — Licensing and Rights Scope
 
-**VERSION:** [VERSION] | **STATUS:** [STATUS]  
-**SCOPE:** [SCOPE] | **COMPLIANCE:** Terra Standards
+## Object classes
 
-## 📖 НАЗНАЧЕНИЕ ПРОТОКОЛА
+- Documentation: [scope]
+- Software: [scope]
+- Data or corpus: [scope]
+- Media: [scope]
+- Brand and marks: [scope]
+- Third-party material: [scope]
+- Archived material: [scope]
 
-### 🎯 ЦЕЛЬ:
-[PROTOCOL_PURPOSE]
+## Controlling order
 
-### 📐 ОБЛАСТЬ ПРИМЕНЕНИЯ:
-[PROTOCOL_SCOPE]
+1. File-level SPDX header or adjacent `.license` file
+2. `REUSE.toml`
+3. Directory-specific notice
+4. `LEGAL.md`
+5. Version-specific historical notice
 
-## 📋 СПЕЦИФИКАЦИЯ ПРОТОКОЛА
+## Standard licenses
 
-### 🔧 ТЕХНИЧЕСКИЕ ТРЕБОВАНИЯ:
-[TECHNICAL_REQUIREMENTS_YAML]
+| Object class | License | SPDX identifier | Canonical text |
+|---|---|---|---|
+| [class] | [license] | [identifier] | [path] |
 
-### 📊 ФОРМАТЫ И СТРУКТУРЫ:
-[FORMAT_SPECIFICATIONS_YAML]
+## Historical grants
 
-## 🔄 ПРОЦЕДУРЫ ВЫПОЛНЕНИЯ
+[Earlier versions, dates, commits, and licenses.]
 
-### 📝 ПОШАГОВЫЙ АЛГОРИТМ:
-[EXECUTION_PROCEDURES]
+## Exclusions
 
-### ⚠️ ОБРАБОТКА ОШИБОК:
-[ERROR_HANDLING]
+- [third-party item]
+- [publisher-controlled version]
+- [logo or mark]
+- [confidential or private material]
 
-## ✅ КРИТЕРИИ СООТВЕТСТВИЯ
+## Rights holder and contributors
 
-### 🎯 ОБЯЗАТЕЛЬНЫЕ ТРЕБОВАНИЯ:
-[COMPLIANCE_REQUIREMENTS]
+[Verified rights information and unresolved consent.]
 
-### 📊 МЕТРИКИ КАЧЕСТВА:
-[QUALITY_METRICS]
+## Metadata alignment
 
-## 🔧 ВАЛИДАЦИОННЫЕ ТРЕБОВАНИЯ
+- README: [status]
+- `CITATION.cff`: [status]
+- Package metadata: [status]
+- Release: [status]
+- DOI or deposit: [status]
 
-### ✅ ПРОТОКОЛЬНЫЕ ПРОВЕРКИ:
-[PROTOCOL_VALIDATION]
+## Professional review
 
-## 📊 СТАТУС ВАЛИДАЦИИ
-
-**ТЕКУЩИЙ СТАТУС:** [STATUS]
-**КРИТИЧНОСТЬ:** [CRITICALITY]
-**ГОТОВ К ВАЛИДАЦИИ:** [READINESS]
-
----
-
-**Автор:** Абдурашид Абдукаримов  
-**Email:** a.abdukarimov@fractal-metascience.org  
-**DID:** aiuz:did:aiuz:stakeholder:abdukarimov_aaahash1234567890
-
-**Terra Compliance Check:**  
-✅ Child Safety: [SAFETY_COMPLIANCE]  
-✅ Vendor Independence: [INDEPENDENCE_COMPLIANCE]  
-✅ Cultural Sensitivity: [CULTURAL_COMPLIANCE]  
-✅ Ethical AI: [ETHICAL_COMPLIANCE]
+[Questions requiring qualified legal review.]
 ```
 
-***
+---
 
-## 🎯 ПРИМЕНЕНИЕ ШАБЛОНОВ
+## Template 5 — Third-party rights record
 
-### 📊 АВТОМАТИЗИРОВАННЫЙ ПРОЦЕСС:
+```markdown
+# Third-Party Record — [Item or component]
 
-1. **Выбор шаблона** по типу документа
-2. **Заполнение переменных** из архивных данных
-3. **Применение Terra Brand Book** стилистики
-4. **Валидация содержания** на соответствие
-5. **Создание финального документа**
-
-### 🔍 КОНТРОЛЬ КАЧЕСТВА:
-
-* **Соответствие оригиналу:** > 95%
-* **Terra Standards:** 100% соблюдение
-* **Child Safety:** Обязательная проверка
-* **Cultural Sensitivity:** Культурная адаптация
-
-***
-
-**СТАТУС ШАБЛОНОВ:** ✅ ГОТОВ К МАССОВОМУ ПРИМЕНЕНИЮ
-
-**РЕКОМЕНДАЦИЯ:** Начать с критических документов (10-15), проверить качество, затем массовое восстановление остальных.
-
-***
-
-**Автор:** Абдурашид Абдукаримов\
-**Email:** <a.abdukarimov@fractal-metascience.org>\
-**DID:** aiuz:did:aiuz:stakeholder:abdukarimov\_aaahash1234567890
-
-**Terra Compliance Check:**\
-✅ Child Safety: Шаблоны обеспечивают защR&D центра детей\
-✅ Vendor Independence: Полная независимость форматов\
-✅ Cultural Sensitivity: Культурная адаптация встроена\
-✅ Ethical AI: Этичные принципы в каждом шаблоне
-
+- Name: [name]
+- Source: [stable source]
+- Version or date: [version]
+- Creator or rights holder: [verified name]
+- Material type: [code / text / image / dataset / standard / template]
+- Rights status: [license / public domain / permission / exception / unknown]
+- License identifier: [SPDX or exact rights statement]
+- Required notice: [text or path]
+- Modification: [none / description]
+- Redistribution allowed: [yes / no / limited / unknown]
+- Repository location: [path]
+- Review date: [date]
+- Reviewer: [role]
+- Unresolved risks: [list]
+```
 
 ---
-**Contact:** a.abdukarimov@fractal-metascience.org  
-**ORCID:** 0009-0000-6394-4912
+
+## Template 6 — Audit record
+
+```markdown
+# Audit — [Target] — [Date]
+
+- Trace ID: [ID]
+- Target: [repository/file/release]
+- Branch or version: [reference]
+- Audit levels: [surface / rights / structural / publication / protocol]
+- Status: [status]
+
+## Operator instruction
+
+[Instruction.]
+
+## Sources read
+
+- [source]
+
+## Findings before change
+
+- [finding]
+
+## Changes reviewed
+
+- [file and role]
+
+## Detox
+
+### Before
+[status]
+
+### During
+[status]
+
+### After
+[status]
+
+## Validation
+
+- Role: [result]
+- Rights: [result]
+- Metadata: [result]
+- Third-party material: [result]
+- Safety and privacy: [result]
+- Naming and identity: [result]
+- Continuity: [result]
+
+## Exclusions and unresolved risks
+
+- [risk]
+
+## Conclusion
+
+[valid / valid with exclusions / prepared for review / blocked]
+```
+
+---
+
+## Template 7 — TraceLog entry
+
+```markdown
+## [Trace ID]
+
+- Status: [status]
+- Operator instruction: [instruction]
+- Target: [surface]
+- Branch or version: [reference]
+
+### Source-first record
+
+[Sources read and why they were relevant.]
+
+### Detox before
+
+[Findings and risks.]
+
+### Changes
+
+Created:
+- [file]
+
+Updated:
+- [file]
+
+### Detox during
+
+[Controls applied.]
+
+### Validation and audit
+
+- Validation status: [status]
+- Audit record: [path]
+
+### Detox after
+
+[Result and unresolved conditions.]
+
+### Commit and release references
+
+- [reference]
+```
+
+---
+
+## Template 8 — Scholarly publication rights record
+
+```markdown
+# Publication Rights Record — [Title]
+
+- Author or co-authors: [verified names]
+- ORCID: [identifiers]
+- Work type: [preprint / accepted manuscript / version of record / monograph]
+- Repository file: [path]
+- Publisher or journal: [name]
+- Submission or article ID: [ID]
+- DOI: [verified DOI or `not assigned`]
+- Publication agreement checked: [yes/no/date]
+- Repository deposit allowed: [yes/no/conditions]
+- License applied by author: [license]
+- Publisher license: [license]
+- Embargo: [date or none]
+- Figures and third-party content: [rights status]
+- Co-author consent: [status]
+- Review status: [status]
+- Trace ID: [ID]
+```
+
+---
+
+## Completion checklist
+
+Before publishing a document created from these templates:
+
+- [ ] All placeholders were replaced or removed
+- [ ] Role and status are accurate
+- [ ] Sources and provenance are visible
+- [ ] Rights and third-party material are classified
+- [ ] No credentials or unnecessary personal data are present
+- [ ] No unsupported certification, compliance, security, partnership, or performance claim remains
+- [ ] Names and contacts are verified
+- [ ] Links and identifiers work
+- [ ] Metadata agrees with licenses and releases
+- [ ] Detox was completed before, during, and after drafting
+- [ ] Validation and audit are recorded
+- [ ] TraceLog is updated where material

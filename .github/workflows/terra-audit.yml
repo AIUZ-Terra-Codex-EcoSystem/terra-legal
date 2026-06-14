@@ -1,4 +1,7 @@
-name: Terra Audit
+# SPDX-FileCopyrightText: 2025-2026 Abdurashid Abdulkhamitovich Abdukarimov
+# SPDX-License-Identifier: Apache-2.0
+
+name: Terra Legal Audit
 
 on:
   push:
@@ -14,37 +17,64 @@ jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Check governance surface
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Check normative surface
         shell: bash
         run: |
           set -euo pipefail
 
-          check_any() {
-            local label="$1"
-            shift
-            for file in "$@"; do
-              if [ -f "$file" ]; then
-                echo "- $label: YES ($file)" >> "$GITHUB_STEP_SUMMARY"
-                return 0
-              fi
-            done
-            echo "- $label: NO" >> "$GITHUB_STEP_SUMMARY"
-            return 1
-          }
+          required_files=(
+            README.md LICENSE LICENSE.md LEGAL.md NOTICE CITATION.cff REUSE.toml
+            THIRD_PARTY_NOTICES.md CONTRIBUTOR_TERMS.md CONTRIBUTING.md GOVERNANCE.md
+            RESPONSIBLE_USE_POLICY.md TRADEMARK_POLICY.md SECURITY.md CODE_OF_CONDUCT.md
+            RULE_0_SOURCE_FIRST_PROTOCOL.md DETOX_ENGINE_PROTOCOL.md TRACELOG_PROTOCOL.md
+            VALIDATION_PROTOCOL.md AUDIT_REGULATION.md AUDIT_COMPLETION_PROTOCOL.md
+            VALIDATION_AUDIT_STACK.md EVIDENCE_AND_PROVENANCE_PROTOCOL.md
+            INDEPENDENT_REVIEW_PROTOCOL.md RISK_AND_RELEASE_GATE_PROTOCOL.md
+            FINAL_VALIDATION_AUDIT.md TL_007.md
+            decisions/2026-06-14-publication-decision.md
+            traces/TL-2026-06-14-004.md traces/TL-2026-06-14-005.md traces/TL-2026-06-14-006.md
+            audits/2026-06-14-terra-legal-stabilization-v2.md
+            audits/2026-06-14-pr3-rule0-reconciliation.md
+            audits/2026-06-14-pr2-merge-readiness.md
+            LICENSES/CC-BY-4.0.txt LICENSES/Apache-2.0.txt
+            legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md
+          )
 
-          fail=0
-          echo "## Terra Audit" >> "$GITHUB_STEP_SUMMARY"
-          check_any "README" "README.md" || fail=1
-          check_any "LICENSE" "LICENSE" "LICENSE.md" || fail=1
-          check_any "SECURITY" "SECURITY.md" || fail=1
-          check_any "CONTRIBUTING" "CONTRIBUTING.md" || fail=1
-          check_any "CODE_OF_CONDUCT" "CODE_OF_CONDUCT.md" || fail=1
-          check_any "GOVERNANCE" "GOVERNANCE.md" || fail=1
-          check_any "CONVENTION" "TERRA_UNIVERSAL_CONVENTION.md" || fail=1
-          check_any "PUBLICATION_RULE" "PUBLICATION_RULE.md" || fail=1
+          for file in "${required_files[@]}"; do
+            test -f "$file" || { echo "Missing required file: $file"; exit 1; }
+          done
 
-          if [ "$fail" -ne 0 ]; then
-            echo "Required governance surface is incomplete."
+          test ! -e PR2_NOT_OPENED.md || { echo "Obsolete pre-PR marker is present"; exit 1; }
+
+          grep -Fq "No single blanket license" LEGAL.md
+          grep -Fq "intentionally limited stabilization mapping" REUSE.toml
+          grep -Fq "Licensing is file-specific" CITATION.cff
+          grep -Fq "https://orcid.org/0009-0000-6394-4912" CITATION.cff
+          grep -Fq "Search existing ecosystem artifacts first" RULE_0_SOURCE_FIRST_PROTOCOL.md
+          grep -Fq "Fabricated precision" DETOX_ENGINE_PROTOCOL.md
+          grep -Fq "Evidence and claim validation" VALIDATION_PROTOCOL.md
+          grep -Fq "GO WITH EXCLUSIONS" RISK_AND_RELEASE_GATE_PROTOCOL.md
+          grep -Fq "GO WITH EXCLUSIONS" decisions/2026-06-14-publication-decision.md
+          grep -Fq "TL-2026-06-14-007" TL_007.md
+          grep -Fq "conditional pass" FINAL_VALIDATION_AUDIT.md
+          grep -Fq "do not retroactively change" CONTRIBUTOR_TERMS.md
+          grep -Fq "explicit approval by the Lead Maintainer" CONTRIBUTOR_TERMS.md
+
+          if grep -Fq '**/*.md' REUSE.toml || grep -Fq '**/*.html' REUSE.toml || grep -Fq '.github/workflows/*.yml' REUSE.toml; then
+            echo "Broad wildcard relicensing pattern detected in REUSE.toml"
             exit 1
           fi
+
+          if grep -Eq '^(license|doi|date-released):[[:space:]]*[^#[:space:]]' CITATION.cff; then
+            echo "Unverified repository-wide license, DOI, or release date is active"
+            exit 1
+          fi
+
+          grep -Fq "actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5" .github/workflows/terra-audit.yml
+          grep -Fq "actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5" .github/workflows/release-and-publish.yml
+          grep -Fq "softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65" .github/workflows/release-and-publish.yml
+
+          echo "Normative, evidence, review, risk, final-audit, and approved dependency controls passed." >> "$GITHUB_STEP_SUMMARY"

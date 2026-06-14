@@ -1,9 +1,9 @@
+# SPDX-FileCopyrightText: 2025-2026 Abdurashid Abdulkhamitovich Abdukarimov
+# SPDX-License-Identifier: Apache-2.0
+
 name: release-and-publish
 
 on:
-  push:
-    tags:
-      - "v*"
   workflow_dispatch:
     inputs:
       tag_name:
@@ -12,6 +12,9 @@ on:
       release_name:
         description: "Optional human-readable release title"
         required: false
+      publication_gate:
+        description: "Type GO_WITH_EXCLUSIONS or GO after completing the release audit"
+        required: true
 
 permissions:
   contents: write
@@ -20,32 +23,39 @@ jobs:
   build_release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           fetch-depth: 0
+
+      - name: Confirm publication gate
+        shell: bash
+        env:
+          GATE: ${{ inputs.publication_gate }}
+        run: |
+          set -euo pipefail
+          case "$GATE" in
+            GO|GO_WITH_EXCLUSIONS) ;;
+            *) echo "Release blocked: a valid publication gate was not supplied." >&2; exit 1 ;;
+          esac
+          test -f decisions/2026-06-14-publication-decision.md
+          test -f RISK_AND_RELEASE_GATE_PROTOCOL.md
+          test -f TRACELOG.md
 
       - name: Resolve release metadata
         id: meta
         shell: bash
+        env:
+          TAG_INPUT: ${{ inputs.tag_name }}
+          NAME_INPUT: ${{ inputs.release_name }}
         run: |
           set -euo pipefail
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            TAG="${{ github.event.inputs.tag_name }}"
-            NAME="${{ github.event.inputs.release_name }}"
-          else
-            TAG="${GITHUB_REF_NAME}"
-            NAME=""
-          fi
-
-          if [ -z "$TAG" ]; then
-            echo "No tag supplied." >&2
-            exit 1
-          fi
-
+          TAG="$TAG_INPUT"
+          NAME="$NAME_INPUT"
+          test -n "$TAG"
           if [ -z "$NAME" ]; then
             NAME="${GITHUB_REPOSITORY#*/} ${TAG}"
           fi
-
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
 
@@ -60,15 +70,18 @@ jobs:
           sha256sum "release/${REPO_NAME}-${TAG_NAME}.zip" > "release/CHECKSUMS.txt"
 
       - name: Publish GitHub release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
           tag_name: ${{ steps.meta.outputs.tag }}
           name: ${{ steps.meta.outputs.name }}
           target_commitish: ${{ github.sha }}
+          body: |
+            Publication gate: ${{ inputs.publication_gate }}
+            Review the repository decision, audits, exclusions, and TraceLog before reuse.
           files: |
             release/${{ github.event.repository.name }}-${{ steps.meta.outputs.tag }}.zip
             release/CHECKSUMS.txt
 
       - name: Summary
         run: |
-          echo "Release bundle created for ${{ github.repository }} ${{ steps.meta.outputs.tag }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Release bundle created under publication gate ${{ inputs.publication_gate }}." >> "$GITHUB_STEP_SUMMARY"
