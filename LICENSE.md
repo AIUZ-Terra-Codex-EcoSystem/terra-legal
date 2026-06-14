@@ -23,7 +23,11 @@ That created material ambiguity because the draft combined:
 
 Those functions require separate legal instruments and cannot safely operate as one automatic blanket license across software, scholarship, datasets, archives, brands, and third-party material.
 
-## Historical text
+## Preserved draft and historical text
+
+The reviewed archive summary is stored at:
+
+- [`legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md`](./legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md)
 
 The complete pre-stabilization text remains preserved in Git history at:
 
