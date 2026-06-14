@@ -9,13 +9,13 @@
 [![Terra Audit](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/terra-audit.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/terra-audit.yml)
 [![Pages](https://img.shields.io/badge/Pages-terra--legal-2E8B57)](https://aiuz-terra-codex-ecosystem.github.io/terra-legal/)
 
-> Normative donor repository for the Terra ecosystem: legal, governance, validation, audit, participation, publication, naming, identity, TraceLog, and continuity bridge files.
+> Normative donor repository for the Terra ecosystem: legal, governance, validation, audit, participation, publication, naming, identity, TraceLog, continuity, and portfolio licensing strategy.
 
 ## Repository role
 
 `terra-legal` is the strongest compact donor repository for:
 
-- license language;
+- license language and portfolio license mapping;
 - contribution rules;
 - code of conduct;
 - governance logic;
@@ -33,6 +33,23 @@ It may still carry complete normative texts when a foundational document would b
 - Repository root: [github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal)
 - Citation metadata: [CITATION.cff](./CITATION.cff)
 - Living trace: [TRACELOG.md](./TRACELOG.md)
+
+## Portfolio licensing strategy
+
+The connected GitHub portfolio has been inventoried at repository level before any mass license change.
+
+- [Complete Repository License Map](./REPOSITORY_LICENSE_MAP.md)
+- [Terra Legal Framework Strategy](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
+- [Relicensing Protocol](./RELICENSING_PROTOCOL.md)
+- [Portfolio Licensing Audit](./audits/2026-06-14-license-portfolio-strategy.md)
+
+Current strategic rule:
+
+- no automatic portfolio-wide Terra Public License propagation;
+- no mass replacement of root license files;
+- standard licenses selected by object class and repository role;
+- Universal Convention, Responsible Use, brand, privacy, contribution, and commercial rules kept as separate legal layers;
+- repository-by-repository rights audit before migration.
 
 ## Publication automation
 
@@ -53,6 +70,9 @@ The DOI field remains pending until a successful published release is verified.
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [GOVERNANCE.md](./GOVERNANCE.md)
 - [SECURITY.md](./SECURITY.md)
+- [REPOSITORY_LICENSE_MAP.md](./REPOSITORY_LICENSE_MAP.md)
+- [TERRA_LEGAL_FRAMEWORK_STRATEGY.md](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
+- [RELICENSING_PROTOCOL.md](./RELICENSING_PROTOCOL.md)
 
 ### Audit, validation, and analysis
 
@@ -112,13 +132,16 @@ Reusable starter scaffold for new repositories:
 3. Read [RULE_0_SOURCE_FIRST_PROTOCOL.md](./RULE_0_SOURCE_FIRST_PROTOCOL.md)
 4. Read [DETOX_ENGINE_PROTOCOL.md](./DETOX_ENGINE_PROTOCOL.md)
 5. Read [TRACELOG_PROTOCOL.md](./TRACELOG_PROTOCOL.md)
-6. Read [INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md](./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md)
-7. Read [NAMING_STANDARD.md](./NAMING_STANDARD.md)
-8. Read [BRAND_IDENTITY_STANDARD.md](./BRAND_IDENTITY_STANDARD.md)
-9. Read [FULL_PACKAGING_PROTOCOL.md](./FULL_PACKAGING_PROTOCOL.md)
-10. Read [DONOR_SOURCE_REGISTRY.md](./DONOR_SOURCE_REGISTRY.md)
-11. Continue to [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
-12. Then read the main directive, sequence protocol, layer model, audit, validation, publication, and template files.
+6. Read [REPOSITORY_LICENSE_MAP.md](./REPOSITORY_LICENSE_MAP.md)
+7. Read [TERRA_LEGAL_FRAMEWORK_STRATEGY.md](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
+8. Read [RELICENSING_PROTOCOL.md](./RELICENSING_PROTOCOL.md)
+9. Read [INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md](./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md)
+10. Read [NAMING_STANDARD.md](./NAMING_STANDARD.md)
+11. Read [BRAND_IDENTITY_STANDARD.md](./BRAND_IDENTITY_STANDARD.md)
+12. Read [FULL_PACKAGING_PROTOCOL.md](./FULL_PACKAGING_PROTOCOL.md)
+13. Read [DONOR_SOURCE_REGISTRY.md](./DONOR_SOURCE_REGISTRY.md)
+14. Continue to [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
+15. Then read the main directive, sequence protocol, layer model, audit, validation, publication, and template files.
 
 ## Ecosystem use
 
@@ -137,7 +160,7 @@ Foundational legal texts may appear here in full when the legal donor layer woul
 
 ## Known unresolved issue
 
-The repository currently contains incompatible license declarations across `LICENSE`, `LICENSE.md`, `CITATION.cff`, and earlier badges. This integration does not choose a license or alter authorship. The issue is recorded in [TRACELOG.md](./TRACELOG.md) and requires a separate operator decision.
+The repository currently contains incompatible license declarations across `LICENSE`, `LICENSE.md`, `CITATION.cff`, and earlier badges. The portfolio strategy does not choose a final `terra-legal` license or alter authorship. Resolution requires the repository-specific rights and legal review defined in the Relicensing Protocol.
 
 ## Author
 
