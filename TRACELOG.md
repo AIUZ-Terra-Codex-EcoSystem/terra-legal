@@ -101,3 +101,92 @@ Audit record: `audits/2026-06-14-naming-identity-trace-continuity.md`.
 ### Final declaration
 
 The requested naming, brand, visual identity, TraceLog, and Invisible Shadow continuity layers are present and connected to the documentary spine.
+
+---
+
+## TL-2026-06-14-002
+
+- **Status:** inventory complete — rights audit pending
+- **Operator instruction:** prepare a complete licensing map for all connected repositories and a Rule-0-based Terra legal framework strategy.
+- **Scope:** 29 repositories under `Secret-Uzbek` and `AIUZ-Terra-Codex-EcoSystem`.
+- **Role:** portfolio licensing inventory and legal-governance strategy.
+
+### Source-first record
+
+Before drafting, the connected GitHub accounts and all accessible repositories were enumerated. Root license surfaces were inspected where present, together with representative README, citation, publication, and donor files. Official materials for Creative Commons, Apache, GNU, OSI, SPDX, REUSE, and Open Data Commons were consulted for the legal architecture.
+
+### Detox before
+
+Complete.
+
+No portfolio-wide license was selected before repository role, current license, metadata contradiction, ownership naming, and third-party-material risks were reviewed.
+
+### Detox during
+
+Complete.
+
+The work did not:
+
+- replace any repository license;
+- claim that earlier public grants disappeared;
+- treat third-party material as Terra-owned;
+- identify handles, brands, or project titles as legal owners without documentary basis;
+- call the current Terra Public License an approved open-source license;
+- make the Universal Convention an undisclosed restriction on standard public licenses.
+
+### Created
+
+- `REPOSITORY_LICENSE_MAP.md`
+- `TERRA_LEGAL_FRAMEWORK_STRATEGY.md`
+- `RELICENSING_PROTOCOL.md`
+- `audits/2026-06-14-license-portfolio-strategy.md`
+
+### Updated
+
+- `README.md`
+- `LIVING_INDEX.md`
+- `CHANGELOG.md`
+- `TRACELOG.md`
+
+### Key findings
+
+- direct GPL versus CC0 metadata conflict in `Secret-Uzbek/AIUZ`;
+- three incompatible license positions in `terra-legal`;
+- CC0 on strategic mixed repositories;
+- widespread Terra Public License copies, damaged copies, and obsolete pointers;
+- inconsistent copyright-owner and author names;
+- incomplete or placeholder license notices;
+- corpus repositories requiring item-level third-party rights records;
+- partner and commercial repositories requiring ownership review before any public relicensing.
+
+### Legal architecture adopted for further work
+
+- CC BY 4.0 as the default candidate for original scholarly and documentary material;
+- Apache-2.0 as the default candidate for newly licensed, fully owned software;
+- preservation of valid MIT, GPL, and CC BY-SA grants unless a rights-cleared change is approved;
+- item-level rights and provenance for corpus repositories;
+- separate Universal Convention, Responsible Use, Trademark and Brand, contributor, privacy, data, publication, and commercial layers;
+- file-level SPDX and REUSE records for mixed repositories;
+- repository-by-repository migration only after ownership, contributor, dependency, publisher, media, and dataset review.
+
+### Terra Public License status
+
+`Draft — not approved for automatic portfolio-wide application`.
+
+Its ethical principles remain source material for the future Responsible Use and contractual framework.
+
+### Commit references
+
+- `84d2a5cf05845c3b5299ea0ec2d69a840d393d21` — complete repository license map
+- `a1da8ee5fe930ca5b24e11eaec164e43b1ade3c8` — Terra legal framework strategy
+- `ab62567e4b9a198abcedc9cafa62e6ff53395169` — relicensing protocol
+- `eb60997faba153ac838ef07c19df91f2652ac1cc` — portfolio licensing audit
+- `07b24d96a5e17fab93b58781d2ac8b3e4adb64b9` — README integration
+- `5d91e397f19675c4461beb96fd05364ba04e39fd` — Living Index integration
+- `4b02344d6e5146c3102675c2a8e9bce8fe0f86e3` — changelog integration
+
+### Detox after
+
+Complete with mandatory next-stage conditions.
+
+No mass relicensing is authorized by this trace. The next stage is a file-level and rights-holder audit, followed by separate operator decisions and reviewable migration pull requests.
