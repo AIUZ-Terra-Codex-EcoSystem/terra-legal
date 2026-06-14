@@ -15,12 +15,20 @@ path = [
   "REPOSITORY_PROTOCOL.md",
   "PUBLICATION_RULE.md",
   "STANDARDS.md",
+  "VALIDATION_AUDIT_STACK.md",
+  "EVIDENCE_AND_PROVENANCE_PROTOCOL.md",
   "VALIDATION_PROTOCOL.md",
+  "INDEPENDENT_REVIEW_PROTOCOL.md",
   "AUDIT_REGULATION.md",
+  "AUDIT_COMPLETION_PROTOCOL.md",
+  "RISK_AND_RELEASE_GATE_PROTOCOL.md",
+  "DETOX_ENGINE_PROTOCOL.md",
+  "TRACELOG_PROTOCOL.md",
   "DOCUMENTATION-STANDARD.md",
   "DOCUMENT_TEMPLATES.md",
   "PULL_REQUEST_REVIEW_CHECKLIST.md",
   ".github/PULL_REQUEST_TEMPLATE/stabilization.md",
+  "decisions/2026-06-14-publication-decision.md",
   "audits/README.md",
   "audits/2026-06-14-terra-legal-stabilization-v2.md",
   "audits/2026-06-14-pr3-rule0-reconciliation.md",
@@ -39,9 +47,10 @@ SPDX-FileComment = "Explicitly classified stabilization documents. This mapping 
 path = [
   "index.html",
   "design/terra-legal.css",
-  ".github/workflows/terra-audit.yml"
+  ".github/workflows/terra-audit.yml",
+  ".github/workflows/release-and-publish.yml"
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "2026 Abdurashid Abdulkhamitovich Abdukarimov <a.abdukarimov@fractal-metascience.org>"
 SPDX-License-Identifier = "Apache-2.0"
-SPDX-FileComment = "Repository-local public interface and audit workflow implementation."
+SPDX-FileComment = "Repository-local public interface and approved workflow implementation. The legacy Zenodo workflow remains outside this approved mapping pending separate review."
