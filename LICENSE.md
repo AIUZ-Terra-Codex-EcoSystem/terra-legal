@@ -1,49 +1,51 @@
-# License Policy
+# License Policy and Terra Public License Draft Status
 
 **Repository:** `terra-legal`  
-**Status:** stabilized multi-license policy  
-**Effective from:** 2026-06-14 stabilization commits  
-**Copyright holder for repository-authored material unless otherwise stated:** Abdurashid Abdulkhamitovich Abdukarimov  
+**Status:** file-scoped multi-license policy under stabilization  
+**Copyright holder for explicitly classified repository-authored material unless otherwise stated:** Abdurashid Abdulkhamitovich Abdukarimov  
 **ORCID:** 0009-0000-6394-4912
 
-## Purpose
+## Controlling rule
 
-`terra-legal` is a mixed donor repository containing legal and governance documents, standards, protocols, policies, audit records, maps, public-page assets, and light implementation files.
+`terra-legal` is a mixed donor repository containing legal and governance documents, standards, protocols, policies, audit records, public-page assets, templates, and implementation files.
 
-A single blanket license is not accurate for all file classes. This policy defines the repository-level default while preserving file-level exceptions and third-party rights.
+There is no automatic blanket license for all repository content.
 
-## Default licensing rule
+A license applies when identified through:
 
-Unless a file, folder, or embedded notice states otherwise:
+1. a file-level SPDX header;
+2. an adjacent `.license` file;
+3. `REUSE.toml`;
+4. a directory-specific notice; or
+5. an explicit file-level statement.
 
-### Documentation and policy material
+Unannotated historical files are not silently relicensed by this policy.
 
-Original repository-authored documentation, standards, protocols, policies, audit records, maps, Markdown files, explanatory texts, and publication-facing donor materials are licensed under:
+## Target licenses for classified material
 
-**Creative Commons Attribution 4.0 International**  
-**SPDX:** `CC-BY-4.0`  
-Canonical URL: <https://creativecommons.org/licenses/by/4.0/>
+### Original documentary material
 
-### Software-like material
+Where rights are held and the file is explicitly classified, original repository-authored documentation, standards, protocols, policies, audit records, maps, and explanatory texts may be licensed under:
 
-Project-owned stylesheets, scripts, workflows, configuration files, and software-like implementation files are licensed under:
+**Creative Commons Attribution 4.0 International — `CC-BY-4.0`**
 
-**Apache License, Version 2.0**  
-**SPDX:** `Apache-2.0`  
-Canonical URL: <https://www.apache.org/licenses/LICENSE-2.0>
-
-## Canonical license texts
-
-Canonical local copies are stored in:
+Canonical local text:
 
 - `LICENSES/CC-BY-4.0.txt`
+
+### Original implementation material
+
+Where rights are held and the file is explicitly classified, project-owned stylesheets, scripts, workflow logic, configuration, and software-like implementation files may be licensed under:
+
+**Apache License, Version 2.0 — `Apache-2.0`**
+
+Canonical local text:
+
 - `LICENSES/Apache-2.0.txt`
 
-If a local copy is ever found to differ from the official text, the official license text controls for the corresponding SPDX identifier.
+## Terra Public License draft
 
-## Terra Public License draft status
-
-The former `LICENSE.md` text named `Terra Public License v1.0` has been moved to:
+The former Terra Public License v1.0 is preserved at:
 
 - `legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md`
 
@@ -51,54 +53,57 @@ Its status is:
 
 **Draft — not approved for automatic portfolio-wide application**
 
-It is preserved as a historical and developmental legal artifact, not as the default license for `terra-legal`.
+It is a historical and developmental legal artifact, not the active default license for `terra-legal` or another repository.
 
-## What is not licensed by this policy
+The complete earlier text remains recoverable through Git history.
 
-This policy does not license or relicense:
+## Exclusions
 
+This policy does not automatically license or relicense:
+
+- unclassified historical files;
 - third-party texts, images, scans, legal materials, standards, articles, archives, or datasets;
-- external license texts except under their own terms;
-- dependencies, GitHub Actions, fonts, templates, or libraries created by others;
+- canonical external license texts except under their own terms;
+- dependencies, GitHub Actions, fonts, templates, libraries, or copied components created by others;
 - trademarks, logos, badges, certification marks, and visual identity marks;
 - private, confidential, partner, or unpublished material;
-- personal data or rights of publicity;
-- material governed by a separate file-level notice.
+- personal data, publicity rights, or confidential communications;
+- material governed by a separate file-level or version-specific notice.
+
+See `THIRD_PARTY_NOTICES.md`.
 
 ## Brand and names
 
 Use of names, marks, logos, badges, certification claims, and confusingly similar branding is governed by:
 
-- `TRADEMARK_POLICY.md`
-- `BRAND_IDENTITY_STANDARD.md`
-- `NAMING_STANDARD.md`
+- `TRADEMARK_POLICY.md`;
+- `BRAND_IDENTITY_STANDARD.md`;
+- `NAMING_STANDARD.md`.
 
-CC BY 4.0 and Apache-2.0 do not grant trademark rights.
+CC BY 4.0 and Apache-2.0 do not themselves grant general trademark or endorsement rights.
 
-## Ethical and responsible use layer
+## Ethical and responsible-use layer
 
-The Terra Universal Convention and responsible-use rules are governance and ethical layers. They do not automatically add downstream legal restrictions to materials already licensed under CC BY 4.0, Apache-2.0, or another standard public license.
+The Terra Universal Convention and Responsible Use Policy are governance and ethical layers. They do not automatically add downstream restrictions to files licensed under CC BY 4.0, Apache-2.0, or another standard public license.
 
 For Terra-operated services, partnerships, certifications, commercial deployments, or managed communities, responsible-use obligations may become binding through separate agreements, terms, policies, or participation rules.
 
 See:
 
-- `RESPONSIBLE_USE_POLICY.md`
-- `TERRA_UNIVERSAL_CONVENTION.md`
-- `TERRA_LEGAL_FRAMEWORK_STRATEGY.md`
+- `RESPONSIBLE_USE_POLICY.md`;
+- `TERRA_UNIVERSAL_CONVENTION.md`;
+- `TERRA_LEGAL_FRAMEWORK_STRATEGY.md`.
 
 ## Earlier grants
 
-Earlier public licensing statements may remain relevant to copies and versions already received under those terms. This stabilization policy does not claim to withdraw any earlier valid grant.
-
-Future repository versions should use this scoped policy unless a later reviewed policy replaces it.
+Earlier public licensing statements may remain relevant to copies and versions already received under those terms. This stabilization policy does not claim to withdraw an earlier valid grant.
 
 ## Attribution request
 
-When citing or reusing repository-authored documentation under CC BY 4.0, use:
+For repository-authored documentary material explicitly licensed under CC BY 4.0, the requested attribution is:
 
-> Abdukarimov, Abdurashid A. `terra-legal`: Terra Legal, Governance, TraceLog, Identity, and Licensing Donor Repository. Fractal Metascience Foundation, Tashkent. ORCID: 0009-0000-6394-4912.
+> Abdukarimov, Abdurashid Abdulkhamitovich. *terra-legal*. Fractal Metascience Foundation, Tashkent, Uzbekistan. ORCID 0009-0000-6394-4912.
 
-## No legal advice disclaimer
+## No legal advice
 
 This policy organizes repository licensing and governance. It is not a substitute for jurisdiction-specific legal advice from a qualified lawyer.
