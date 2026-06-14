@@ -1,7 +1,7 @@
 # terra-legal
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--6394--4912-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0000-6394-4912)
-[![License](https://img.shields.io/badge/License-review%20required-b8860b)](./TRACELOG.md)
+[![License](https://img.shields.io/badge/License-scoped%20multi--license-2E8B57)](./LICENSE.md)
 [![Release](https://img.shields.io/github/v/release/AIUZ-Terra-Codex-EcoSystem/terra-legal?display_name=tag)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/AIUZ-Terra-Codex-EcoSystem/terra-legal)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/commits/main)
 [![Release Pipeline](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/release-and-publish.yml/badge.svg)](https://github.com/AIUZ-Terra-Codex-EcoSystem/terra-legal/actions/workflows/release-and-publish.yml)
@@ -26,6 +26,27 @@
 
 It is a donor layer, not the whole theory corpus, not the whole archive, and not a dump zone.
 It may still carry complete normative texts when a foundational document would be misleading or useless in bridge-only form.
+
+## Stabilized repository licensing
+
+`terra-legal` now uses a scoped multi-license policy:
+
+- original documentation, standards, policies, protocols, audit records, maps, and explanatory texts: **CC BY 4.0**;
+- project-owned software-like files, stylesheets, workflows, scripts, and configuration: **Apache-2.0**;
+- Terra custom legal drafts: preserved in `legal-drafts/` as draft legal artifacts, not default repository licenses;
+- third-party materials and official external texts: governed by their own terms;
+- names, logos, badges, certification claims, and marks: governed by the Trademark and Brand Policy.
+
+Start with:
+
+- [LICENSE](./LICENSE)
+- [LICENSE.md](./LICENSE.md)
+- [LEGAL.md](./LEGAL.md)
+- [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)
+- [RESPONSIBLE_USE_POLICY.md](./RESPONSIBLE_USE_POLICY.md)
+- [TRADEMARK_POLICY.md](./TRADEMARK_POLICY.md)
+
+The former Terra Public License default text is preserved as a draft in [`legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md`](./legal-drafts/TERRA_PUBLIC_LICENSE_v1.0_DRAFT.md).
 
 ## Main public surfaces
 
@@ -66,6 +87,11 @@ The DOI field remains pending until a successful published release is verified.
 ### Legal, governance, and participation
 
 - [LICENSE.md](./LICENSE.md)
+- [LEGAL.md](./LEGAL.md)
+- [RESPONSIBLE_USE_POLICY.md](./RESPONSIBLE_USE_POLICY.md)
+- [TRADEMARK_POLICY.md](./TRADEMARK_POLICY.md)
+- [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)
+- [REUSE.toml](./REUSE.toml)
 - [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
 - [GOVERNANCE.md](./GOVERNANCE.md)
@@ -128,20 +154,21 @@ Reusable starter scaffold for new repositories:
 ## Reading path
 
 1. Start with [README.md](./README.md)
-2. Continue to [TERRA_DOCUMENTARY_LAYER.md](./TERRA_DOCUMENTARY_LAYER.md)
-3. Read [RULE_0_SOURCE_FIRST_PROTOCOL.md](./RULE_0_SOURCE_FIRST_PROTOCOL.md)
-4. Read [DETOX_ENGINE_PROTOCOL.md](./DETOX_ENGINE_PROTOCOL.md)
-5. Read [TRACELOG_PROTOCOL.md](./TRACELOG_PROTOCOL.md)
-6. Read [REPOSITORY_LICENSE_MAP.md](./REPOSITORY_LICENSE_MAP.md)
-7. Read [TERRA_LEGAL_FRAMEWORK_STRATEGY.md](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
-8. Read [RELICENSING_PROTOCOL.md](./RELICENSING_PROTOCOL.md)
-9. Read [INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md](./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md)
-10. Read [NAMING_STANDARD.md](./NAMING_STANDARD.md)
-11. Read [BRAND_IDENTITY_STANDARD.md](./BRAND_IDENTITY_STANDARD.md)
-12. Read [FULL_PACKAGING_PROTOCOL.md](./FULL_PACKAGING_PROTOCOL.md)
-13. Read [DONOR_SOURCE_REGISTRY.md](./DONOR_SOURCE_REGISTRY.md)
-14. Continue to [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
-15. Then read the main directive, sequence protocol, layer model, audit, validation, publication, and template files.
+2. Continue to [LICENSE.md](./LICENSE.md) and [LEGAL.md](./LEGAL.md)
+3. Read [TERRA_DOCUMENTARY_LAYER.md](./TERRA_DOCUMENTARY_LAYER.md)
+4. Read [RULE_0_SOURCE_FIRST_PROTOCOL.md](./RULE_0_SOURCE_FIRST_PROTOCOL.md)
+5. Read [DETOX_ENGINE_PROTOCOL.md](./DETOX_ENGINE_PROTOCOL.md)
+6. Read [TRACELOG_PROTOCOL.md](./TRACELOG_PROTOCOL.md)
+7. Read [REPOSITORY_LICENSE_MAP.md](./REPOSITORY_LICENSE_MAP.md)
+8. Read [TERRA_LEGAL_FRAMEWORK_STRATEGY.md](./TERRA_LEGAL_FRAMEWORK_STRATEGY.md)
+9. Read [RELICENSING_PROTOCOL.md](./RELICENSING_PROTOCOL.md)
+10. Read [INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md](./INVISIBLE_SHADOW_CONTINUITY_BRIDGE.md)
+11. Read [NAMING_STANDARD.md](./NAMING_STANDARD.md)
+12. Read [BRAND_IDENTITY_STANDARD.md](./BRAND_IDENTITY_STANDARD.md)
+13. Read [FULL_PACKAGING_PROTOCOL.md](./FULL_PACKAGING_PROTOCOL.md)
+14. Read [DONOR_SOURCE_REGISTRY.md](./DONOR_SOURCE_REGISTRY.md)
+15. Continue to [TERRA_UNIVERSAL_CONVENTION.md](./TERRA_UNIVERSAL_CONVENTION.md)
+16. Then read the main directive, sequence protocol, layer model, audit, validation, publication, and template files.
 
 ## Ecosystem use
 
@@ -158,13 +185,19 @@ This repository should remain compact, readable, and normative.
 It should not absorb theory corpora, raw archives, or shadow duplicates.
 Foundational legal texts may appear here in full when the legal donor layer would otherwise degrade into pointers without substantive content.
 
-## Known unresolved issue
+## Remaining stabilization work
 
-The repository currently contains incompatible license declarations across `LICENSE`, `LICENSE.md`, `CITATION.cff`, and earlier badges. The portfolio strategy does not choose a final `terra-legal` license or alter authorship. Resolution requires the repository-specific rights and legal review defined in the Relicensing Protocol.
+The principal repository-level license contradiction has been stabilized. Remaining work:
+
+- file-level audit of all older materials;
+- full third-party notice expansion;
+- GitHub Pages visual migration to the shared stylesheet;
+- validation of workflows and Zenodo metadata;
+- professional legal review before using custom Terra terms in commercial or child-facing deployments.
 
 ## Author
 
-**Abdurashid Abdukarimov**
+**Abdurashid Abdulkhamitovich Abdukarimov**
 
 - ORCID: [0009-0000-6394-4912](https://orcid.org/0009-0000-6394-4912)
 - Foundation: Fractal Metascience Foundation
